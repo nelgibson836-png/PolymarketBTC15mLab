@@ -1,0 +1,669 @@
+{
+  "generated_at": "2026-09-11T21:15:38.461674+00:00",
+  "markets": 10,
+  "binance_rows": 64800,
+  "train_days": 21,
+  "entry_minutes": [
+    1,
+    3,
+    5
+  ],
+  "edge_thresholds": [
+    0.03,
+    0.05,
+    0.1
+  ],
+  "model": "minute_from_15m_open + current_move_bucket, trained only on prior 21 Binance days",
+  "summary": [
+    {
+      "edge_threshold": 0.03,
+      "entry_minute": 1,
+      "trades": 10,
+      "wins": 6,
+      "win_rate": 60.0,
+      "roi_per_dollar": 0.098,
+      "total_pnl_per_dollar": 0.98
+    },
+    {
+      "edge_threshold": 0.03,
+      "entry_minute": 3,
+      "trades": 8,
+      "wins": 6,
+      "win_rate": 75.0,
+      "roi_per_dollar": 0.20625,
+      "total_pnl_per_dollar": 1.65
+    },
+    {
+      "edge_threshold": 0.03,
+      "entry_minute": 5,
+      "trades": 4,
+      "wins": 2,
+      "win_rate": 50.0,
+      "roi_per_dollar": -0.035,
+      "total_pnl_per_dollar": -0.14
+    },
+    {
+      "edge_threshold": 0.05,
+      "entry_minute": 1,
+      "trades": 8,
+      "wins": 4,
+      "win_rate": 50.0,
+      "roi_per_dollar": 0.0025,
+      "total_pnl_per_dollar": 0.02
+    },
+    {
+      "edge_threshold": 0.05,
+      "entry_minute": 3,
+      "trades": 7,
+      "wins": 5,
+      "win_rate": 71.43,
+      "roi_per_dollar": 0.175,
+      "total_pnl_per_dollar": 1.225
+    },
+    {
+      "edge_threshold": 0.05,
+      "entry_minute": 5,
+      "trades": 4,
+      "wins": 2,
+      "win_rate": 50.0,
+      "roi_per_dollar": -0.035,
+      "total_pnl_per_dollar": -0.14
+    },
+    {
+      "edge_threshold": 0.1,
+      "entry_minute": 1,
+      "trades": 2,
+      "wins": 1,
+      "win_rate": 50.0,
+      "roi_per_dollar": 0.025,
+      "total_pnl_per_dollar": 0.05
+    },
+    {
+      "edge_threshold": 0.1,
+      "entry_minute": 3,
+      "trades": 5,
+      "wins": 4,
+      "win_rate": 80.0,
+      "roi_per_dollar": 0.291,
+      "total_pnl_per_dollar": 1.455
+    },
+    {
+      "edge_threshold": 0.1,
+      "entry_minute": 5,
+      "trades": 3,
+      "wins": 1,
+      "win_rate": 33.33,
+      "roi_per_dollar": -0.205,
+      "total_pnl_per_dollar": -0.615
+    }
+  ],
+  "trades": [
+    {
+      "slug": "btc-updown-15m-1789150500",
+      "minute": 1,
+      "side": "up",
+      "model_probability": 0.5625,
+      "market_price": 0.525,
+      "edge": 0.0375,
+      "edge_threshold": 0.03,
+      "actual": "UP",
+      "pnl_per_dollar": 0.475
+    },
+    {
+      "slug": "btc-updown-15m-1789150500",
+      "minute": 3,
+      "side": "up",
+      "model_probability": 0.821429,
+      "market_price": 0.715,
+      "edge": 0.106429,
+      "edge_threshold": 0.03,
+      "actual": "UP",
+      "pnl_per_dollar": 0.285
+    },
+    {
+      "slug": "btc-updown-15m-1789150500",
+      "minute": 3,
+      "side": "up",
+      "model_probability": 0.821429,
+      "market_price": 0.715,
+      "edge": 0.106429,
+      "edge_threshold": 0.05,
+      "actual": "UP",
+      "pnl_per_dollar": 0.285
+    },
+    {
+      "slug": "btc-updown-15m-1789150500",
+      "minute": 3,
+      "side": "up",
+      "model_probability": 0.821429,
+      "market_price": 0.715,
+      "edge": 0.106429,
+      "edge_threshold": 0.1,
+      "actual": "UP",
+      "pnl_per_dollar": 0.285
+    },
+    {
+      "slug": "btc-updown-15m-1789151400",
+      "minute": 1,
+      "side": "down",
+      "model_probability": 0.578717,
+      "market_price": 0.465,
+      "edge": 0.113717,
+      "edge_threshold": 0.03,
+      "actual": "DOWN",
+      "pnl_per_dollar": 0.535
+    },
+    {
+      "slug": "btc-updown-15m-1789151400",
+      "minute": 1,
+      "side": "down",
+      "model_probability": 0.578717,
+      "market_price": 0.465,
+      "edge": 0.113717,
+      "edge_threshold": 0.05,
+      "actual": "DOWN",
+      "pnl_per_dollar": 0.535
+    },
+    {
+      "slug": "btc-updown-15m-1789151400",
+      "minute": 1,
+      "side": "down",
+      "model_probability": 0.578717,
+      "market_price": 0.465,
+      "edge": 0.113717,
+      "edge_threshold": 0.1,
+      "actual": "DOWN",
+      "pnl_per_dollar": 0.535
+    },
+    {
+      "slug": "btc-updown-15m-1789151400",
+      "minute": 3,
+      "side": "down",
+      "model_probability": 0.650104,
+      "market_price": 0.535,
+      "edge": 0.115104,
+      "edge_threshold": 0.03,
+      "actual": "DOWN",
+      "pnl_per_dollar": 0.465
+    },
+    {
+      "slug": "btc-updown-15m-1789151400",
+      "minute": 3,
+      "side": "down",
+      "model_probability": 0.650104,
+      "market_price": 0.535,
+      "edge": 0.115104,
+      "edge_threshold": 0.05,
+      "actual": "DOWN",
+      "pnl_per_dollar": 0.465
+    },
+    {
+      "slug": "btc-updown-15m-1789151400",
+      "minute": 3,
+      "side": "down",
+      "model_probability": 0.650104,
+      "market_price": 0.535,
+      "edge": 0.115104,
+      "edge_threshold": 0.1,
+      "actual": "DOWN",
+      "pnl_per_dollar": 0.465
+    },
+    {
+      "slug": "btc-updown-15m-1789151400",
+      "minute": 5,
+      "side": "up",
+      "model_probability": 0.737452,
+      "market_price": 0.435,
+      "edge": 0.302452,
+      "edge_threshold": 0.03,
+      "actual": "DOWN",
+      "pnl_per_dollar": -0.435
+    },
+    {
+      "slug": "btc-updown-15m-1789151400",
+      "minute": 5,
+      "side": "up",
+      "model_probability": 0.737452,
+      "market_price": 0.435,
+      "edge": 0.302452,
+      "edge_threshold": 0.05,
+      "actual": "DOWN",
+      "pnl_per_dollar": -0.435
+    },
+    {
+      "slug": "btc-updown-15m-1789151400",
+      "minute": 5,
+      "side": "up",
+      "model_probability": 0.737452,
+      "market_price": 0.435,
+      "edge": 0.302452,
+      "edge_threshold": 0.1,
+      "actual": "DOWN",
+      "pnl_per_dollar": -0.435
+    },
+    {
+      "slug": "btc-updown-15m-1789152300",
+      "minute": 1,
+      "side": "up",
+      "model_probability": 0.5625,
+      "market_price": 0.505,
+      "edge": 0.0575,
+      "edge_threshold": 0.03,
+      "actual": "DOWN",
+      "pnl_per_dollar": -0.505
+    },
+    {
+      "slug": "btc-updown-15m-1789152300",
+      "minute": 1,
+      "side": "up",
+      "model_probability": 0.5625,
+      "market_price": 0.505,
+      "edge": 0.0575,
+      "edge_threshold": 0.05,
+      "actual": "DOWN",
+      "pnl_per_dollar": -0.505
+    },
+    {
+      "slug": "btc-updown-15m-1789152300",
+      "minute": 3,
+      "side": "down",
+      "model_probability": 0.678445,
+      "market_price": 0.465,
+      "edge": 0.213445,
+      "edge_threshold": 0.03,
+      "actual": "DOWN",
+      "pnl_per_dollar": 0.535
+    },
+    {
+      "slug": "btc-updown-15m-1789152300",
+      "minute": 3,
+      "side": "down",
+      "model_probability": 0.678445,
+      "market_price": 0.465,
+      "edge": 0.213445,
+      "edge_threshold": 0.05,
+      "actual": "DOWN",
+      "pnl_per_dollar": 0.535
+    },
+    {
+      "slug": "btc-updown-15m-1789152300",
+      "minute": 3,
+      "side": "down",
+      "model_probability": 0.678445,
+      "market_price": 0.465,
+      "edge": 0.213445,
+      "edge_threshold": 0.1,
+      "actual": "DOWN",
+      "pnl_per_dollar": 0.535
+    },
+    {
+      "slug": "btc-updown-15m-1789153200",
+      "minute": 1,
+      "side": "up",
+      "model_probability": 0.561753,
+      "market_price": 0.515,
+      "edge": 0.046753,
+      "edge_threshold": 0.03,
+      "actual": "UP",
+      "pnl_per_dollar": 0.485
+    },
+    {
+      "slug": "btc-updown-15m-1789153200",
+      "minute": 3,
+      "side": "up",
+      "model_probability": 0.608229,
+      "market_price": 0.575,
+      "edge": 0.033229,
+      "edge_threshold": 0.03,
+      "actual": "UP",
+      "pnl_per_dollar": 0.425
+    },
+    {
+      "slug": "btc-updown-15m-1789153200",
+      "minute": 5,
+      "side": "up",
+      "model_probability": 0.806306,
+      "market_price": 0.575,
+      "edge": 0.231306,
+      "edge_threshold": 0.03,
+      "actual": "UP",
+      "pnl_per_dollar": 0.425
+    },
+    {
+      "slug": "btc-updown-15m-1789153200",
+      "minute": 5,
+      "side": "up",
+      "model_probability": 0.806306,
+      "market_price": 0.575,
+      "edge": 0.231306,
+      "edge_threshold": 0.05,
+      "actual": "UP",
+      "pnl_per_dollar": 0.425
+    },
+    {
+      "slug": "btc-updown-15m-1789153200",
+      "minute": 5,
+      "side": "up",
+      "model_probability": 0.806306,
+      "market_price": 0.575,
+      "edge": 0.231306,
+      "edge_threshold": 0.1,
+      "actual": "UP",
+      "pnl_per_dollar": 0.425
+    },
+    {
+      "slug": "btc-updown-15m-1789154100",
+      "minute": 1,
+      "side": "down",
+      "model_probability": 0.649533,
+      "market_price": 0.485,
+      "edge": 0.164533,
+      "edge_threshold": 0.03,
+      "actual": "UP",
+      "pnl_per_dollar": -0.485
+    },
+    {
+      "slug": "btc-updown-15m-1789154100",
+      "minute": 1,
+      "side": "down",
+      "model_probability": 0.649533,
+      "market_price": 0.485,
+      "edge": 0.164533,
+      "edge_threshold": 0.05,
+      "actual": "UP",
+      "pnl_per_dollar": -0.485
+    },
+    {
+      "slug": "btc-updown-15m-1789154100",
+      "minute": 1,
+      "side": "down",
+      "model_probability": 0.649533,
+      "market_price": 0.485,
+      "edge": 0.164533,
+      "edge_threshold": 0.1,
+      "actual": "UP",
+      "pnl_per_dollar": -0.485
+    },
+    {
+      "slug": "btc-updown-15m-1789154100",
+      "minute": 5,
+      "side": "down",
+      "model_probability": 0.75265,
+      "market_price": 0.605,
+      "edge": 0.14765,
+      "edge_threshold": 0.03,
+      "actual": "UP",
+      "pnl_per_dollar": -0.605
+    },
+    {
+      "slug": "btc-updown-15m-1789154100",
+      "minute": 5,
+      "side": "down",
+      "model_probability": 0.75265,
+      "market_price": 0.605,
+      "edge": 0.14765,
+      "edge_threshold": 0.05,
+      "actual": "UP",
+      "pnl_per_dollar": -0.605
+    },
+    {
+      "slug": "btc-updown-15m-1789154100",
+      "minute": 5,
+      "side": "down",
+      "model_probability": 0.75265,
+      "market_price": 0.605,
+      "edge": 0.14765,
+      "edge_threshold": 0.1,
+      "actual": "UP",
+      "pnl_per_dollar": -0.605
+    },
+    {
+      "slug": "btc-updown-15m-1789155000",
+      "minute": 1,
+      "side": "up",
+      "model_probability": 0.562334,
+      "market_price": 0.495,
+      "edge": 0.067334,
+      "edge_threshold": 0.03,
+      "actual": "UP",
+      "pnl_per_dollar": 0.505
+    },
+    {
+      "slug": "btc-updown-15m-1789155000",
+      "minute": 1,
+      "side": "up",
+      "model_probability": 0.562334,
+      "market_price": 0.495,
+      "edge": 0.067334,
+      "edge_threshold": 0.05,
+      "actual": "UP",
+      "pnl_per_dollar": 0.505
+    },
+    {
+      "slug": "btc-updown-15m-1789155900",
+      "minute": 1,
+      "side": "down",
+      "model_probability": 0.578717,
+      "market_price": 0.505,
+      "edge": 0.073717,
+      "edge_threshold": 0.03,
+      "actual": "UP",
+      "pnl_per_dollar": -0.505
+    },
+    {
+      "slug": "btc-updown-15m-1789155900",
+      "minute": 1,
+      "side": "down",
+      "model_probability": 0.578717,
+      "market_price": 0.505,
+      "edge": 0.073717,
+      "edge_threshold": 0.05,
+      "actual": "UP",
+      "pnl_per_dollar": -0.505
+    },
+    {
+      "slug": "btc-updown-15m-1789155900",
+      "minute": 3,
+      "side": "down",
+      "model_probability": 0.64876,
+      "market_price": 0.465,
+      "edge": 0.18376,
+      "edge_threshold": 0.03,
+      "actual": "UP",
+      "pnl_per_dollar": -0.465
+    },
+    {
+      "slug": "btc-updown-15m-1789155900",
+      "minute": 3,
+      "side": "down",
+      "model_probability": 0.64876,
+      "market_price": 0.465,
+      "edge": 0.18376,
+      "edge_threshold": 0.05,
+      "actual": "UP",
+      "pnl_per_dollar": -0.465
+    },
+    {
+      "slug": "btc-updown-15m-1789155900",
+      "minute": 3,
+      "side": "down",
+      "model_probability": 0.64876,
+      "market_price": 0.465,
+      "edge": 0.18376,
+      "edge_threshold": 0.1,
+      "actual": "UP",
+      "pnl_per_dollar": -0.465
+    },
+    {
+      "slug": "btc-updown-15m-1789155900",
+      "minute": 5,
+      "side": "up",
+      "model_probability": 0.595642,
+      "market_price": 0.525,
+      "edge": 0.070642,
+      "edge_threshold": 0.03,
+      "actual": "UP",
+      "pnl_per_dollar": 0.475
+    },
+    {
+      "slug": "btc-updown-15m-1789155900",
+      "minute": 5,
+      "side": "up",
+      "model_probability": 0.595642,
+      "market_price": 0.525,
+      "edge": 0.070642,
+      "edge_threshold": 0.05,
+      "actual": "UP",
+      "pnl_per_dollar": 0.475
+    },
+    {
+      "slug": "btc-updown-15m-1789156800",
+      "minute": 1,
+      "side": "up",
+      "model_probability": 0.56366,
+      "market_price": 0.495,
+      "edge": 0.06866,
+      "edge_threshold": 0.03,
+      "actual": "UP",
+      "pnl_per_dollar": 0.505
+    },
+    {
+      "slug": "btc-updown-15m-1789156800",
+      "minute": 1,
+      "side": "up",
+      "model_probability": 0.56366,
+      "market_price": 0.495,
+      "edge": 0.06866,
+      "edge_threshold": 0.05,
+      "actual": "UP",
+      "pnl_per_dollar": 0.505
+    },
+    {
+      "slug": "btc-updown-15m-1789156800",
+      "minute": 3,
+      "side": "up",
+      "model_probability": 0.822485,
+      "market_price": 0.365,
+      "edge": 0.457485,
+      "edge_threshold": 0.03,
+      "actual": "UP",
+      "pnl_per_dollar": 0.635
+    },
+    {
+      "slug": "btc-updown-15m-1789156800",
+      "minute": 3,
+      "side": "up",
+      "model_probability": 0.822485,
+      "market_price": 0.365,
+      "edge": 0.457485,
+      "edge_threshold": 0.05,
+      "actual": "UP",
+      "pnl_per_dollar": 0.635
+    },
+    {
+      "slug": "btc-updown-15m-1789156800",
+      "minute": 3,
+      "side": "up",
+      "model_probability": 0.822485,
+      "market_price": 0.365,
+      "edge": 0.457485,
+      "edge_threshold": 0.1,
+      "actual": "UP",
+      "pnl_per_dollar": 0.635
+    },
+    {
+      "slug": "btc-updown-15m-1789157700",
+      "minute": 1,
+      "side": "down",
+      "model_probability": 0.579562,
+      "market_price": 0.515,
+      "edge": 0.064562,
+      "edge_threshold": 0.03,
+      "actual": "DOWN",
+      "pnl_per_dollar": 0.485
+    },
+    {
+      "slug": "btc-updown-15m-1789157700",
+      "minute": 1,
+      "side": "down",
+      "model_probability": 0.579562,
+      "market_price": 0.515,
+      "edge": 0.064562,
+      "edge_threshold": 0.05,
+      "actual": "DOWN",
+      "pnl_per_dollar": 0.485
+    },
+    {
+      "slug": "btc-updown-15m-1789157700",
+      "minute": 3,
+      "side": "down",
+      "model_probability": 0.676056,
+      "market_price": 0.625,
+      "edge": 0.051056,
+      "edge_threshold": 0.03,
+      "actual": "DOWN",
+      "pnl_per_dollar": 0.375
+    },
+    {
+      "slug": "btc-updown-15m-1789157700",
+      "minute": 3,
+      "side": "down",
+      "model_probability": 0.676056,
+      "market_price": 0.625,
+      "edge": 0.051056,
+      "edge_threshold": 0.05,
+      "actual": "DOWN",
+      "pnl_per_dollar": 0.375
+    },
+    {
+      "slug": "btc-updown-15m-1789158600",
+      "minute": 1,
+      "side": "down",
+      "model_probability": 0.580175,
+      "market_price": 0.515,
+      "edge": 0.065175,
+      "edge_threshold": 0.03,
+      "actual": "UP",
+      "pnl_per_dollar": -0.515
+    },
+    {
+      "slug": "btc-updown-15m-1789158600",
+      "minute": 1,
+      "side": "down",
+      "model_probability": 0.580175,
+      "market_price": 0.515,
+      "edge": 0.065175,
+      "edge_threshold": 0.05,
+      "actual": "UP",
+      "pnl_per_dollar": -0.515
+    },
+    {
+      "slug": "btc-updown-15m-1789158600",
+      "minute": 3,
+      "side": "down",
+      "model_probability": 0.677193,
+      "market_price": 0.605,
+      "edge": 0.072193,
+      "edge_threshold": 0.03,
+      "actual": "UP",
+      "pnl_per_dollar": -0.605
+    },
+    {
+      "slug": "btc-updown-15m-1789158600",
+      "minute": 3,
+      "side": "down",
+      "model_probability": 0.677193,
+      "market_price": 0.605,
+      "edge": 0.072193,
+      "edge_threshold": 0.05,
+      "actual": "UP",
+      "pnl_per_dollar": -0.605
+    }
+  ],
+  "skipped": 0,
+  "notes": [
+    "Polymarket historical token price is treated as theoretical entry price; historical bid/ask execution is not reconstructed.",
+    "Polymarket settlement outcome is used for P&L; the model probability is learned from Binance BTCUSDT direction.",
+    "Fees, slippage and order size/liquidity are not included yet."
+  ]
+}
