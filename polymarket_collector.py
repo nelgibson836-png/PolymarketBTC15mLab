@@ -20,7 +20,7 @@ LOOKBACK_DAYS = 14
 def get_json(url, params=None):
     if params:
         url += "?" + urllib.parse.urlencode(params)
-    req = urllib.request.Request(url, headers={"User-Agent": "PolymarketBTC15mLab/0.2"})
+    req = urllib.request.Request(url, headers={"User-Agent": "PolymarketBTC15mLab/0.3"})
     with urllib.request.urlopen(req, timeout=30) as response:
         return json.loads(response.read().decode("utf-8"))
 
@@ -39,7 +39,6 @@ def parse_json_field(value, default=None):
 def is_btc_15m(market):
     slug = str(market.get("slug", "")).lower()
     question = str(market.get("question", "")).lower()
-    # Current BTC 15m markets use slugs such as btc-updown-15m-1789149600.
     if slug.startswith("btc-updown-15m-"):
         return True
     return "bitcoin" in question and "15" in question and "minute" in question
@@ -91,12 +90,16 @@ def collect_markets(lookback_days=LOOKBACK_DAYS, limit=100, max_pages=20):
     return markets
 
 
-def collect_price_history(token_id, start_ts=None, end_ts=None):
-    params = {"market": token_id, "interval": "1m"}
-    if start_ts is not None:
-        params["startTs"] = int(start_ts)
-    if end_ts is not None:
-        params["endTs"] = int(end_ts)
+def collect_price_history(token_id, start_ts, end_ts):
+    # For fine-grained history, Polymarket expects an explicit absolute range.
+    # interval=1m means "last month", not 1-minute fidelity, and combining it
+    # with startTs/endTs causes a 400 validation error.
+    params = {
+        "market": token_id,
+        "startTs": int(start_ts),
+        "endTs": int(end_ts),
+        "fidelity": 1,
+    }
     data = get_json(CLOB_HISTORY_URL, params)
     return data.get("history", []) if isinstance(data, dict) else []
 
@@ -138,6 +141,9 @@ def normalize_market(market):
         "price_history": {},
     }
 
+    if start_ts is None or end_ts is None:
+        return result
+
     for token_id in token_ids:
         try:
             result["price_history"][str(token_id)] = collect_price_history(token_id, start_ts, end_ts)
@@ -163,6 +169,7 @@ def main():
         "generated_at": datetime.now(timezone.utc).isoformat(),
         "source": "Polymarket Gamma API + CLOB prices-history",
         "lookback_days": LOOKBACK_DAYS,
+        "price_history_fidelity_minutes": 1,
         "markets_found": len(normalized),
         "markets": normalized,
     }
