@@ -1,6 +1,464 @@
 {
-  "generated_at": "2026-09-11T17:15:08.899660+00:00",
+  "generated_at": "2026-09-11T18:01:43.976672+00:00",
   "source": "Polymarket Gamma API + CLOB prices-history",
-  "markets_found": 0,
-  "markets": []
+  "lookback_days": 14,
+  "markets_found": 12,
+  "markets": [
+    {
+      "id": "4440263",
+      "question": "Bitcoin Up or Down - September 11, 10:45AM-11:00AM ET",
+      "slug": "btc-updown-15m-1789137900",
+      "condition_id": "0xb1f8a2f2e08df034fb983e41dbd9d5abb91ca85bcce14f3d571b1e6cf2d9ea28",
+      "start_date": "2026-09-10T14:53:46.013744Z",
+      "end_date": "2026-09-11T15:00:00Z",
+      "closed_time": "2026-09-11 15:01:27+00",
+      "resolution_source": "https://data.chain.link/streams/btc-usd-twap-60s-streams",
+      "resolved_by": null,
+      "outcomes": [
+        "Up",
+        "Down"
+      ],
+      "outcome_prices": [
+        "1",
+        "0"
+      ],
+      "clob_token_ids": [
+        "28635467805592200395575087281423329907521686936251522705720465660757007529101",
+        "66695736080398110980269712913044639076619109394195401557109377721944438898853"
+      ],
+      "active": true,
+      "closed": true,
+      "volume": 21891.680309,
+      "liquidity": null,
+      "best_bid": 0.999,
+      "best_ask": 1,
+      "last_trade_price": 0.999,
+      "price_history": {
+        "28635467805592200395575087281423329907521686936251522705720465660757007529101": {
+          "error": "HTTP Error 400: Bad Request"
+        },
+        "66695736080398110980269712913044639076619109394195401557109377721944438898853": {
+          "error": "HTTP Error 400: Bad Request"
+        }
+      }
+    },
+    {
+      "id": "4440492",
+      "question": "Bitcoin Up or Down - September 11, 11:00AM-11:15AM ET",
+      "slug": "btc-updown-15m-1789138800",
+      "condition_id": "0xcd34358e964921e503be80707a4cb0e8b3d45d2edfd6fe1fd28def70243a2ba5",
+      "start_date": "2026-09-10T15:08:33.543466Z",
+      "end_date": "2026-09-11T15:15:00Z",
+      "closed_time": "2026-09-11 15:15:54+00",
+      "resolution_source": "https://data.chain.link/streams/btc-usd-twap-60s-streams",
+      "resolved_by": null,
+      "outcomes": [
+        "Up",
+        "Down"
+      ],
+      "outcome_prices": [
+        "0",
+        "1"
+      ],
+      "clob_token_ids": [
+        "99604251769546349491585517772514635483600224915503557359831129652523053745980",
+        "100905132076161419449623266396016323981263100387239940905635116326484605712891"
+      ],
+      "active": true,
+      "closed": true,
+      "volume": 26376.429363999985,
+      "liquidity": null,
+      "best_bid": null,
+      "best_ask": 0.001,
+      "last_trade_price": 0.001,
+      "price_history": {
+        "99604251769546349491585517772514635483600224915503557359831129652523053745980": {
+          "error": "HTTP Error 400: Bad Request"
+        },
+        "100905132076161419449623266396016323981263100387239940905635116326484605712891": {
+          "error": "HTTP Error 400: Bad Request"
+        }
+      }
+    },
+    {
+      "id": "4440711",
+      "question": "Bitcoin Up or Down - September 11, 11:15AM-11:30AM ET",
+      "slug": "btc-updown-15m-1789139700",
+      "condition_id": "0xa9b1daae8040880f05d4461370896f3aadf39e75b6d3800bddbf64e312402f27",
+      "start_date": "2026-09-10T15:23:10.480029Z",
+      "end_date": "2026-09-11T15:30:00Z",
+      "closed_time": "2026-09-11 15:31:27+00",
+      "resolution_source": "https://data.chain.link/streams/btc-usd-twap-60s-streams",
+      "resolved_by": null,
+      "outcomes": [
+        "Up",
+        "Down"
+      ],
+      "outcome_prices": [
+        "1",
+        "0"
+      ],
+      "clob_token_ids": [
+        "9520148807123319792316379783229581244127542888594430085027829994492115732168",
+        "34503807419632373442457032790687529251348860822730455282463934364144348721812"
+      ],
+      "active": true,
+      "closed": true,
+      "volume": 19987.522645,
+      "liquidity": null,
+      "best_bid": 0.999,
+      "best_ask": 1,
+      "last_trade_price": 0.999,
+      "price_history": {
+        "9520148807123319792316379783229581244127542888594430085027829994492115732168": {
+          "error": "HTTP Error 400: Bad Request"
+        },
+        "34503807419632373442457032790687529251348860822730455282463934364144348721812": {
+          "error": "HTTP Error 400: Bad Request"
+        }
+      }
+    },
+    {
+      "id": "4440960",
+      "question": "Bitcoin Up or Down - September 11, 11:30AM-11:45AM ET",
+      "slug": "btc-updown-15m-1789140600",
+      "condition_id": "0xe4ddcca996be73de5992e7e5e3813db131533c505babd1fd9ad316551c119252",
+      "start_date": "2026-09-10T15:38:45.155364Z",
+      "end_date": "2026-09-11T15:45:00Z",
+      "closed_time": "2026-09-11 15:46:27+00",
+      "resolution_source": "https://data.chain.link/streams/btc-usd-twap-60s-streams",
+      "resolved_by": null,
+      "outcomes": [
+        "Up",
+        "Down"
+      ],
+      "outcome_prices": [
+        "0",
+        "1"
+      ],
+      "clob_token_ids": [
+        "35244619115292700141037218763773395170126082764871982128415335623736789575664",
+        "90769039639826338556625983569037676035402280771029522888619703796751359269133"
+      ],
+      "active": true,
+      "closed": true,
+      "volume": 30298.714177000013,
+      "liquidity": null,
+      "best_bid": null,
+      "best_ask": 0.001,
+      "last_trade_price": 0.01,
+      "price_history": {
+        "35244619115292700141037218763773395170126082764871982128415335623736789575664": {
+          "error": "HTTP Error 400: Bad Request"
+        },
+        "90769039639826338556625983569037676035402280771029522888619703796751359269133": {
+          "error": "HTTP Error 400: Bad Request"
+        }
+      }
+    },
+    {
+      "id": "4441249",
+      "question": "Bitcoin Up or Down - September 11, 11:45AM-12:00PM ET",
+      "slug": "btc-updown-15m-1789141500",
+      "condition_id": "0xd43f5a98ab9d83e9f7d847af749340d27e824743a21e25337340942587e38414",
+      "start_date": "2026-09-10T15:53:41.676926Z",
+      "end_date": "2026-09-11T16:00:00Z",
+      "closed_time": "2026-09-11 16:01:27+00",
+      "resolution_source": "https://data.chain.link/streams/btc-usd-twap-60s-streams",
+      "resolved_by": null,
+      "outcomes": [
+        "Up",
+        "Down"
+      ],
+      "outcome_prices": [
+        "0",
+        "1"
+      ],
+      "clob_token_ids": [
+        "25361244819908036066807067209058239143148273557609457392665373184851058560440",
+        "44355296160661310524286461098052234353387814524822799030007187330414598932933"
+      ],
+      "active": true,
+      "closed": true,
+      "volume": 24440.30222900001,
+      "liquidity": null,
+      "best_bid": null,
+      "best_ask": 0.001,
+      "last_trade_price": 0.002,
+      "price_history": {
+        "25361244819908036066807067209058239143148273557609457392665373184851058560440": {
+          "error": "HTTP Error 400: Bad Request"
+        },
+        "44355296160661310524286461098052234353387814524822799030007187330414598932933": {
+          "error": "HTTP Error 400: Bad Request"
+        }
+      }
+    },
+    {
+      "id": "4441476",
+      "question": "Bitcoin Up or Down - September 11, 12:00PM-12:15PM ET",
+      "slug": "btc-updown-15m-1789142400",
+      "condition_id": "0x93748a596f5b7adec491c032cc1b82c8ba83d41297e723b5df829a89df135a79",
+      "start_date": "2026-09-10T16:09:20.93628Z",
+      "end_date": "2026-09-11T16:15:00Z",
+      "closed_time": "2026-09-11 16:16:01+00",
+      "resolution_source": "https://data.chain.link/streams/btc-usd-twap-60s-streams",
+      "resolved_by": null,
+      "outcomes": [
+        "Up",
+        "Down"
+      ],
+      "outcome_prices": [
+        "1",
+        "0"
+      ],
+      "clob_token_ids": [
+        "74852018422757654682781200701880189527027891877910973953100263262776356666009",
+        "86784611440025114514063367814381927355173752124210313824864827728619773366770"
+      ],
+      "active": true,
+      "closed": true,
+      "volume": 29906.226324000032,
+      "liquidity": null,
+      "best_bid": 0.999,
+      "best_ask": 1,
+      "last_trade_price": 0.999,
+      "price_history": {
+        "74852018422757654682781200701880189527027891877910973953100263262776356666009": {
+          "error": "HTTP Error 400: Bad Request"
+        },
+        "86784611440025114514063367814381927355173752124210313824864827728619773366770": {
+          "error": "HTTP Error 400: Bad Request"
+        }
+      }
+    },
+    {
+      "id": "4441619",
+      "question": "Bitcoin Up or Down - September 11, 12:15PM-12:30PM ET",
+      "slug": "btc-updown-15m-1789143300",
+      "condition_id": "0xc1f0c1fb3d30b9544c861597838e8141d806ecd2869b849a32f75ed328010756",
+      "start_date": "2026-09-10T16:23:51.757112Z",
+      "end_date": "2026-09-11T16:30:00Z",
+      "closed_time": "2026-09-11 16:31:27+00",
+      "resolution_source": "https://data.chain.link/streams/btc-usd-twap-60s-streams",
+      "resolved_by": null,
+      "outcomes": [
+        "Up",
+        "Down"
+      ],
+      "outcome_prices": [
+        "0",
+        "1"
+      ],
+      "clob_token_ids": [
+        "2587542851657551634412523357420785189952155390884017854637146847814273491368",
+        "14135975064074958758102558859914167353292182345932514018399534771171922654641"
+      ],
+      "active": true,
+      "closed": true,
+      "volume": 16081.187230000003,
+      "liquidity": null,
+      "best_bid": 0.03,
+      "best_ask": 0.04,
+      "last_trade_price": 0.05,
+      "price_history": {
+        "2587542851657551634412523357420785189952155390884017854637146847814273491368": {
+          "error": "HTTP Error 400: Bad Request"
+        },
+        "14135975064074958758102558859914167353292182345932514018399534771171922654641": {
+          "error": "HTTP Error 400: Bad Request"
+        }
+      }
+    },
+    {
+      "id": "4441807",
+      "question": "Bitcoin Up or Down - September 11, 12:30PM-12:45PM ET",
+      "slug": "btc-updown-15m-1789144200",
+      "condition_id": "0x1cf74c7168324e57bf33806ed95ce051d36e472982c6cb3c65cb74f16696c5e7",
+      "start_date": "2026-09-10T16:38:42.465091Z",
+      "end_date": "2026-09-11T16:45:00Z",
+      "closed_time": "2026-09-11 16:45:52+00",
+      "resolution_source": "https://data.chain.link/streams/btc-usd-twap-60s-streams",
+      "resolved_by": null,
+      "outcomes": [
+        "Up",
+        "Down"
+      ],
+      "outcome_prices": [
+        "1",
+        "0"
+      ],
+      "clob_token_ids": [
+        "31794496739007920374111914878167670321961750887311519689361535538899199501064",
+        "20614044844458293646954021658227214514817409210946309447940758356258028182909"
+      ],
+      "active": true,
+      "closed": true,
+      "volume": 119.16235400000001,
+      "liquidity": 0,
+      "best_bid": 0.5,
+      "best_ask": 0.51,
+      "last_trade_price": 0.5,
+      "price_history": {
+        "31794496739007920374111914878167670321961750887311519689361535538899199501064": {
+          "error": "HTTP Error 400: Bad Request"
+        },
+        "20614044844458293646954021658227214514817409210946309447940758356258028182909": {
+          "error": "HTTP Error 400: Bad Request"
+        }
+      }
+    },
+    {
+      "id": "4442363",
+      "question": "Bitcoin Up or Down - September 11, 12:45PM-1:00PM ET",
+      "slug": "btc-updown-15m-1789145100",
+      "condition_id": "0x188add3662eebea50b710b515f3c6720f27bf565092decf94e853c70da658730",
+      "start_date": "2026-09-10T16:53:22.032142Z",
+      "end_date": "2026-09-11T17:00:00Z",
+      "closed_time": "2026-09-11 17:01:27+00",
+      "resolution_source": "https://data.chain.link/streams/btc-usd-twap-60s-streams",
+      "resolved_by": null,
+      "outcomes": [
+        "Up",
+        "Down"
+      ],
+      "outcome_prices": [
+        "1",
+        "0"
+      ],
+      "clob_token_ids": [
+        "98219314974529382687578688068806573305652028592996139139821817638860219266710",
+        "31491214726349388028664310801532769207396957780021601871641493994962601808638"
+      ],
+      "active": true,
+      "closed": true,
+      "volume": 13521.537693999995,
+      "liquidity": null,
+      "best_bid": 0.999,
+      "best_ask": 1,
+      "last_trade_price": 0.999,
+      "price_history": {
+        "98219314974529382687578688068806573305652028592996139139821817638860219266710": {
+          "error": "HTTP Error 400: Bad Request"
+        },
+        "31491214726349388028664310801532769207396957780021601871641493994962601808638": {
+          "error": "HTTP Error 400: Bad Request"
+        }
+      }
+    },
+    {
+      "id": "4442460",
+      "question": "Bitcoin Up or Down - September 11, 1:00PM-1:15PM ET",
+      "slug": "btc-updown-15m-1789146000",
+      "condition_id": "0x79bed9a16a9515f68fc6bf207ab789d7899f23f1748818bc40dba183f7827115",
+      "start_date": "2026-09-10T17:08:20.219139Z",
+      "end_date": "2026-09-11T17:15:00Z",
+      "closed_time": "2026-09-11 17:15:52+00",
+      "resolution_source": "https://data.chain.link/streams/btc-usd-twap-60s-streams",
+      "resolved_by": null,
+      "outcomes": [
+        "Up",
+        "Down"
+      ],
+      "outcome_prices": [
+        "0",
+        "1"
+      ],
+      "clob_token_ids": [
+        "93786933231968127355161481874949440249093009373962800201449290049554684551821",
+        "67040523977001426080466112797613057020182683818543297821737687334791548422184"
+      ],
+      "active": true,
+      "closed": true,
+      "volume": 15997.217332,
+      "liquidity": null,
+      "best_bid": null,
+      "best_ask": 0.001,
+      "last_trade_price": 0.02,
+      "price_history": {
+        "93786933231968127355161481874949440249093009373962800201449290049554684551821": {
+          "error": "HTTP Error 400: Bad Request"
+        },
+        "67040523977001426080466112797613057020182683818543297821737687334791548422184": {
+          "error": "HTTP Error 400: Bad Request"
+        }
+      }
+    },
+    {
+      "id": "4442512",
+      "question": "Bitcoin Up or Down - September 11, 1:15PM-1:30PM ET",
+      "slug": "btc-updown-15m-1789146900",
+      "condition_id": "0xea69cf414ae8f417f3a8263be5302e2c3c06ce0438cf58c5b2316f7503943c6d",
+      "start_date": "2026-09-10T17:23:55.134543Z",
+      "end_date": "2026-09-11T17:30:00Z",
+      "closed_time": "2026-09-11 17:31:27+00",
+      "resolution_source": "https://data.chain.link/streams/btc-usd-twap-60s-streams",
+      "resolved_by": null,
+      "outcomes": [
+        "Up",
+        "Down"
+      ],
+      "outcome_prices": [
+        "1",
+        "0"
+      ],
+      "clob_token_ids": [
+        "19764110342716582625521179769018798051188465063252064377714419630255027113723",
+        "34810841080733922797807136372588993831889175475012716365700078136725158474133"
+      ],
+      "active": true,
+      "closed": true,
+      "volume": 19044.788755,
+      "liquidity": null,
+      "best_bid": 0.999,
+      "best_ask": 1,
+      "last_trade_price": 0.999,
+      "price_history": {
+        "19764110342716582625521179769018798051188465063252064377714419630255027113723": {
+          "error": "HTTP Error 400: Bad Request"
+        },
+        "34810841080733922797807136372588993831889175475012716365700078136725158474133": {
+          "error": "HTTP Error 400: Bad Request"
+        }
+      }
+    },
+    {
+      "id": "4442591",
+      "question": "Bitcoin Up or Down - September 11, 1:30PM-1:45PM ET",
+      "slug": "btc-updown-15m-1789147800",
+      "condition_id": "0x28a6d8133f32bd2ca8e469a3cfe18875ce8797d161af4503af8ef672a8c1852a",
+      "start_date": "2026-09-10T17:38:20.54801Z",
+      "end_date": "2026-09-11T17:45:00Z",
+      "closed_time": "2026-09-11 17:46:27+00",
+      "resolution_source": "https://data.chain.link/streams/btc-usd-twap-60s-streams",
+      "resolved_by": null,
+      "outcomes": [
+        "Up",
+        "Down"
+      ],
+      "outcome_prices": [
+        "0",
+        "1"
+      ],
+      "clob_token_ids": [
+        "8188794969973894219348649240440424085238074425568113628389817029399373895560",
+        "31731254693124452724021405407584470133878137816893910192157846686134286436103"
+      ],
+      "active": true,
+      "closed": true,
+      "volume": 26620.086929999998,
+      "liquidity": null,
+      "best_bid": null,
+      "best_ask": 0.001,
+      "last_trade_price": 0.01,
+      "price_history": {
+        "8188794969973894219348649240440424085238074425568113628389817029399373895560": {
+          "error": "HTTP Error 400: Bad Request"
+        },
+        "31731254693124452724021405407584470133878137816893910192157846686134286436103": {
+          "error": "HTTP Error 400: Bad Request"
+        }
+      }
+    }
+  ]
 }
