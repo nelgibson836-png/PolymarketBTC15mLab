@@ -22,10 +22,11 @@ MIN_TRAIN_SAMPLES = 100
 ENTRY_MINUTES = (1, 3, 5)
 EDGE_THRESHOLDS = (0.03, 0.05, 0.10)
 MOVE_BINS = [-math.inf, -0.30, -0.20, -0.10, -0.05, 0.00, 0.05, 0.10, 0.20, 0.30, math.inf]
+MIN_MARKETS_FOR_SERIOUS_BACKTEST = 500
 
 
 def get_json(url):
-    req = Request(url, headers={"User-Agent": "PolymarketBTC15mLab/0.4"})
+    req = Request(url, headers={"User-Agent": "PolymarketBTC15mLab/0.5"})
     with urlopen(req, timeout=30) as response:
         return json.loads(response.read().decode("utf-8"))
 
@@ -114,7 +115,12 @@ def actual_outcome(market):
     prices = market.get("outcome_prices") or []
     try:
         if len(prices) >= 2:
-            return 1 if float(prices[0]) > 0.9 else 0
+            up = float(prices[0])
+            down = float(prices[1])
+            if up > 0.9 and down < 0.1:
+                return 1
+            if down > 0.9 and up < 0.1:
+                return 0
     except (TypeError, ValueError):
         pass
     return None
@@ -134,11 +140,18 @@ def main():
     with open(MARKET_FILE, "r", encoding="utf-8") as f:
         dataset = json.load(f)
     markets = dataset.get("markets", [])
+
+    if len(markets) < MIN_MARKETS_FOR_SERIOUS_BACKTEST:
+        raise RuntimeError(
+            f"Only {len(markets)} BTC 15m markets available. "
+            f"Need at least {MIN_MARKETS_FOR_SERIOUS_BACKTEST} before running the serious backtest."
+        )
+
     rows = fetch_binance()
     observations = build_observations(rows)
     obs_map = {(o["start"], o["minute"]): o for o in observations}
 
-    trades = []
+    candidates = []
     skipped = 0
     for market in markets:
         try:
@@ -150,6 +163,7 @@ def main():
             up_hist = history.get(tokens.get("up"), [])
             down_hist = history.get(tokens.get("down"), [])
             model = fit_model(observations, period_start * 1000)
+
             for minute in ENTRY_MINUTES:
                 obs = obs_map.get((period_start * 1000, minute))
                 if not obs:
@@ -157,24 +171,35 @@ def main():
                 probability_up = model.get((minute, obs["bucket"]))
                 if probability_up is None:
                     continue
+
                 target_ts = period_start + (minute - 1) * 60
                 up_price = history_price(up_hist, target_ts)
                 down_price = history_price(down_hist, target_ts)
                 if up_price is None or down_price is None:
                     skipped += 1
                     continue
+
                 side = "up" if probability_up >= 0.5 else "down"
                 model_p = probability_up if side == "up" else 1.0 - probability_up
                 market_p = up_price if side == "up" else down_price
                 edge = model_p - market_p
-                pnl = None
-                for threshold in EDGE_THRESHOLDS:
-                    if edge >= threshold and actual is not None:
-                        pnl = (1.0 - market_p) if ((side == "up" and actual == 1) or (side == "down" and actual == 0)) else -market_p
-                        trades.append({"slug": market.get("slug"), "minute": minute, "side": side,
-                                       "model_probability": round(model_p, 6), "market_price": round(market_p, 6),
-                                       "edge": round(edge, 6), "edge_threshold": threshold,
-                                       "actual": "UP" if actual == 1 else "DOWN", "pnl_per_dollar": round(pnl, 6)})
+
+                if actual is None:
+                    skipped += 1
+                    continue
+
+                won = (side == "up" and actual == 1) or (side == "down" and actual == 0)
+                candidates.append({
+                    "slug": market.get("slug"),
+                    "market_end": market.get("end_date"),
+                    "minute": minute,
+                    "side": side,
+                    "model_probability": round(model_p, 6),
+                    "market_price": round(market_p, 6),
+                    "edge": round(edge, 6),
+                    "actual": "UP" if actual == 1 else "DOWN",
+                    "won": won,
+                })
         except Exception as exc:
             print(f"skip {market.get('slug')}: {exc}")
             skipped += 1
@@ -182,31 +207,55 @@ def main():
     summaries = []
     for threshold in EDGE_THRESHOLDS:
         for minute in ENTRY_MINUTES:
-            subset = [t for t in trades if t["edge_threshold"] == threshold and t["minute"] == minute]
+            subset = [c for c in candidates if c["edge"] >= threshold and c["minute"] == minute]
             if not subset:
-                summaries.append({"edge_threshold": threshold, "entry_minute": minute, "trades": 0, "win_rate": None, "roi_per_dollar": None})
+                summaries.append({
+                    "edge_threshold": threshold,
+                    "entry_minute": minute,
+                    "trades": 0,
+                    "win_rate": None,
+                    "roi_per_dollar": None,
+                    "total_pnl_per_dollar": None,
+                })
                 continue
-            wins = sum(1 for t in subset if t["pnl_per_dollar"] > 0)
-            pnl = sum(t["pnl_per_dollar"] for t in subset)
-            summaries.append({"edge_threshold": threshold, "entry_minute": minute,
-                              "trades": len(subset), "wins": wins,
-                              "win_rate": round(wins / len(subset) * 100, 2),
-                              "roi_per_dollar": round(pnl / len(subset), 6),
-                              "total_pnl_per_dollar": round(pnl, 6)})
+
+            pnl_values = []
+            for c in subset:
+                price = c["market_price"]
+                pnl_values.append((1.0 - price) if c["won"] else -price)
+
+            wins = sum(1 for c in subset if c["won"])
+            pnl = sum(pnl_values)
+            summaries.append({
+                "edge_threshold": threshold,
+                "entry_minute": minute,
+                "trades": len(subset),
+                "wins": wins,
+                "losses": len(subset) - wins,
+                "win_rate": round(wins / len(subset) * 100, 2),
+                "roi_per_dollar": round(pnl / len(subset), 6),
+                "total_pnl_per_dollar": round(pnl, 6),
+            })
 
     output = {
         "generated_at": datetime.now(timezone.utc).isoformat(),
-        "markets": len(markets), "binance_rows": len(rows),
-        "train_days": TRAIN_DAYS, "entry_minutes": ENTRY_MINUTES,
+        "markets": len(markets),
+        "binance_rows": len(rows),
+        "train_days": TRAIN_DAYS,
+        "entry_minutes": ENTRY_MINUTES,
         "edge_thresholds": EDGE_THRESHOLDS,
         "model": "minute_from_15m_open + current_move_bucket, trained only on prior 21 Binance days",
+        "candidate_observations": len(candidates),
         "summary": summaries,
-        "trades": trades,
+        "candidates": candidates,
         "skipped": skipped,
+        "status": "research_only",
         "notes": [
+            "A trade is evaluated only once per market/entry minute and then filtered independently by edge threshold.",
             "Polymarket historical token price is treated as theoretical entry price; historical bid/ask execution is not reconstructed.",
             "Polymarket settlement outcome is used for P&L; the model probability is learned from Binance BTCUSDT direction.",
-            "Fees, slippage and order size/liquidity are not included yet."
+            "Fees, slippage, spread, order size and liquidity are not included yet.",
+            "This result is not sufficient for live trading; paper trading remains mandatory."
         ]
     }
     os.makedirs(os.path.dirname(OUTPUT_FILE), exist_ok=True)
