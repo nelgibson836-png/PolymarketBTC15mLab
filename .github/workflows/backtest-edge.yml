@@ -15,6 +15,26 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
+      - name: Check dataset readiness
+        id: readiness
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          p = Path("data/markets_btc15m.json")
+          if not p.exists():
+              print("Dataset not found; skipping backtest.")
+              raise SystemExit(0)
+          with p.open(encoding="utf-8") as f:
+              data = json.load(f)
+          markets = len(data.get("markets", []))
+          print(f"Dataset markets: {markets}")
+          if markets < 500:
+              print(f"Dataset not ready: {markets}/500 markets. Backtest will be skipped.")
+              raise SystemExit(0)
+          print("Dataset ready for serious backtest.")
+          PY
+
       - name: Run edge backtest
         run: python polymarket_backtest.py
 
