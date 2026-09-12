@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Collect recent historical BTC 15m markets and CLOB price history from Polymarket.
 
-Read-only collector. No wallet, private key, order or trading API is used.
+Read-only. No wallet, private key, order or trading API is used.
 """
 
 import json
@@ -20,7 +20,7 @@ LOOKBACK_DAYS = 14
 def get_json(url, params=None):
     if params:
         url += "?" + urllib.parse.urlencode(params)
-    req = urllib.request.Request(url, headers={"User-Agent": "PolymarketBTC15mLab/0.3"})
+    req = urllib.request.Request(url, headers={"User-Agent": "PolymarketBTC15mLab/0.5"})
     with urllib.request.urlopen(req, timeout=30) as response:
         return json.loads(response.read().decode("utf-8"))
 
@@ -36,6 +36,15 @@ def parse_json_field(value, default=None):
         return default if default is not None else []
 
 
+def parse_end_date(value):
+    if not value:
+        return None
+    try:
+        return datetime.fromisoformat(str(value).replace("Z", "+00:00"))
+    except ValueError:
+        return None
+
+
 def is_btc_15m(market):
     slug = str(market.get("slug", "")).lower()
     question = str(market.get("question", "")).lower()
@@ -44,7 +53,14 @@ def is_btc_15m(market):
     return "bitcoin" in question and "15" in question and "minute" in question
 
 
-def collect_markets(lookback_days=LOOKBACK_DAYS, limit=100, max_pages=20):
+def collect_markets(lookback_days=LOOKBACK_DAYS, limit=100, max_pages=100):
+    """Discover BTC 15m markets by scanning the ordered closed-market feed.
+
+    We intentionally do not send end_date_min/end_date_max to Gamma here because
+    those filters can produce a sparse result set for this market family. We
+    filter the returned rows locally and stop once the ordered feed is older than
+    the requested lookback window.
+    """
     now = datetime.now(timezone.utc)
     min_end = now - timedelta(days=lookback_days)
     markets = []
@@ -57,8 +73,6 @@ def collect_markets(lookback_days=LOOKBACK_DAYS, limit=100, max_pages=20):
             "offset": page * limit,
             "order": "endDate",
             "ascending": "false",
-            "end_date_min": min_end.isoformat().replace("+00:00", "Z"),
-            "end_date_max": now.isoformat().replace("+00:00", "Z"),
         }
         data = get_json(GAMMA_URL, params)
         rows = data.get("data", data) if isinstance(data, dict) else data
@@ -67,15 +81,14 @@ def collect_markets(lookback_days=LOOKBACK_DAYS, limit=100, max_pages=20):
 
         oldest_seen = None
         for market in rows:
-            end_date = market.get("endDate")
-            if end_date:
-                try:
-                    parsed_end = datetime.fromisoformat(end_date.replace("Z", "+00:00"))
-                    oldest_seen = parsed_end if oldest_seen is None else min(oldest_seen, parsed_end)
-                except ValueError:
-                    pass
+            parsed_end = parse_end_date(market.get("endDate"))
+            if parsed_end is not None:
+                oldest_seen = parsed_end if oldest_seen is None else min(oldest_seen, parsed_end)
+
             market_id = str(market.get("id", ""))
-            if market_id and market_id in seen_ids:
+            if not market_id or market_id in seen_ids:
+                continue
+            if parsed_end is None or parsed_end < min_end or parsed_end > now:
                 continue
             if is_btc_15m(market):
                 seen_ids.add(market_id)
@@ -91,9 +104,8 @@ def collect_markets(lookback_days=LOOKBACK_DAYS, limit=100, max_pages=20):
 
 
 def collect_price_history(token_id, start_ts, end_ts):
-    # For fine-grained history, Polymarket expects an explicit absolute range.
-    # interval=1m means "last month", not 1-minute fidelity, and combining it
-    # with startTs/endTs causes a 400 validation error.
+    # Explicit absolute range + fidelity=1 gives minute-level history.
+    # interval=1m means one month and conflicts with startTs/endTs.
     params = {
         "market": token_id,
         "startTs": int(start_ts),
