@@ -20,25 +20,29 @@ jobs:
         run: |
           python - <<'PY'
           import json
+          import os
           from pathlib import Path
+
           p = Path("data/markets_btc15m.json")
-          if not p.exists():
-              print("Dataset not found; skipping backtest.")
-              raise SystemExit(0)
-          with p.open(encoding="utf-8") as f:
-              data = json.load(f)
-          markets = len(data.get("markets", []))
+          markets = 0
+          if p.exists():
+              with p.open(encoding="utf-8") as f:
+                  data = json.load(f)
+              markets = len(data.get("markets", []))
+
+          ready = markets >= 500
           print(f"Dataset markets: {markets}")
-          if markets < 500:
-              print(f"Dataset not ready: {markets}/500 markets. Backtest will be skipped.")
-              raise SystemExit(0)
-          print("Dataset ready for serious backtest.")
+          print(f"Dataset ready: {ready}")
+          with open(os.environ["GITHUB_OUTPUT"], "a", encoding="utf-8") as out:
+              out.write(f"ready={'true' if ready else 'false'}\n")
           PY
 
       - name: Run edge backtest
+        if: steps.readiness.outputs.ready == 'true'
         run: python polymarket_backtest.py
 
       - name: Commit report
+        if: steps.readiness.outputs.ready == 'true'
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
