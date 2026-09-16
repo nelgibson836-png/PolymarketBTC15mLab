@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-16T17:15:19.628084+00:00",
+  "generated_at": "2026-09-16T21:38:39.485937+00:00",
   "markets": 672,
   "binance_rows": 64800,
   "train_days": 21,
@@ -14,7 +14,7 @@
     0.1
   ],
   "model": "minute_from_15m_open + current_move_bucket, trained only on prior 21 Binance days",
-  "candidate_observations": 1257,
+  "candidate_observations": 1249,
   "summary": [
     {
       "edge_threshold": 0.03,
@@ -27,22 +27,22 @@
     {
       "edge_threshold": 0.03,
       "entry_minute": 3,
-      "trades": 527,
-      "wins": 346,
+      "trades": 526,
+      "wins": 345,
       "losses": 181,
-      "win_rate": 65.65,
-      "roi_per_dollar": 0.133615,
-      "total_pnl_per_dollar": 70.415
+      "win_rate": 65.59,
+      "roi_per_dollar": 0.133593,
+      "total_pnl_per_dollar": 70.27
     },
     {
       "edge_threshold": 0.03,
       "entry_minute": 5,
-      "trades": 374,
-      "wins": 231,
-      "losses": 143,
-      "win_rate": 61.76,
-      "roi_per_dollar": 0.074332,
-      "total_pnl_per_dollar": 27.8
+      "trades": 371,
+      "wins": 229,
+      "losses": 142,
+      "win_rate": 61.73,
+      "roi_per_dollar": 0.074461,
+      "total_pnl_per_dollar": 27.625
     },
     {
       "edge_threshold": 0.05,
@@ -55,22 +55,22 @@
     {
       "edge_threshold": 0.05,
       "entry_minute": 3,
-      "trades": 485,
-      "wins": 316,
+      "trades": 486,
+      "wins": 317,
       "losses": 169,
-      "win_rate": 65.15,
-      "roi_per_dollar": 0.136495,
-      "total_pnl_per_dollar": 66.2
+      "win_rate": 65.23,
+      "roi_per_dollar": 0.137253,
+      "total_pnl_per_dollar": 66.705
     },
     {
       "edge_threshold": 0.05,
       "entry_minute": 5,
-      "trades": 335,
-      "wins": 205,
-      "losses": 130,
-      "win_rate": 61.19,
-      "roi_per_dollar": 0.081896,
-      "total_pnl_per_dollar": 27.435
+      "trades": 332,
+      "wins": 203,
+      "losses": 129,
+      "win_rate": 61.14,
+      "roi_per_dollar": 0.082108,
+      "total_pnl_per_dollar": 27.26
     },
     {
       "edge_threshold": 0.1,
@@ -83,12 +83,12 @@
     {
       "edge_threshold": 0.1,
       "entry_minute": 3,
-      "trades": 361,
-      "wins": 231,
+      "trades": 364,
+      "wins": 234,
       "losses": 130,
-      "win_rate": 63.99,
-      "roi_per_dollar": 0.146565,
-      "total_pnl_per_dollar": 52.91
+      "win_rate": 64.29,
+      "roi_per_dollar": 0.149437,
+      "total_pnl_per_dollar": 54.395
     },
     {
       "edge_threshold": 0.1,
@@ -102,369 +102,6 @@
     }
   ],
   "candidates": [
-    {
-      "slug": "btc-updown-15m-1788973200",
-      "market_end": "2026-09-09T17:15:00Z",
-      "minute": 3,
-      "side": "up",
-      "model_probability": 0.598131,
-      "market_price": 0.445,
-      "edge": 0.153131,
-      "actual": "UP",
-      "won": true
-    },
-    {
-      "slug": "btc-updown-15m-1788973200",
-      "market_end": "2026-09-09T17:15:00Z",
-      "minute": 5,
-      "side": "down",
-      "model_probability": 0.737226,
-      "market_price": 0.455,
-      "edge": 0.282226,
-      "actual": "UP",
-      "won": false
-    },
-    {
-      "slug": "btc-updown-15m-1788974100",
-      "market_end": "2026-09-09T17:30:00Z",
-      "minute": 3,
-      "side": "down",
-      "model_probability": 0.673993,
-      "market_price": 0.485,
-      "edge": 0.188993,
-      "actual": "DOWN",
-      "won": true
-    },
-    {
-      "slug": "btc-updown-15m-1788974100",
-      "market_end": "2026-09-09T17:30:00Z",
-      "minute": 5,
-      "side": "down",
-      "model_probability": 0.733577,
-      "market_price": 0.655,
-      "edge": 0.078577,
-      "actual": "DOWN",
-      "won": true
-    },
-    {
-      "slug": "btc-updown-15m-1788975000",
-      "market_end": "2026-09-09T17:45:00Z",
-      "minute": 3,
-      "side": "down",
-      "model_probability": 0.675182,
-      "market_price": 0.615,
-      "edge": 0.060182,
-      "actual": "DOWN",
-      "won": true
-    },
-    {
-      "slug": "btc-updown-15m-1788975000",
-      "market_end": "2026-09-09T17:45:00Z",
-      "minute": 5,
-      "side": "down",
-      "model_probability": 0.734545,
-      "market_price": 0.785,
-      "edge": -0.050455,
-      "actual": "DOWN",
-      "won": true
-    },
-    {
-      "slug": "btc-updown-15m-1788975900",
-      "market_end": "2026-09-09T18:00:00Z",
-      "minute": 3,
-      "side": "up",
-      "model_probability": 0.598881,
-      "market_price": 0.525,
-      "edge": 0.073881,
-      "actual": "UP",
-      "won": true
-    },
-    {
-      "slug": "btc-updown-15m-1788975900",
-      "market_end": "2026-09-09T18:00:00Z",
-      "minute": 5,
-      "side": "up",
-      "model_probability": 0.722656,
-      "market_price": 0.615,
-      "edge": 0.107656,
-      "actual": "UP",
-      "won": true
-    },
-    {
-      "slug": "btc-updown-15m-1788976800",
-      "market_end": "2026-09-09T18:15:00Z",
-      "minute": 3,
-      "side": "down",
-      "model_probability": 0.648472,
-      "market_price": 0.565,
-      "edge": 0.083472,
-      "actual": "DOWN",
-      "won": true
-    },
-    {
-      "slug": "btc-updown-15m-1788976800",
-      "market_end": "2026-09-09T18:15:00Z",
-      "minute": 5,
-      "side": "down",
-      "model_probability": 0.738182,
-      "market_price": 0.655,
-      "edge": 0.083182,
-      "actual": "DOWN",
-      "won": true
-    },
-    {
-      "slug": "btc-updown-15m-1788977700",
-      "market_end": "2026-09-09T18:30:00Z",
-      "minute": 3,
-      "side": "up",
-      "model_probability": 0.599628,
-      "market_price": 0.535,
-      "edge": 0.064628,
-      "actual": "UP",
-      "won": true
-    },
-    {
-      "slug": "btc-updown-15m-1788977700",
-      "market_end": "2026-09-09T18:30:00Z",
-      "minute": 5,
-      "side": "down",
-      "model_probability": 0.607143,
-      "market_price": 0.395,
-      "edge": 0.212143,
-      "actual": "UP",
-      "won": false
-    },
-    {
-      "slug": "btc-updown-15m-1788978600",
-      "market_end": "2026-09-09T18:45:00Z",
-      "minute": 3,
-      "side": "down",
-      "model_probability": 0.649237,
-      "market_price": 0.535,
-      "edge": 0.114237,
-      "actual": "DOWN",
-      "won": true
-    },
-    {
-      "slug": "btc-updown-15m-1788978600",
-      "market_end": "2026-09-09T18:45:00Z",
-      "minute": 5,
-      "side": "down",
-      "model_probability": 0.73913,
-      "market_price": 0.585,
-      "edge": 0.15413,
-      "actual": "DOWN",
-      "won": true
-    },
-    {
-      "slug": "btc-updown-15m-1788979500",
-      "market_end": "2026-09-09T19:00:00Z",
-      "minute": 3,
-      "side": "down",
-      "model_probability": 0.651416,
-      "market_price": 0.605,
-      "edge": 0.046416,
-      "actual": "DOWN",
-      "won": true
-    },
-    {
-      "slug": "btc-updown-15m-1788979500",
-      "market_end": "2026-09-09T19:00:00Z",
-      "minute": 5,
-      "side": "down",
-      "model_probability": 0.605701,
-      "market_price": 0.515,
-      "edge": 0.090701,
-      "actual": "DOWN",
-      "won": true
-    },
-    {
-      "slug": "btc-updown-15m-1788980400",
-      "market_end": "2026-09-09T19:15:00Z",
-      "minute": 3,
-      "side": "up",
-      "model_probability": 0.600372,
-      "market_price": 0.595,
-      "edge": 0.005372,
-      "actual": "UP",
-      "won": true
-    },
-    {
-      "slug": "btc-updown-15m-1788980400",
-      "market_end": "2026-09-09T19:15:00Z",
-      "minute": 5,
-      "side": "down",
-      "model_probability": 0.606635,
-      "market_price": 0.515,
-      "edge": 0.091635,
-      "actual": "UP",
-      "won": false
-    },
-    {
-      "slug": "btc-updown-15m-1788981300",
-      "market_end": "2026-09-09T19:30:00Z",
-      "minute": 3,
-      "side": "up",
-      "model_probability": 0.60223,
-      "market_price": 0.685,
-      "edge": -0.08277,
-      "actual": "UP",
-      "won": true
-    },
-    {
-      "slug": "btc-updown-15m-1788981300",
-      "market_end": "2026-09-09T19:30:00Z",
-      "minute": 5,
-      "side": "up",
-      "model_probability": 0.582716,
-      "market_price": 0.585,
-      "edge": -0.002284,
-      "actual": "UP",
-      "won": true
-    },
-    {
-      "slug": "btc-updown-15m-1788982200",
-      "market_end": "2026-09-09T19:45:00Z",
-      "minute": 3,
-      "side": "up",
-      "model_probability": 0.602968,
-      "market_price": 0.465,
-      "edge": 0.137968,
-      "actual": "DOWN",
-      "won": false
-    },
-    {
-      "slug": "btc-updown-15m-1788982200",
-      "market_end": "2026-09-09T19:45:00Z",
-      "minute": 5,
-      "side": "down",
-      "model_probability": 0.604265,
-      "market_price": 0.435,
-      "edge": 0.169265,
-      "actual": "DOWN",
-      "won": true
-    },
-    {
-      "slug": "btc-updown-15m-1788983100",
-      "market_end": "2026-09-09T20:00:00Z",
-      "minute": 3,
-      "side": "up",
-      "model_probability": 0.601852,
-      "market_price": 0.455,
-      "edge": 0.146852,
-      "actual": "DOWN",
-      "won": false
-    },
-    {
-      "slug": "btc-updown-15m-1788983100",
-      "market_end": "2026-09-09T20:00:00Z",
-      "minute": 5,
-      "side": "up",
-      "model_probability": 0.583744,
-      "market_price": 0.475,
-      "edge": 0.108744,
-      "actual": "DOWN",
-      "won": false
-    },
-    {
-      "slug": "btc-updown-15m-1788984000",
-      "market_end": "2026-09-09T20:15:00Z",
-      "minute": 3,
-      "side": "up",
-      "model_probability": 0.600739,
-      "market_price": 0.635,
-      "edge": -0.034261,
-      "actual": "UP",
-      "won": true
-    },
-    {
-      "slug": "btc-updown-15m-1788984000",
-      "market_end": "2026-09-09T20:15:00Z",
-      "minute": 5,
-      "side": "down",
-      "model_probability": 0.740072,
-      "market_price": 0.345,
-      "edge": 0.395072,
-      "actual": "UP",
-      "won": false
-    },
-    {
-      "slug": "btc-updown-15m-1788984900",
-      "market_end": "2026-09-09T20:30:00Z",
-      "minute": 3,
-      "side": "up",
-      "model_probability": 0.726531,
-      "market_price": 0.575,
-      "edge": 0.151531,
-      "actual": "DOWN",
-      "won": false
-    },
-    {
-      "slug": "btc-updown-15m-1788984900",
-      "market_end": "2026-09-09T20:30:00Z",
-      "minute": 5,
-      "side": "up",
-      "model_probability": 0.58231,
-      "market_price": 0.725,
-      "edge": -0.14269,
-      "actual": "DOWN",
-      "won": false
-    },
-    {
-      "slug": "btc-updown-15m-1788985800",
-      "market_end": "2026-09-09T20:45:00Z",
-      "minute": 3,
-      "side": "up",
-      "model_probability": 0.776042,
-      "market_price": 0.745,
-      "edge": 0.031042,
-      "actual": "UP",
-      "won": true
-    },
-    {
-      "slug": "btc-updown-15m-1788985800",
-      "market_end": "2026-09-09T20:45:00Z",
-      "minute": 5,
-      "side": "up",
-      "model_probability": 0.80786,
-      "market_price": 0.845,
-      "edge": -0.03714,
-      "actual": "UP",
-      "won": true
-    },
-    {
-      "slug": "btc-updown-15m-1788986700",
-      "market_end": "2026-09-09T21:00:00Z",
-      "minute": 3,
-      "side": "down",
-      "model_probability": 0.654267,
-      "market_price": 0.475,
-      "edge": 0.179267,
-      "actual": "UP",
-      "won": false
-    },
-    {
-      "slug": "btc-updown-15m-1788987600",
-      "market_end": "2026-09-09T21:15:00Z",
-      "minute": 3,
-      "side": "down",
-      "model_probability": 0.652838,
-      "market_price": 0.545,
-      "edge": 0.107838,
-      "actual": "DOWN",
-      "won": true
-    },
-    {
-      "slug": "btc-updown-15m-1788987600",
-      "market_end": "2026-09-09T21:15:00Z",
-      "minute": 5,
-      "side": "down",
-      "model_probability": 0.606635,
-      "market_price": 0.605,
-      "edge": 0.001635,
-      "actual": "DOWN",
-      "won": true
-    },
     {
       "slug": "btc-updown-15m-1788988500",
       "market_end": "2026-09-09T21:30:00Z",
@@ -13928,9 +13565,284 @@
       "edge": -0.105,
       "actual": "UP",
       "won": true
+    },
+    {
+      "slug": "btc-updown-15m-1789578000",
+      "market_end": "2026-09-16T17:15:00Z",
+      "minute": 3,
+      "side": "down",
+      "model_probability": 0.651515,
+      "market_price": 0.575,
+      "edge": 0.076515,
+      "actual": "DOWN",
+      "won": true
+    },
+    {
+      "slug": "btc-updown-15m-1789578000",
+      "market_end": "2026-09-16T17:15:00Z",
+      "minute": 5,
+      "side": "up",
+      "model_probability": 0.592668,
+      "market_price": 0.365,
+      "edge": 0.227668,
+      "actual": "DOWN",
+      "won": false
+    },
+    {
+      "slug": "btc-updown-15m-1789578900",
+      "market_end": "2026-09-16T17:30:00Z",
+      "minute": 3,
+      "side": "up",
+      "model_probability": 0.718487,
+      "market_price": 0.645,
+      "edge": 0.073487,
+      "actual": "UP",
+      "won": true
+    },
+    {
+      "slug": "btc-updown-15m-1789578900",
+      "market_end": "2026-09-16T17:30:00Z",
+      "minute": 5,
+      "side": "up",
+      "model_probability": 0.591463,
+      "market_price": 0.725,
+      "edge": -0.133537,
+      "actual": "UP",
+      "won": true
+    },
+    {
+      "slug": "btc-updown-15m-1789579800",
+      "market_end": "2026-09-16T17:45:00Z",
+      "minute": 3,
+      "side": "up",
+      "model_probability": 0.613893,
+      "market_price": 0.405,
+      "edge": 0.208893,
+      "actual": "DOWN",
+      "won": false
+    },
+    {
+      "slug": "btc-updown-15m-1789579800",
+      "market_end": "2026-09-16T17:45:00Z",
+      "minute": 5,
+      "side": "down",
+      "model_probability": 0.804124,
+      "market_price": 0.425,
+      "edge": 0.379124,
+      "actual": "DOWN",
+      "won": true
+    },
+    {
+      "slug": "btc-updown-15m-1789580700",
+      "market_end": "2026-09-16T18:00:00Z",
+      "minute": 3,
+      "side": "down",
+      "model_probability": 0.652174,
+      "market_price": 0.355,
+      "edge": 0.297174,
+      "actual": "UP",
+      "won": false
+    },
+    {
+      "slug": "btc-updown-15m-1789580700",
+      "market_end": "2026-09-16T18:00:00Z",
+      "minute": 5,
+      "side": "down",
+      "model_probability": 0.805128,
+      "market_price": 0.405,
+      "edge": 0.400128,
+      "actual": "UP",
+      "won": false
+    },
+    {
+      "slug": "btc-updown-15m-1789581600",
+      "market_end": "2026-09-16T18:15:00Z",
+      "minute": 3,
+      "side": "down",
+      "model_probability": 0.8125,
+      "market_price": 0.635,
+      "edge": 0.1775,
+      "actual": "UP",
+      "won": false
+    },
+    {
+      "slug": "btc-updown-15m-1789581600",
+      "market_end": "2026-09-16T18:15:00Z",
+      "minute": 5,
+      "side": "up",
+      "model_probability": 0.749064,
+      "market_price": 0.305,
+      "edge": 0.444064,
+      "actual": "UP",
+      "won": true
+    },
+    {
+      "slug": "btc-updown-15m-1789582500",
+      "market_end": "2026-09-16T18:30:00Z",
+      "minute": 3,
+      "side": "up",
+      "model_probability": 0.714286,
+      "market_price": 0.505,
+      "edge": 0.209286,
+      "actual": "UP",
+      "won": true
+    },
+    {
+      "slug": "btc-updown-15m-1789584300",
+      "market_end": "2026-09-16T19:00:00Z",
+      "minute": 3,
+      "side": "down",
+      "model_probability": 0.806897,
+      "market_price": 0.625,
+      "edge": 0.181897,
+      "actual": "DOWN",
+      "won": true
+    },
+    {
+      "slug": "btc-updown-15m-1789584300",
+      "market_end": "2026-09-16T19:00:00Z",
+      "minute": 5,
+      "side": "down",
+      "model_probability": 0.759124,
+      "market_price": 0.755,
+      "edge": 0.004124,
+      "actual": "DOWN",
+      "won": true
+    },
+    {
+      "slug": "btc-updown-15m-1789587000",
+      "market_end": "2026-09-16T19:45:00Z",
+      "minute": 3,
+      "side": "up",
+      "model_probability": 0.821705,
+      "market_price": 0.555,
+      "edge": 0.266705,
+      "actual": "UP",
+      "won": true
+    },
+    {
+      "slug": "btc-updown-15m-1789587900",
+      "market_end": "2026-09-16T20:00:00Z",
+      "minute": 3,
+      "side": "up",
+      "model_probability": 0.823077,
+      "market_price": 0.625,
+      "edge": 0.198077,
+      "actual": "UP",
+      "won": true
+    },
+    {
+      "slug": "btc-updown-15m-1789587900",
+      "market_end": "2026-09-16T20:00:00Z",
+      "minute": 5,
+      "side": "up",
+      "model_probability": 0.841808,
+      "market_price": 0.715,
+      "edge": 0.126808,
+      "actual": "UP",
+      "won": true
+    },
+    {
+      "slug": "btc-updown-15m-1789588800",
+      "market_end": "2026-09-16T20:15:00Z",
+      "minute": 3,
+      "side": "up",
+      "model_probability": 0.824427,
+      "market_price": 0.425,
+      "edge": 0.399427,
+      "actual": "UP",
+      "won": true
+    },
+    {
+      "slug": "btc-updown-15m-1789589700",
+      "market_end": "2026-09-16T20:30:00Z",
+      "minute": 3,
+      "side": "up",
+      "model_probability": 0.825758,
+      "market_price": 0.415,
+      "edge": 0.410758,
+      "actual": "DOWN",
+      "won": false
+    },
+    {
+      "slug": "btc-updown-15m-1789589700",
+      "market_end": "2026-09-16T20:30:00Z",
+      "minute": 5,
+      "side": "up",
+      "model_probability": 0.842697,
+      "market_price": 0.715,
+      "edge": 0.127697,
+      "actual": "DOWN",
+      "won": false
+    },
+    {
+      "slug": "btc-updown-15m-1789590600",
+      "market_end": "2026-09-16T20:45:00Z",
+      "minute": 3,
+      "side": "down",
+      "model_probability": 0.680147,
+      "market_price": 0.405,
+      "edge": 0.275147,
+      "actual": "DOWN",
+      "won": true
+    },
+    {
+      "slug": "btc-updown-15m-1789590600",
+      "market_end": "2026-09-16T20:45:00Z",
+      "minute": 5,
+      "side": "up",
+      "model_probability": 0.589796,
+      "market_price": 0.375,
+      "edge": 0.214796,
+      "actual": "DOWN",
+      "won": false
+    },
+    {
+      "slug": "btc-updown-15m-1789591500",
+      "market_end": "2026-09-16T21:00:00Z",
+      "minute": 3,
+      "side": "down",
+      "model_probability": 0.648289,
+      "market_price": 0.645,
+      "edge": 0.003289,
+      "actual": "UP",
+      "won": false
+    },
+    {
+      "slug": "btc-updown-15m-1789591500",
+      "market_end": "2026-09-16T21:00:00Z",
+      "minute": 5,
+      "side": "up",
+      "model_probability": 0.588595,
+      "market_price": 0.515,
+      "edge": 0.073595,
+      "actual": "UP",
+      "won": true
+    },
+    {
+      "slug": "btc-updown-15m-1789592400",
+      "market_end": "2026-09-16T21:15:00Z",
+      "minute": 3,
+      "side": "down",
+      "model_probability": 0.648289,
+      "market_price": 0.545,
+      "edge": 0.103289,
+      "actual": "DOWN",
+      "won": true
+    },
+    {
+      "slug": "btc-updown-15m-1789592400",
+      "market_end": "2026-09-16T21:15:00Z",
+      "minute": 5,
+      "side": "down",
+      "model_probability": 0.618947,
+      "market_price": 0.615,
+      "edge": 0.003947,
+      "actual": "DOWN",
+      "won": true
     }
   ],
-  "skipped": 633,
+  "skipped": 630,
   "status": "research_only",
   "notes": [
     "A trade is evaluated only once per market/entry minute and then filtered independently by edge threshold.",
