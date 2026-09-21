@@ -11,7 +11,7 @@ from datetime import datetime, timezone
 MARKET_URL = "https://gamma-api.polymarket.com/markets/slug/{}"
 CLOB_URL = "https://clob.polymarket.com/prices-history"
 OUTPUT = "data/markets_btc15m.json"
-LOOKBACK_DAYS = 7
+LOOKBACK_DAYS = 14
 WINDOW = 900
 DISCOVERY_WORKERS = 12
 HISTORY_WORKERS = 6
@@ -26,7 +26,7 @@ def get_json(url, params=None):
         try:
             req = urllib.request.Request(
                 url,
-                headers={"User-Agent": "PolymarketBTC15mLab/1.1", "Accept": "application/json"},
+                headers={"User-Agent": "PolymarketBTC15mLab/1.2", "Accept": "application/json"},
             )
             with urllib.request.urlopen(req, timeout=25) as r:
                 return json.loads(r.read().decode("utf-8"))
