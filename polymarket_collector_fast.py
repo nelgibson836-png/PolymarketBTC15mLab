@@ -89,6 +89,7 @@ def normalize_market(market):
         "window_end_ts": end_ts,
         "closed_time": market.get("closedTime"),
         "resolution_source": market.get("resolutionSource"),
+        "crypto_market_config": market.get("cryptoMarketConfig") or (market.get("raw") or {}).get("cryptoMarketConfig"),
         "resolved_by": market.get("resolvedBy"),
         "outcomes": outcomes,
         "outcome_prices": prices,
