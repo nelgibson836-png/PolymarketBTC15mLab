@@ -11,7 +11,7 @@ class PaperEngineTests(unittest.TestCase):
     def test_depth_walk(self):
         fill = simulate_market_buy([(0.50, 1.0), (0.60, 2.0)], 1.20)
         self.assertAlmostEqual(fill.gross_cost, 1.20, places=8)
-        self.assertAlmostEqual(fill.shares, 1.0 + (0.20 / 0.60), places=8)
+        self.assertAlmostEqual(fill.shares, 1.0 + (0.70 / 0.60), places=8)
         self.assertEqual(fill.levels_used, 2)
         self.assertAlmostEqual(fill.worst_price, 0.60, places=8)
 
