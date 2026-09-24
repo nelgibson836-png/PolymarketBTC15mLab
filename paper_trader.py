@@ -223,7 +223,7 @@ class BinanceFeed:
                 print(f"[BINANCE] message error: {exc}")
 
         def runner():
-            while not self.stop_event.is_set():
+            while not run_stop.is_set():
                 app = websocket.WebSocketApp(
                     BINANCE_WS,
                     on_message=on_message,
@@ -235,7 +235,7 @@ class BinanceFeed:
                     app.run_forever()
                 except Exception as exc:
                     print(f"[BINANCE] connection exception: {exc}")
-                if not self.stop_event.is_set():
+                if not run_stop.is_set():
                     time.sleep(2)
 
         self.thread = threading.Thread(target=runner, daemon=True)
@@ -268,16 +268,18 @@ class PolymarketBookFeed:
         with self.lock:
             if slug == self.market_slug and token_set == self.token_ids:
                 return
+            old_stop = self.stop_event
+            old_stop.set()
             if self.ws is not None:
                 try:
                     self.ws.close()
                 except Exception:
                     pass
-            self.stop_event.set()
+            run_stop = threading.Event()
+            self.stop_event = run_stop
             self.market_slug = slug
             self.token_ids = token_set
             self.books = {}
-            self.stop_event = threading.Event()
 
         def on_open(ws):
             ws.send(json.dumps({
@@ -342,9 +344,9 @@ class PolymarketBookFeed:
                     self.ws = app
 
                 def ping():
-                    while not self.stop_event.is_set():
+                    while not run_stop.is_set():
                         time.sleep(10)
-                        if self.stop_event.is_set():
+                        if run_stop.is_set():
                             return
                         try:
                             app.send("PING")
