@@ -4,6 +4,7 @@ on:
   push:
     paths:
       - "paper_engine.py"
+      - "paper_trader.py"
       - "test_paper_engine.py"
       - ".github/workflows/paper-engine-tests.yml"
   pull_request:
@@ -21,5 +22,9 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
+      - name: Install runtime dependency
+        run: pip install -r requirements.txt
+      - name: Compile paper trader
+        run: python -m py_compile paper_engine.py paper_trader.py test_paper_engine.py
       - name: Run unit tests
         run: python -m unittest -v test_paper_engine.py
