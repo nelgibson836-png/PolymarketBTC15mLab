@@ -223,7 +223,7 @@ class BinanceFeed:
                 print(f"[BINANCE] message error: {exc}")
 
         def runner():
-            while not run_stop.is_set():
+            while not self.stop_event.is_set():
                 app = websocket.WebSocketApp(
                     BINANCE_WS,
                     on_message=on_message,
@@ -235,7 +235,7 @@ class BinanceFeed:
                     app.run_forever()
                 except Exception as exc:
                     print(f"[BINANCE] connection exception: {exc}")
-                if not run_stop.is_set():
+                if not self.stop_event.is_set():
                     time.sleep(2)
 
         self.thread = threading.Thread(target=runner, daemon=True)
