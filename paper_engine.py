@@ -7,6 +7,15 @@ from typing import Iterable, List, Tuple
 TAKER_FEE_RATE = 0.07
 
 
+def order_book_imbalance(bids, asks, levels=3):
+    """Volume imbalance across the top N bid/ask levels, in [-1, 1]."""
+    n = max(1, int(levels))
+    bid_volume = sum(max(0.0, float(size)) for _, size in sorted(bids, reverse=True)[:n])
+    ask_volume = sum(max(0.0, float(size)) for _, size in sorted(asks)[:n])
+    total = bid_volume + ask_volume
+    return (bid_volume - ask_volume) / total if total else 0.0
+
+
 def taker_fee_per_share(price: float) -> float:
     """Current eligible crypto taker fee per share at token price p."""
     price = float(price)
