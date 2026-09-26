@@ -1,6 +1,6 @@
 import unittest
 
-from paper_engine import RiskState, net_expected_edge, simulate_market_buy, taker_fee_per_share
+from paper_engine import RiskState, net_expected_edge, order_book_imbalance, simulate_market_buy, taker_fee_per_share
 
 
 class PaperEngineTests(unittest.TestCase):
@@ -14,6 +14,10 @@ class PaperEngineTests(unittest.TestCase):
         self.assertAlmostEqual(fill.shares, 1.0 + (0.70 / 0.60), places=8)
         self.assertEqual(fill.levels_used, 2)
         self.assertAlmostEqual(fill.worst_price, 0.60, places=8)
+
+    def test_order_book_imbalance(self):
+        self.assertAlmostEqual(order_book_imbalance([(0.50, 3.0), (0.49, 1.0)], [(0.51, 1.0), (0.52, 1.0)]), 0.3333333333333333)
+        self.assertEqual(order_book_imbalance([], []), 0.0)
 
     def test_edge_uses_all_in_cost(self):
         fill = simulate_market_buy([(0.50, 2.0)], 1.00)
