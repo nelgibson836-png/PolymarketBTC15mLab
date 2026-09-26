@@ -17,7 +17,7 @@ from urllib.request import Request, urlopen
 
 import websocket
 
-from paper_engine import RiskState, net_expected_edge, simulate_market_buy
+from paper_engine import RiskState, net_expected_edge, order_book_imbalance, simulate_market_buy
 
 GAMMA_URL = "https://gamma-api.polymarket.com/markets/slug/{}"
 BINANCE_REST = "https://api.binance.com"
@@ -380,6 +380,15 @@ class PolymarketBookFeed:
                 return []
             return sorted(book["asks"].items())
 
+    def book_imbalance(self, token_id, levels=3):
+        with self.lock:
+            book = self.books.get(str(token_id))
+            if not book:
+                return 0.0
+            bids = list(book["bids"].items())
+            asks = list(book["asks"].items())
+            return order_book_imbalance(bids, asks, levels=levels)
+
     def book_age_ms(self, token_id):
         with self.lock:
             book = self.books.get(str(token_id))
@@ -578,6 +587,15 @@ class PaperTrader:
         if not asks:
             self._event("signal_block", "missing_ask", {"side": side})
             return
+
+        book_imbalance = self.polymarket.book_imbalance(token_id, levels=3)
+        self._event("book_snapshot", payload={
+            "entry_minute": entry_minute,
+            "side": side,
+            "imbalance_top3": book_imbalance,
+            "book_age_ms": book_age,
+            "best_ask": asks[0][0],
+        })
 
         budget = min(POSITION_USDC, self.risk.max_position_usdc(MAX_POSITION_FRACTION))
         allowed, reason = self.risk.can_enter(
