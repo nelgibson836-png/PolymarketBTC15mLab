@@ -159,6 +159,32 @@ def token_map(market):
     return result
 
 
+def calibration_report(candidates):
+    """Evaluate model probabilities independently of entry-cost filters."""
+    if not candidates:
+        return {"brier_score": None, "calibration_bins": []}
+
+    brier = sum((c["model_probability"] - (1 if c["won"] else 0)) ** 2 for c in candidates) / len(candidates)
+    bins = []
+    edges = [0.5, 0.6, 0.7, 0.8, 0.9, 1.000001]
+    for lo, hi in zip(edges, edges[1:]):
+        subset = [c for c in candidates if lo <= c["model_probability"] < hi]
+        if not subset:
+            continue
+        bins.append({
+            "probability_range": f"[{lo:.1f},{min(1.0, hi):.1f})" if hi < 1.0 else f"[{lo:.1f},1.0]",
+            "observations": len(subset),
+            "mean_model_probability": round(sum(c["model_probability"] for c in subset) / len(subset), 6),
+            "observed_win_rate": round(sum(1 for c in subset if c["won"]) / len(subset), 6),
+        })
+    return {
+        "brier_score": round(brier, 8),
+        "mean_model_probability": round(sum(c["model_probability"] for c in candidates) / len(candidates), 6),
+        "observed_win_rate": round(sum(1 for c in candidates if c["won"]) / len(candidates), 6),
+        "calibration_bins": bins,
+    }
+
+
 def summarize(candidates, threshold, minute, buffer):
     subset = [
         c for c in candidates
@@ -299,6 +325,7 @@ def main():
         "fee_model": "0.07 * price * (1 - price) per share for eligible crypto taker entry",
         "model": "minute_from_15m_open + current_move_bucket, trained only on prior 21 Binance days",
         "candidate_observations": len(candidates),
+        "calibration": calibration_report(candidates),
         "summary": summaries,
         "candidates": candidates,
         "skipped": skipped,
