@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-05T20:13:53.133233+00:00",
+  "generated_at": "2026-11-06T07:17:14.705450+00:00",
   "markets": 1335,
   "binance_rows": 64800,
   "train_days": 21,
@@ -21,35 +21,35 @@
   ],
   "fee_model": "0.07 * price * (1 - price) per share for eligible crypto taker entry",
   "model": "minute_from_15m_open + current_move_bucket, trained only on prior 21 Binance days",
-  "candidate_observations": 2386,
+  "candidate_observations": 2378,
   "calibration": {
-    "brier_score": 0.22091872,
-    "mean_model_probability": 0.665057,
-    "observed_win_rate": 0.655071,
+    "brier_score": 0.22102292,
+    "mean_model_probability": 0.666369,
+    "observed_win_rate": 0.653911,
     "calibration_bins": [
       {
         "probability_range": "[0.5,0.6)",
-        "observations": 909,
-        "mean_model_probability": 0.571982,
-        "observed_win_rate": 0.574257
+        "observations": 897,
+        "mean_model_probability": 0.571735,
+        "observed_win_rate": 0.571906
       },
       {
         "probability_range": "[0.6,0.7)",
-        "observations": 514,
-        "mean_model_probability": 0.639747,
-        "observed_win_rate": 0.657588
+        "observations": 494,
+        "mean_model_probability": 0.639767,
+        "observed_win_rate": 0.653846
       },
       {
         "probability_range": "[0.7,0.8)",
-        "observations": 706,
-        "mean_model_probability": 0.744076,
-        "observed_win_rate": 0.712465
+        "observations": 722,
+        "mean_model_probability": 0.743214,
+        "observed_win_rate": 0.710526
       },
       {
         "probability_range": "[0.8,0.9)",
-        "observations": 257,
-        "mean_model_probability": 0.827811,
-        "observed_win_rate": 0.77821
+        "observations": 265,
+        "mean_model_probability": 0.826925,
+        "observed_win_rate": 0.777358
       }
     ]
   },
@@ -67,23 +67,23 @@
       "edge_threshold": 0.03,
       "entry_minute": 3,
       "execution_buffer": 0.0,
-      "trades": 737,
-      "wins": 471,
-      "losses": 266,
-      "win_rate": 63.91,
-      "net_pnl_per_trade": 0.125593,
-      "return_on_cost_percent": 24.459
+      "trades": 743,
+      "wins": 474,
+      "losses": 269,
+      "win_rate": 63.8,
+      "net_pnl_per_trade": 0.124972,
+      "return_on_cost_percent": 24.362
     },
     {
       "edge_threshold": 0.03,
       "entry_minute": 5,
       "execution_buffer": 0.0,
-      "trades": 637,
-      "wins": 405,
-      "losses": 232,
-      "win_rate": 63.58,
-      "net_pnl_per_trade": 0.083865,
-      "return_on_cost_percent": 15.195
+      "trades": 639,
+      "wins": 408,
+      "losses": 231,
+      "win_rate": 63.85,
+      "net_pnl_per_trade": 0.085235,
+      "return_on_cost_percent": 15.406
     },
     {
       "edge_threshold": 0.05,
@@ -98,23 +98,23 @@
       "edge_threshold": 0.05,
       "entry_minute": 3,
       "execution_buffer": 0.0,
-      "trades": 658,
-      "wins": 426,
-      "losses": 232,
-      "win_rate": 64.74,
-      "net_pnl_per_trade": 0.1416,
-      "return_on_cost_percent": 27.994
+      "trades": 665,
+      "wins": 430,
+      "losses": 235,
+      "win_rate": 64.66,
+      "net_pnl_per_trade": 0.140791,
+      "return_on_cost_percent": 27.834
     },
     {
       "edge_threshold": 0.05,
       "entry_minute": 5,
       "execution_buffer": 0.0,
-      "trades": 564,
-      "wins": 358,
+      "trades": 566,
+      "wins": 360,
       "losses": 206,
-      "win_rate": 63.48,
-      "net_pnl_per_trade": 0.096962,
-      "return_on_cost_percent": 18.03
+      "win_rate": 63.6,
+      "net_pnl_per_trade": 0.097234,
+      "return_on_cost_percent": 18.046
     },
     {
       "edge_threshold": 0.1,
@@ -129,23 +129,23 @@
       "edge_threshold": 0.1,
       "entry_minute": 3,
       "execution_buffer": 0.0,
-      "trades": 471,
-      "wins": 314,
-      "losses": 157,
-      "win_rate": 66.67,
-      "net_pnl_per_trade": 0.180824,
-      "return_on_cost_percent": 37.219
+      "trades": 485,
+      "wins": 326,
+      "losses": 159,
+      "win_rate": 67.22,
+      "net_pnl_per_trade": 0.184534,
+      "return_on_cost_percent": 37.843
     },
     {
       "edge_threshold": 0.1,
       "entry_minute": 5,
       "execution_buffer": 0.0,
-      "trades": 393,
-      "wins": 245,
+      "trades": 394,
+      "wins": 246,
       "losses": 148,
-      "win_rate": 62.34,
-      "net_pnl_per_trade": 0.123509,
-      "return_on_cost_percent": 24.707
+      "win_rate": 62.44,
+      "net_pnl_per_trade": 0.124241,
+      "return_on_cost_percent": 24.842
     },
     {
       "edge_threshold": 0.03,
@@ -160,23 +160,23 @@
       "edge_threshold": 0.03,
       "entry_minute": 3,
       "execution_buffer": 0.005,
-      "trades": 716,
-      "wins": 458,
-      "losses": 258,
-      "win_rate": 63.97,
-      "net_pnl_per_trade": 0.122579,
-      "return_on_cost_percent": 23.706
+      "trades": 723,
+      "wins": 462,
+      "losses": 261,
+      "win_rate": 63.9,
+      "net_pnl_per_trade": 0.122338,
+      "return_on_cost_percent": 23.678
     },
     {
       "edge_threshold": 0.03,
       "entry_minute": 5,
       "execution_buffer": 0.005,
-      "trades": 622,
-      "wins": 396,
-      "losses": 226,
-      "win_rate": 63.67,
-      "net_pnl_per_trade": 0.083152,
-      "return_on_cost_percent": 15.023
+      "trades": 624,
+      "wins": 399,
+      "losses": 225,
+      "win_rate": 63.94,
+      "net_pnl_per_trade": 0.084543,
+      "return_on_cost_percent": 15.236
     },
     {
       "edge_threshold": 0.05,
@@ -191,12 +191,12 @@
       "edge_threshold": 0.05,
       "entry_minute": 3,
       "execution_buffer": 0.005,
-      "trades": 637,
-      "wins": 414,
-      "losses": 223,
-      "win_rate": 64.99,
-      "net_pnl_per_trade": 0.140964,
-      "return_on_cost_percent": 27.697
+      "trades": 646,
+      "wins": 420,
+      "losses": 226,
+      "win_rate": 65.02,
+      "net_pnl_per_trade": 0.141065,
+      "return_on_cost_percent": 27.709
     },
     {
       "edge_threshold": 0.05,
@@ -206,8 +206,8 @@
       "wins": 343,
       "losses": 201,
       "win_rate": 63.05,
-      "net_pnl_per_trade": 0.091632,
-      "return_on_cost_percent": 17.004
+      "net_pnl_per_trade": 0.091383,
+      "return_on_cost_percent": 16.95
     },
     {
       "edge_threshold": 0.1,
@@ -222,23 +222,23 @@
       "edge_threshold": 0.1,
       "entry_minute": 3,
       "execution_buffer": 0.005,
-      "trades": 461,
-      "wins": 307,
-      "losses": 154,
-      "win_rate": 66.59,
-      "net_pnl_per_trade": 0.176117,
-      "return_on_cost_percent": 35.955
+      "trades": 475,
+      "wins": 319,
+      "losses": 156,
+      "win_rate": 67.16,
+      "net_pnl_per_trade": 0.179898,
+      "return_on_cost_percent": 36.588
     },
     {
       "edge_threshold": 0.1,
       "entry_minute": 5,
       "execution_buffer": 0.005,
-      "trades": 378,
-      "wins": 236,
+      "trades": 379,
+      "wins": 237,
       "losses": 142,
-      "win_rate": 62.43,
-      "net_pnl_per_trade": 0.123346,
-      "return_on_cost_percent": 24.62
+      "win_rate": 62.53,
+      "net_pnl_per_trade": 0.124094,
+      "return_on_cost_percent": 24.758
     },
     {
       "edge_threshold": 0.03,
@@ -253,23 +253,23 @@
       "edge_threshold": 0.03,
       "entry_minute": 3,
       "execution_buffer": 0.01,
-      "trades": 696,
-      "wins": 448,
-      "losses": 248,
-      "win_rate": 64.37,
-      "net_pnl_per_trade": 0.122814,
-      "return_on_cost_percent": 23.579
+      "trades": 702,
+      "wins": 451,
+      "losses": 251,
+      "win_rate": 64.25,
+      "net_pnl_per_trade": 0.121994,
+      "return_on_cost_percent": 23.44
     },
     {
       "edge_threshold": 0.03,
       "entry_minute": 5,
       "execution_buffer": 0.01,
-      "trades": 608,
-      "wins": 389,
-      "losses": 219,
-      "win_rate": 63.98,
-      "net_pnl_per_trade": 0.083329,
-      "return_on_cost_percent": 14.975
+      "trades": 609,
+      "wins": 391,
+      "losses": 218,
+      "win_rate": 64.2,
+      "net_pnl_per_trade": 0.084478,
+      "return_on_cost_percent": 15.151
     },
     {
       "edge_threshold": 0.05,
@@ -284,23 +284,23 @@
       "edge_threshold": 0.05,
       "entry_minute": 3,
       "execution_buffer": 0.01,
-      "trades": 620,
-      "wins": 407,
-      "losses": 213,
-      "win_rate": 65.65,
-      "net_pnl_per_trade": 0.144219,
-      "return_on_cost_percent": 28.155
+      "trades": 629,
+      "wins": 413,
+      "losses": 216,
+      "win_rate": 65.66,
+      "net_pnl_per_trade": 0.144204,
+      "return_on_cost_percent": 28.143
     },
     {
       "edge_threshold": 0.05,
       "entry_minute": 5,
       "execution_buffer": 0.01,
-      "trades": 531,
-      "wins": 337,
+      "trades": 530,
+      "wins": 336,
       "losses": 194,
-      "win_rate": 63.47,
-      "net_pnl_per_trade": 0.09279,
-      "return_on_cost_percent": 17.124
+      "win_rate": 63.4,
+      "net_pnl_per_trade": 0.092125,
+      "return_on_cost_percent": 17.002
     },
     {
       "edge_threshold": 0.1,
@@ -315,23 +315,23 @@
       "edge_threshold": 0.1,
       "entry_minute": 3,
       "execution_buffer": 0.01,
-      "trades": 445,
-      "wins": 294,
-      "losses": 151,
-      "win_rate": 66.07,
-      "net_pnl_per_trade": 0.16907,
-      "return_on_cost_percent": 34.391
+      "trades": 460,
+      "wins": 307,
+      "losses": 153,
+      "win_rate": 66.74,
+      "net_pnl_per_trade": 0.173816,
+      "return_on_cost_percent": 35.216
     },
     {
       "edge_threshold": 0.1,
       "entry_minute": 5,
       "execution_buffer": 0.01,
-      "trades": 365,
-      "wins": 227,
+      "trades": 366,
+      "wins": 228,
       "losses": 138,
-      "win_rate": 62.19,
-      "net_pnl_per_trade": 0.117201,
-      "return_on_cost_percent": 23.221
+      "win_rate": 62.3,
+      "net_pnl_per_trade": 0.117979,
+      "return_on_cost_percent": 23.363
     },
     {
       "edge_threshold": 0.03,
@@ -346,23 +346,23 @@
       "edge_threshold": 0.03,
       "entry_minute": 3,
       "execution_buffer": 0.02,
-      "trades": 658,
-      "wins": 426,
-      "losses": 232,
-      "win_rate": 64.74,
-      "net_pnl_per_trade": 0.121597,
-      "return_on_cost_percent": 23.125
+      "trades": 665,
+      "wins": 430,
+      "losses": 235,
+      "win_rate": 64.66,
+      "net_pnl_per_trade": 0.120788,
+      "return_on_cost_percent": 22.971
     },
     {
       "edge_threshold": 0.03,
       "entry_minute": 5,
       "execution_buffer": 0.02,
-      "trades": 567,
-      "wins": 361,
+      "trades": 569,
+      "wins": 363,
       "losses": 206,
-      "win_rate": 63.67,
-      "net_pnl_per_trade": 0.077683,
-      "return_on_cost_percent": 13.897
+      "win_rate": 63.8,
+      "net_pnl_per_trade": 0.077954,
+      "return_on_cost_percent": 13.92
     },
     {
       "edge_threshold": 0.05,
@@ -377,23 +377,23 @@
       "edge_threshold": 0.05,
       "entry_minute": 3,
       "execution_buffer": 0.02,
-      "trades": 587,
-      "wins": 384,
-      "losses": 203,
-      "win_rate": 65.42,
-      "net_pnl_per_trade": 0.135383,
-      "return_on_cost_percent": 26.096
+      "trades": 600,
+      "wins": 393,
+      "losses": 207,
+      "win_rate": 65.5,
+      "net_pnl_per_trade": 0.135257,
+      "return_on_cost_percent": 26.024
     },
     {
       "edge_threshold": 0.05,
       "entry_minute": 5,
       "execution_buffer": 0.02,
-      "trades": 492,
-      "wins": 311,
-      "losses": 181,
-      "win_rate": 63.21,
-      "net_pnl_per_trade": 0.089795,
-      "return_on_cost_percent": 16.558
+      "trades": 490,
+      "wins": 310,
+      "losses": 180,
+      "win_rate": 63.27,
+      "net_pnl_per_trade": 0.09032,
+      "return_on_cost_percent": 16.654
     },
     {
       "edge_threshold": 0.1,
@@ -408,2433 +408,26 @@
       "edge_threshold": 0.1,
       "entry_minute": 3,
       "execution_buffer": 0.02,
-      "trades": 411,
-      "wins": 275,
-      "losses": 136,
-      "win_rate": 66.91,
-      "net_pnl_per_trade": 0.172791,
-      "return_on_cost_percent": 34.815
+      "trades": 425,
+      "wins": 287,
+      "losses": 138,
+      "win_rate": 67.53,
+      "net_pnl_per_trade": 0.176939,
+      "return_on_cost_percent": 35.505
     },
     {
       "edge_threshold": 0.1,
       "entry_minute": 5,
       "execution_buffer": 0.02,
-      "trades": 339,
+      "trades": 338,
       "wins": 207,
-      "losses": 132,
-      "win_rate": 61.06,
-      "net_pnl_per_trade": 0.100796,
-      "return_on_cost_percent": 19.771
+      "losses": 131,
+      "win_rate": 61.24,
+      "net_pnl_per_trade": 0.103236,
+      "return_on_cost_percent": 20.274
     }
   ],
   "candidates": [
-    {
-      "slug": "btc-updown-15m-1792699200",
-      "market_end": "2026-10-22T20:15:00Z",
-      "entry_minute": 3,
-      "side": "down",
-      "model_probability": 0.604982,
-      "market_price": 0.555,
-      "gross_edge": 0.049982,
-      "net_edge_by_buffer": {
-        "0.000": 0.032694,
-        "0.005": 0.027734,
-        "0.010": 0.022778,
-        "0.020": 0.012876
-      },
-      "execution_price_by_buffer": {
-        "0.000": 0.555,
-        "0.005": 0.56,
-        "0.010": 0.565,
-        "0.020": 0.575
-      },
-      "fee_by_buffer": {
-        "0.000": 0.017288,
-        "0.005": 0.017248,
-        "0.010": 0.017204,
-        "0.020": 0.017106
-      },
-      "actual": "DOWN",
-      "won": true
-    },
-    {
-      "slug": "btc-updown-15m-1792699200",
-      "market_end": "2026-10-22T20:15:00Z",
-      "entry_minute": 5,
-      "side": "down",
-      "model_probability": 0.73251,
-      "market_price": 0.575,
-      "gross_edge": 0.15751,
-      "net_edge_by_buffer": {
-        "0.000": 0.140404,
-        "0.005": 0.135458,
-        "0.010": 0.130516,
-        "0.020": 0.120642
-      },
-      "execution_price_by_buffer": {
-        "0.000": 0.575,
-        "0.005": 0.58,
-        "0.010": 0.585,
-        "0.020": 0.595
-      },
-      "fee_by_buffer": {
-        "0.000": 0.017106,
-        "0.005": 0.017052,
-        "0.010": 0.016994,
-        "0.020": 0.016868
-      },
-      "actual": "DOWN",
-      "won": true
-    },
-    {
-      "slug": "btc-updown-15m-1792700100",
-      "market_end": "2026-10-22T20:30:00Z",
-      "entry_minute": 3,
-      "side": "down",
-      "model_probability": 0.691667,
-      "market_price": 0.765,
-      "gross_edge": -0.073333,
-      "net_edge_by_buffer": {
-        "0.000": -0.085918,
-        "0.005": -0.09073,
-        "0.010": -0.09554,
-        "0.020": -0.105148
-      },
-      "execution_price_by_buffer": {
-        "0.000": 0.765,
-        "0.005": 0.77,
-        "0.010": 0.775,
-        "0.020": 0.785
-      },
-      "fee_by_buffer": {
-        "0.000": 0.012584,
-        "0.005": 0.012397,
-        "0.010": 0.012206,
-        "0.020": 0.011814
-      },
-      "actual": "DOWN",
-      "won": true
-    },
-    {
-      "slug": "btc-updown-15m-1792700100",
-      "market_end": "2026-10-22T20:30:00Z",
-      "entry_minute": 5,
-      "side": "down",
-      "model_probability": 0.824742,
-      "market_price": 0.805,
-      "gross_edge": 0.019742,
-      "net_edge_by_buffer": {
-        "0.000": 0.008754,
-        "0.005": 0.003969,
-        "0.010": -0.000812,
-        "0.020": -0.010364
-      },
-      "execution_price_by_buffer": {
-        "0.000": 0.805,
-        "0.005": 0.81,
-        "0.010": 0.815,
-        "0.020": 0.825
-      },
-      "fee_by_buffer": {
-        "0.000": 0.010988,
-        "0.005": 0.010773,
-        "0.010": 0.010554,
-        "0.020": 0.010106
-      },
-      "actual": "DOWN",
-      "won": true
-    },
-    {
-      "slug": "btc-updown-15m-1792701000",
-      "market_end": "2026-10-22T20:45:00Z",
-      "entry_minute": 3,
-      "side": "down",
-      "model_probability": 0.692946,
-      "market_price": 0.605,
-      "gross_edge": 0.087946,
-      "net_edge_by_buffer": {
-        "0.000": 0.071218,
-        "0.005": 0.066293,
-        "0.010": 0.061372,
-        "0.020": 0.05154
-      },
-      "execution_price_by_buffer": {
-        "0.000": 0.605,
-        "0.005": 0.61,
-        "0.010": 0.615,
-        "0.020": 0.625
-      },
-      "fee_by_buffer": {
-        "0.000": 0.016728,
-        "0.005": 0.016653,
-        "0.010": 0.016574,
-        "0.020": 0.016406
-      },
-      "actual": "DOWN",
-      "won": true
-    },
-    {
-      "slug": "btc-updown-15m-1792701000",
-      "market_end": "2026-10-22T20:45:00Z",
-      "entry_minute": 5,
-      "side": "down",
-      "model_probability": 0.733607,
-      "market_price": 0.775,
-      "gross_edge": -0.041393,
-      "net_edge_by_buffer": {
-        "0.000": -0.0536,
-        "0.005": -0.058405,
-        "0.010": -0.063208,
-        "0.020": -0.072802
-      },
-      "execution_price_by_buffer": {
-        "0.000": 0.775,
-        "0.005": 0.78,
-        "0.010": 0.785,
-        "0.020": 0.795
-      },
-      "fee_by_buffer": {
-        "0.000": 0.012206,
-        "0.005": 0.012012,
-        "0.010": 0.011814,
-        "0.020": 0.011408
-      },
-      "actual": "DOWN",
-      "won": true
-    },
-    {
-      "slug": "btc-updown-15m-1792701900",
-      "market_end": "2026-10-22T21:00:00Z",
-      "entry_minute": 3,
-      "side": "down",
-      "model_probability": 0.694215,
-      "market_price": 0.495,
-      "gross_edge": 0.199215,
-      "net_edge_by_buffer": {
-        "0.000": 0.181717,
-        "0.005": 0.176715,
-        "0.010": 0.171717,
-        "0.020": 0.161731
-      },
-      "execution_price_by_buffer": {
-        "0.000": 0.495,
-        "0.005": 0.5,
-        "0.010": 0.505,
-        "0.020": 0.515
-      },
-      "fee_by_buffer": {
-        "0.000": 0.017498,
-        "0.005": 0.0175,
-        "0.010": 0.017498,
-        "0.020": 0.017484
-      },
-      "actual": "DOWN",
-      "won": true
-    },
-    {
-      "slug": "btc-updown-15m-1792701900",
-      "market_end": "2026-10-22T21:00:00Z",
-      "entry_minute": 5,
-      "side": "down",
-      "model_probability": 0.825641,
-      "market_price": 0.725,
-      "gross_edge": 0.100641,
-      "net_edge_by_buffer": {
-        "0.000": 0.086685,
-        "0.005": 0.081844,
-        "0.010": 0.077007,
-        "0.020": 0.067343
-      },
-      "execution_price_by_buffer": {
-        "0.000": 0.725,
-        "0.005": 0.73,
-        "0.010": 0.735,
-        "0.020": 0.745
-      },
-      "fee_by_buffer": {
-        "0.000": 0.013956,
-        "0.005": 0.013797,
-        "0.010": 0.013634,
-        "0.020": 0.013298
-      },
-      "actual": "DOWN",
-      "won": true
-    },
-    {
-      "slug": "btc-updown-15m-1792702800",
-      "market_end": "2026-10-22T21:15:00Z",
-      "entry_minute": 3,
-      "side": "down",
-      "model_probability": 0.604278,
-      "market_price": 0.525,
-      "gross_edge": 0.079278,
-      "net_edge_by_buffer": {
-        "0.000": 0.061822,
-        "0.005": 0.056841,
-        "0.010": 0.051864,
-        "0.020": 0.04192
-      },
-      "execution_price_by_buffer": {
-        "0.000": 0.525,
-        "0.005": 0.53,
-        "0.010": 0.535,
-        "0.020": 0.545
-      },
-      "fee_by_buffer": {
-        "0.000": 0.017456,
-        "0.005": 0.017437,
-        "0.010": 0.017414,
-        "0.020": 0.017358
-      },
-      "actual": "UP",
-      "won": false
-    },
-    {
-      "slug": "btc-updown-15m-1792702800",
-      "market_end": "2026-10-22T21:15:00Z",
-      "entry_minute": 5,
-      "side": "down",
-      "model_probability": 0.622407,
-      "market_price": 0.565,
-      "gross_edge": 0.057407,
-      "net_edge_by_buffer": {
-        "0.000": 0.040202,
-        "0.005": 0.03525,
-        "0.010": 0.0303,
-        "0.020": 0.020412
-      },
-      "execution_price_by_buffer": {
-        "0.000": 0.565,
-        "0.005": 0.57,
-        "0.010": 0.575,
-        "0.020": 0.585
-      },
-      "fee_by_buffer": {
-        "0.000": 0.017204,
-        "0.005": 0.017157,
-        "0.010": 0.017106,
-        "0.020": 0.016994
-      },
-      "actual": "UP",
-      "won": false
-    },
-    {
-      "slug": "btc-updown-15m-1792703700",
-      "market_end": "2026-10-22T21:30:00Z",
-      "entry_minute": 3,
-      "side": "up",
-      "model_probability": 0.756272,
-      "market_price": 0.675,
-      "gross_edge": 0.081272,
-      "net_edge_by_buffer": {
-        "0.000": 0.065916,
-        "0.005": 0.06104,
-        "0.010": 0.056168,
-        "0.020": 0.046434
-      },
-      "execution_price_by_buffer": {
-        "0.000": 0.675,
-        "0.005": 0.68,
-        "0.010": 0.685,
-        "0.020": 0.695
-      },
-      "fee_by_buffer": {
-        "0.000": 0.015356,
-        "0.005": 0.015232,
-        "0.010": 0.015104,
-        "0.020": 0.014838
-      },
-      "actual": "UP",
-      "won": true
-    },
-    {
-      "slug": "btc-updown-15m-1792703700",
-      "market_end": "2026-10-22T21:30:00Z",
-      "entry_minute": 5,
-      "side": "up",
-      "model_probability": 0.789474,
-      "market_price": 0.845,
-      "gross_edge": -0.055526,
-      "net_edge_by_buffer": {
-        "0.000": -0.064695,
-        "0.005": -0.069451,
-        "0.010": -0.074205,
-        "0.020": -0.083701
-      },
-      "execution_price_by_buffer": {
-        "0.000": 0.845,
-        "0.005": 0.85,
-        "0.010": 0.855,
-        "0.020": 0.865
-      },
-      "fee_by_buffer": {
-        "0.000": 0.009168,
-        "0.005": 0.008925,
-        "0.010": 0.008678,
-        "0.020": 0.008174
-      },
-      "actual": "UP",
-      "won": true
-    },
-    {
-      "slug": "btc-updown-15m-1792704600",
-      "market_end": "2026-10-22T21:45:00Z",
-      "entry_minute": 3,
-      "side": "down",
-      "model_probability": 0.695473,
-      "market_price": 0.315,
-      "gross_edge": 0.380473,
-      "net_edge_by_buffer": {
-        "0.000": 0.365369,
-        "0.005": 0.360241,
-        "0.010": 0.355117,
-        "0.020": 0.344879
-      },
-      "execution_price_by_buffer": {
-        "0.000": 0.315,
-        "0.005": 0.32,
-        "0.010": 0.325,
-        "0.020": 0.335
-      },
-      "fee_by_buffer": {
-        "0.000": 0.015104,
-        "0.005": 0.015232,
-        "0.010": 0.015356,
-        "0.020": 0.015594
-      },
-      "actual": "DOWN",
-      "won": true
-    },
-    {
-      "slug": "btc-updown-15m-1792704600",
-      "market_end": "2026-10-22T21:45:00Z",
-      "entry_minute": 5,
-      "side": "down",
-      "model_probability": 0.826531,
-      "market_price": 0.675,
-      "gross_edge": 0.151531,
-      "net_edge_by_buffer": {
-        "0.000": 0.136174,
-        "0.005": 0.131299,
-        "0.010": 0.126426,
-        "0.020": 0.116692
-      },
-      "execution_price_by_buffer": {
-        "0.000": 0.675,
-        "0.005": 0.68,
-        "0.010": 0.685,
-        "0.020": 0.695
-      },
-      "fee_by_buffer": {
-        "0.000": 0.015356,
-        "0.005": 0.015232,
-        "0.010": 0.015104,
-        "0.020": 0.014838
-      },
-      "actual": "DOWN",
-      "won": true
-    },
-    {
-      "slug": "btc-updown-15m-1792705500",
-      "market_end": "2026-10-22T22:00:00Z",
-      "entry_minute": 3,
-      "side": "up",
-      "model_probability": 0.567797,
-      "market_price": 0.345,
-      "gross_edge": 0.222797,
-      "net_edge_by_buffer": {
-        "0.000": 0.206978,
-        "0.005": 0.201872,
-        "0.010": 0.196768,
-        "0.020": 0.186572
-      },
-      "execution_price_by_buffer": {
-        "0.000": 0.345,
-        "0.005": 0.35,
-        "0.010": 0.355,
-        "0.020": 0.365
-      },
-      "fee_by_buffer": {
-        "0.000": 0.015818,
-        "0.005": 0.015925,
-        "0.010": 0.016028,
-        "0.020": 0.016224
-      },
-      "actual": "DOWN",
-      "won": false
-    },
-    {
-      "slug": "btc-updown-15m-1792705500",
-      "market_end": "2026-10-22T22:00:00Z",
-      "entry_minute": 5,
-      "side": "up",
-      "model_probability": 0.587361,
-      "market_price": 0.435,
-      "gross_edge": 0.152361,
-      "net_edge_by_buffer": {
-        "0.000": 0.135156,
-        "0.005": 0.130113,
-        "0.010": 0.125072,
-        "0.020": 0.115002
-      },
-      "execution_price_by_buffer": {
-        "0.000": 0.435,
-        "0.005": 0.44,
-        "0.010": 0.445,
-        "0.020": 0.455
-      },
-      "fee_by_buffer": {
-        "0.000": 0.017204,
-        "0.005": 0.017248,
-        "0.010": 0.017288,
-        "0.020": 0.017358
-      },
-      "actual": "DOWN",
-      "won": false
-    },
-    {
-      "slug": "btc-updown-15m-1792706400",
-      "market_end": "2026-10-22T22:15:00Z",
-      "entry_minute": 3,
-      "side": "up",
-      "model_probability": 0.568528,
-      "market_price": 0.415,
-      "gross_edge": 0.153528,
-      "net_edge_by_buffer": {
-        "0.000": 0.136534,
-        "0.005": 0.131476,
-        "0.010": 0.126422,
-        "0.020": 0.116324
-      },
-      "execution_price_by_buffer": {
-        "0.000": 0.415,
-        "0.005": 0.42,
-        "0.010": 0.425,
-        "0.020": 0.435
-      },
-      "fee_by_buffer": {
-        "0.000": 0.016994,
-        "0.005": 0.017052,
-        "0.010": 0.017106,
-        "0.020": 0.017204
-      },
-      "actual": "UP",
-      "won": true
-    },
-    {
-      "slug": "btc-updown-15m-1792706400",
-      "market_end": "2026-10-22T22:15:00Z",
-      "entry_minute": 5,
-      "side": "up",
-      "model_probability": 0.588126,
-      "market_price": 0.695,
-      "gross_edge": -0.106874,
-      "net_edge_by_buffer": {
-        "0.000": -0.121712,
-        "0.005": -0.126574,
-        "0.010": -0.131432,
-        "0.020": -0.141138
-      },
-      "execution_price_by_buffer": {
-        "0.000": 0.695,
-        "0.005": 0.7,
-        "0.010": 0.705,
-        "0.020": 0.715
-      },
-      "fee_by_buffer": {
-        "0.000": 0.014838,
-        "0.005": 0.0147,
-        "0.010": 0.014558,
-        "0.020": 0.014264
-      },
-      "actual": "UP",
-      "won": true
-    },
-    {
-      "slug": "btc-updown-15m-1792707300",
-      "market_end": "2026-10-22T22:30:00Z",
-      "entry_minute": 3,
-      "side": "down",
-      "model_probability": 0.603203,
-      "market_price": 0.645,
-      "gross_edge": -0.041797,
-      "net_edge_by_buffer": {
-        "0.000": -0.057825,
-        "0.005": -0.062722,
-        "0.010": -0.067615,
-        "0.020": -0.077391
-      },
-      "execution_price_by_buffer": {
-        "0.000": 0.645,
-        "0.005": 0.65,
-        "0.010": 0.655,
-        "0.020": 0.665
-      },
-      "fee_by_buffer": {
-        "0.000": 0.016028,
-        "0.005": 0.015925,
-        "0.010": 0.015818,
-        "0.020": 0.015594
-      },
-      "actual": "DOWN",
-      "won": true
-    },
-    {
-      "slug": "btc-updown-15m-1792707300",
-      "market_end": "2026-10-22T22:30:00Z",
-      "entry_minute": 5,
-      "side": "down",
-      "model_probability": 0.733607,
-      "market_price": 0.715,
-      "gross_edge": 0.018607,
-      "net_edge_by_buffer": {
-        "0.000": 0.004342,
-        "0.005": -0.000505,
-        "0.010": -0.00535,
-        "0.020": -0.015028
-      },
-      "execution_price_by_buffer": {
-        "0.000": 0.715,
-        "0.005": 0.72,
-        "0.010": 0.725,
-        "0.020": 0.735
-      },
-      "fee_by_buffer": {
-        "0.000": 0.014264,
-        "0.005": 0.014112,
-        "0.010": 0.013956,
-        "0.020": 0.013634
-      },
-      "actual": "DOWN",
-      "won": true
-    },
-    {
-      "slug": "btc-updown-15m-1792708200",
-      "market_end": "2026-10-22T22:45:00Z",
-      "entry_minute": 3,
-      "side": "down",
-      "model_probability": 0.603908,
-      "market_price": 0.535,
-      "gross_edge": 0.068908,
-      "net_edge_by_buffer": {
-        "0.000": 0.051493,
-        "0.005": 0.04652,
-        "0.010": 0.041549,
-        "0.020": 0.031619
-      },
-      "execution_price_by_buffer": {
-        "0.000": 0.535,
-        "0.005": 0.54,
-        "0.010": 0.545,
-        "0.020": 0.555
-      },
-      "fee_by_buffer": {
-        "0.000": 0.017414,
-        "0.005": 0.017388,
-        "0.010": 0.017358,
-        "0.020": 0.017288
-      },
-      "actual": "DOWN",
-      "won": true
-    },
-    {
-      "slug": "btc-updown-15m-1792708200",
-      "market_end": "2026-10-22T22:45:00Z",
-      "entry_minute": 5,
-      "side": "down",
-      "model_probability": 0.619543,
-      "market_price": 0.505,
-      "gross_edge": 0.114543,
-      "net_edge_by_buffer": {
-        "0.000": 0.097044,
-        "0.005": 0.09205,
-        "0.010": 0.087058,
-        "0.020": 0.077086
-      },
-      "execution_price_by_buffer": {
-        "0.000": 0.505,
-        "0.005": 0.51,
-        "0.010": 0.515,
-        "0.020": 0.525
-      },
-      "fee_by_buffer": {
-        "0.000": 0.017498,
-        "0.005": 0.017493,
-        "0.010": 0.017484,
-        "0.020": 0.017456
-      },
-      "actual": "DOWN",
-      "won": true
-    },
-    {
-      "slug": "btc-updown-15m-1792709100",
-      "market_end": "2026-10-22T23:00:00Z",
-      "entry_minute": 3,
-      "side": "up",
-      "model_probability": 0.569492,
-      "market_price": 0.685,
-      "gross_edge": -0.115508,
-      "net_edge_by_buffer": {
-        "0.000": -0.130613,
-        "0.005": -0.135481,
-        "0.010": -0.140347,
-        "0.020": -0.150067
-      },
-      "execution_price_by_buffer": {
-        "0.000": 0.685,
-        "0.005": 0.69,
-        "0.010": 0.695,
-        "0.020": 0.705
-      },
-      "fee_by_buffer": {
-        "0.000": 0.015104,
-        "0.005": 0.014973,
-        "0.010": 0.014838,
-        "0.020": 0.014558
-      },
-      "actual": "UP",
-      "won": true
-    },
-    {
-      "slug": "btc-updown-15m-1792709100",
-      "market_end": "2026-10-22T23:00:00Z",
-      "entry_minute": 5,
-      "side": "up",
-      "model_probability": 0.587037,
-      "market_price": 0.585,
-      "gross_edge": 0.002037,
-      "net_edge_by_buffer": {
-        "0.000": -0.014957,
-        "0.005": -0.019896,
-        "0.010": -0.024831,
-        "0.020": -0.034691
-      },
-      "execution_price_by_buffer": {
-        "0.000": 0.585,
-        "0.005": 0.59,
-        "0.010": 0.595,
-        "0.020": 0.605
-      },
-      "fee_by_buffer": {
-        "0.000": 0.016994,
-        "0.005": 0.016933,
-        "0.010": 0.016868,
-        "0.020": 0.016728
-      },
-      "actual": "UP",
-      "won": true
-    },
-    {
-      "slug": "btc-updown-15m-1792710000",
-      "market_end": "2026-10-22T23:15:00Z",
-      "entry_minute": 3,
-      "side": "up",
-      "model_probability": 0.57022,
-      "market_price": 0.525,
-      "gross_edge": 0.04522,
-      "net_edge_by_buffer": {
-        "0.000": 0.027764,
-        "0.005": 0.022783,
-        "0.010": 0.017806,
-        "0.020": 0.007862
-      },
-      "execution_price_by_buffer": {
-        "0.000": 0.525,
-        "0.005": 0.53,
-        "0.010": 0.535,
-        "0.020": 0.545
-      },
-      "fee_by_buffer": {
-        "0.000": 0.017456,
-        "0.005": 0.017437,
-        "0.010": 0.017414,
-        "0.020": 0.017358
-      },
-      "actual": "UP",
-      "won": true
-    },
-    {
-      "slug": "btc-updown-15m-1792710000",
-      "market_end": "2026-10-22T23:15:00Z",
-      "entry_minute": 5,
-      "side": "up",
-      "model_probability": 0.5878,
-      "market_price": 0.525,
-      "gross_edge": 0.0628,
-      "net_edge_by_buffer": {
-        "0.000": 0.045344,
-        "0.005": 0.040363,
-        "0.010": 0.035386,
-        "0.020": 0.025442
-      },
-      "execution_price_by_buffer": {
-        "0.000": 0.525,
-        "0.005": 0.53,
-        "0.010": 0.535,
-        "0.020": 0.545
-      },
-      "fee_by_buffer": {
-        "0.000": 0.017456,
-        "0.005": 0.017437,
-        "0.010": 0.017414,
-        "0.020": 0.017358
-      },
-      "actual": "UP",
-      "won": true
-    },
-    {
-      "slug": "btc-updown-15m-1792710900",
-      "market_end": "2026-10-22T23:30:00Z",
-      "entry_minute": 3,
-      "side": "down",
-      "model_probability": 0.605684,
-      "market_price": 0.625,
-      "gross_edge": -0.019316,
-      "net_edge_by_buffer": {
-        "0.000": -0.035722,
-        "0.005": -0.040633,
-        "0.010": -0.04554,
-        "0.020": -0.055344
-      },
-      "execution_price_by_buffer": {
-        "0.000": 0.625,
-        "0.005": 0.63,
-        "0.010": 0.635,
-        "0.020": 0.645
-      },
-      "fee_by_buffer": {
-        "0.000": 0.016406,
-        "0.005": 0.016317,
-        "0.010": 0.016224,
-        "0.020": 0.016028
-      },
-      "actual": "DOWN",
-      "won": true
-    },
-    {
-      "slug": "btc-updown-15m-1792710900",
-      "market_end": "2026-10-22T23:30:00Z",
-      "entry_minute": 5,
-      "side": "down",
-      "model_probability": 0.620042,
-      "market_price": 0.685,
-      "gross_edge": -0.064958,
-      "net_edge_by_buffer": {
-        "0.000": -0.080062,
-        "0.005": -0.084931,
-        "0.010": -0.089796,
-        "0.020": -0.099516
-      },
-      "execution_price_by_buffer": {
-        "0.000": 0.685,
-        "0.005": 0.69,
-        "0.010": 0.695,
-        "0.020": 0.705
-      },
-      "fee_by_buffer": {
-        "0.000": 0.015104,
-        "0.005": 0.014973,
-        "0.010": 0.014838,
-        "0.020": 0.014558
-      },
-      "actual": "DOWN",
-      "won": true
-    },
-    {
-      "slug": "btc-updown-15m-1792711800",
-      "market_end": "2026-10-22T23:45:00Z",
-      "entry_minute": 3,
-      "side": "up",
-      "model_probability": 0.57022,
-      "market_price": 0.485,
-      "gross_edge": 0.08522,
-      "net_edge_by_buffer": {
-        "0.000": 0.067736,
-        "0.005": 0.062727,
-        "0.010": 0.057722,
-        "0.020": 0.047722
-      },
-      "execution_price_by_buffer": {
-        "0.000": 0.485,
-        "0.005": 0.49,
-        "0.010": 0.495,
-        "0.020": 0.505
-      },
-      "fee_by_buffer": {
-        "0.000": 0.017484,
-        "0.005": 0.017493,
-        "0.010": 0.017498,
-        "0.020": 0.017498
-      },
-      "actual": "UP",
-      "won": true
-    },
-    {
-      "slug": "btc-updown-15m-1792711800",
-      "market_end": "2026-10-22T23:45:00Z",
-      "entry_minute": 5,
-      "side": "down",
-      "model_probability": 0.620833,
-      "market_price": 0.415,
-      "gross_edge": 0.205833,
-      "net_edge_by_buffer": {
-        "0.000": 0.188839,
-        "0.005": 0.183781,
-        "0.010": 0.178727,
-        "0.020": 0.168629
-      },
-      "execution_price_by_buffer": {
-        "0.000": 0.415,
-        "0.005": 0.42,
-        "0.010": 0.425,
-        "0.020": 0.435
-      },
-      "fee_by_buffer": {
-        "0.000": 0.016994,
-        "0.005": 0.017052,
-        "0.010": 0.017106,
-        "0.020": 0.017204
-      },
-      "actual": "UP",
-      "won": false
-    },
-    {
-      "slug": "btc-updown-15m-1792712700",
-      "market_end": "2026-10-23T00:00:00Z",
-      "entry_minute": 3,
-      "side": "up",
-      "model_probability": 0.570946,
-      "market_price": 0.635,
-      "gross_edge": -0.064054,
-      "net_edge_by_buffer": {
-        "0.000": -0.080278,
-        "0.005": -0.085182,
-        "0.010": -0.090082,
-        "0.020": -0.099872
-      },
-      "execution_price_by_buffer": {
-        "0.000": 0.635,
-        "0.005": 0.64,
-        "0.010": 0.645,
-        "0.020": 0.655
-      },
-      "fee_by_buffer": {
-        "0.000": 0.016224,
-        "0.005": 0.016128,
-        "0.010": 0.016028,
-        "0.020": 0.015818
-      },
-      "actual": "UP",
-      "won": true
-    },
-    {
-      "slug": "btc-updown-15m-1792712700",
-      "market_end": "2026-10-23T00:00:00Z",
-      "entry_minute": 5,
-      "side": "up",
-      "model_probability": 0.588561,
-      "market_price": 0.625,
-      "gross_edge": -0.036439,
-      "net_edge_by_buffer": {
-        "0.000": -0.052845,
-        "0.005": -0.057756,
-        "0.010": -0.062663,
-        "0.020": -0.072467
-      },
-      "execution_price_by_buffer": {
-        "0.000": 0.625,
-        "0.005": 0.63,
-        "0.010": 0.635,
-        "0.020": 0.645
-      },
-      "fee_by_buffer": {
-        "0.000": 0.016406,
-        "0.005": 0.016317,
-        "0.010": 0.016224,
-        "0.020": 0.016028
-      },
-      "actual": "UP",
-      "won": true
-    },
-    {
-      "slug": "btc-updown-15m-1792713600",
-      "market_end": "2026-10-23T00:15:00Z",
-      "entry_minute": 3,
-      "side": "down",
-      "model_probability": 0.698347,
-      "market_price": 0.825,
-      "gross_edge": -0.126653,
-      "net_edge_by_buffer": {
-        "0.000": -0.136759,
-        "0.005": -0.14153,
-        "0.010": -0.146297,
-        "0.020": -0.155821
-      },
-      "execution_price_by_buffer": {
-        "0.000": 0.825,
-        "0.005": 0.83,
-        "0.010": 0.835,
-        "0.020": 0.845
-      },
-      "fee_by_buffer": {
-        "0.000": 0.010106,
-        "0.005": 0.009877,
-        "0.010": 0.009644,
-        "0.020": 0.009168
-      },
-      "actual": "DOWN",
-      "won": true
-    },
-    {
-      "slug": "btc-updown-15m-1792713600",
-      "market_end": "2026-10-23T00:15:00Z",
-      "entry_minute": 5,
-      "side": "down",
-      "model_probability": 0.827411,
-      "market_price": 0.835,
-      "gross_edge": -0.007589,
-      "net_edge_by_buffer": {
-        "0.000": -0.017233,
-        "0.005": -0.021997,
-        "0.010": -0.026757,
-        "0.020": -0.036267
-      },
-      "execution_price_by_buffer": {
-        "0.000": 0.835,
-        "0.005": 0.84,
-        "0.010": 0.845,
-        "0.020": 0.855
-      },
-      "fee_by_buffer": {
-        "0.000": 0.009644,
-        "0.005": 0.009408,
-        "0.010": 0.009168,
-        "0.020": 0.008678
-      },
-      "actual": "DOWN",
-      "won": true
-    },
-    {
-      "slug": "btc-updown-15m-1792714500",
-      "market_end": "2026-10-23T00:30:00Z",
-      "entry_minute": 3,
-      "side": "down",
-      "model_probability": 0.606383,
-      "market_price": 0.325,
-      "gross_edge": 0.281383,
-      "net_edge_by_buffer": {
-        "0.000": 0.266027,
-        "0.005": 0.260906,
-        "0.010": 0.255789,
-        "0.020": 0.245565
-      },
-      "execution_price_by_buffer": {
-        "0.000": 0.325,
-        "0.005": 0.33,
-        "0.010": 0.335,
-        "0.020": 0.345
-      },
-      "fee_by_buffer": {
-        "0.000": 0.015356,
-        "0.005": 0.015477,
-        "0.010": 0.015594,
-        "0.020": 0.015818
-      },
-      "actual": "UP",
-      "won": false
-    },
-    {
-      "slug": "btc-updown-15m-1792714500",
-      "market_end": "2026-10-23T00:30:00Z",
-      "entry_minute": 5,
-      "side": "down",
-      "model_probability": 0.734694,
-      "market_price": 0.385,
-      "gross_edge": 0.349694,
-      "net_edge_by_buffer": {
-        "0.000": 0.33312,
-        "0.005": 0.328041,
-        "0.010": 0.322966,
-        "0.020": 0.312826
-      },
-      "execution_price_by_buffer": {
-        "0.000": 0.385,
-        "0.005": 0.39,
-        "0.010": 0.395,
-        "0.020": 0.405
-      },
-      "fee_by_buffer": {
-        "0.000": 0.016574,
-        "0.005": 0.016653,
-        "0.010": 0.016728,
-        "0.020": 0.016868
-      },
-      "actual": "UP",
-      "won": false
-    },
-    {
-      "slug": "btc-updown-15m-1792715400",
-      "market_end": "2026-10-23T00:45:00Z",
-      "entry_minute": 3,
-      "side": "up",
-      "model_probability": 0.770492,
-      "market_price": 0.655,
-      "gross_edge": 0.115492,
-      "net_edge_by_buffer": {
-        "0.000": 0.099674,
-        "0.005": 0.094784,
-        "0.010": 0.089898,
-        "0.020": 0.080136
-      },
-      "execution_price_by_buffer": {
-        "0.000": 0.655,
-        "0.005": 0.66,
-        "0.010": 0.665,
-        "0.020": 0.675
-      },
-      "fee_by_buffer": {
-        "0.000": 0.015818,
-        "0.005": 0.015708,
-        "0.010": 0.015594,
-        "0.020": 0.015356
-      },
-      "actual": "UP",
-      "won": true
-    },
-    {
-      "slug": "btc-updown-15m-1792715400",
-      "market_end": "2026-10-23T00:45:00Z",
-      "entry_minute": 5,
-      "side": "up",
-      "model_probability": 0.841463,
-      "market_price": 0.895,
-      "gross_edge": -0.053537,
-      "net_edge_by_buffer": {
-        "0.000": -0.060115,
-        "0.005": -0.064837,
-        "0.010": -0.069555,
-        "0.020": -0.078981
-      },
-      "execution_price_by_buffer": {
-        "0.000": 0.895,
-        "0.005": 0.9,
-        "0.010": 0.905,
-        "0.020": 0.915
-      },
-      "fee_by_buffer": {
-        "0.000": 0.006578,
-        "0.005": 0.0063,
-        "0.010": 0.006018,
-        "0.020": 0.005444
-      },
-      "actual": "UP",
-      "won": true
-    },
-    {
-      "slug": "btc-updown-15m-1792716300",
-      "market_end": "2026-10-23T01:00:00Z",
-      "entry_minute": 3,
-      "side": "up",
-      "model_probability": 0.572635,
-      "market_price": 0.565,
-      "gross_edge": 0.007635,
-      "net_edge_by_buffer": {
-        "0.000": -0.009569,
-        "0.005": -0.014522,
-        "0.010": -0.019471,
-        "0.020": -0.029359
-      },
-      "execution_price_by_buffer": {
-        "0.000": 0.565,
-        "0.005": 0.57,
-        "0.010": 0.575,
-        "0.020": 0.585
-      },
-      "fee_by_buffer": {
-        "0.000": 0.017204,
-        "0.005": 0.017157,
-        "0.010": 0.017106,
-        "0.020": 0.016994
-      },
-      "actual": "DOWN",
-      "won": false
-    },
-    {
-      "slug": "btc-updown-15m-1792716300",
-      "market_end": "2026-10-23T01:00:00Z",
-      "entry_minute": 5,
-      "side": "up",
-      "model_probability": 0.791667,
-      "market_price": 0.705,
-      "gross_edge": 0.086667,
-      "net_edge_by_buffer": {
-        "0.000": 0.072108,
-        "0.005": 0.067254,
-        "0.010": 0.062402,
-        "0.020": 0.05271
-      },
-      "execution_price_by_buffer": {
-        "0.000": 0.705,
-        "0.005": 0.71,
-        "0.010": 0.715,
-        "0.020": 0.725
-      },
-      "fee_by_buffer": {
-        "0.000": 0.014558,
-        "0.005": 0.014413,
-        "0.010": 0.014264,
-        "0.020": 0.013956
-      },
-      "actual": "DOWN",
-      "won": false
-    },
-    {
-      "slug": "btc-updown-15m-1792717200",
-      "market_end": "2026-10-23T01:15:00Z",
-      "entry_minute": 3,
-      "side": "up",
-      "model_probability": 0.755396,
-      "market_price": 0.665,
-      "gross_edge": 0.090396,
-      "net_edge_by_buffer": {
-        "0.000": 0.074801,
-        "0.005": 0.069919,
-        "0.010": 0.065039,
-        "0.020": 0.055291
-      },
-      "execution_price_by_buffer": {
-        "0.000": 0.665,
-        "0.005": 0.67,
-        "0.010": 0.675,
-        "0.020": 0.685
-      },
-      "fee_by_buffer": {
-        "0.000": 0.015594,
-        "0.005": 0.015477,
-        "0.010": 0.015356,
-        "0.020": 0.015104
-      },
-      "actual": "UP",
-      "won": true
-    },
-    {
-      "slug": "btc-updown-15m-1792717200",
-      "market_end": "2026-10-23T01:15:00Z",
-      "entry_minute": 5,
-      "side": "up",
-      "model_probability": 0.589319,
-      "market_price": 0.715,
-      "gross_edge": -0.125681,
-      "net_edge_by_buffer": {
-        "0.000": -0.139946,
-        "0.005": -0.144793,
-        "0.010": -0.149638,
-        "0.020": -0.159316
-      },
-      "execution_price_by_buffer": {
-        "0.000": 0.715,
-        "0.005": 0.72,
-        "0.010": 0.725,
-        "0.020": 0.735
-      },
-      "fee_by_buffer": {
-        "0.000": 0.014264,
-        "0.005": 0.014112,
-        "0.010": 0.013956,
-        "0.020": 0.013634
-      },
-      "actual": "UP",
-      "won": true
-    },
-    {
-      "slug": "btc-updown-15m-1792718100",
-      "market_end": "2026-10-23T01:30:00Z",
-      "entry_minute": 3,
-      "side": "down",
-      "model_probability": 0.786207,
-      "market_price": 0.825,
-      "gross_edge": -0.038793,
-      "net_edge_by_buffer": {
-        "0.000": -0.048899,
-        "0.005": -0.05367,
-        "0.010": -0.058437,
-        "0.020": -0.067961
-      },
-      "execution_price_by_buffer": {
-        "0.000": 0.825,
-        "0.005": 0.83,
-        "0.010": 0.835,
-        "0.020": 0.845
-      },
-      "fee_by_buffer": {
-        "0.000": 0.010106,
-        "0.005": 0.009877,
-        "0.010": 0.009644,
-        "0.020": 0.009168
-      },
-      "actual": "UP",
-      "won": false
-    },
-    {
-      "slug": "btc-updown-15m-1792718100",
-      "market_end": "2026-10-23T01:30:00Z",
-      "entry_minute": 5,
-      "side": "down",
-      "model_probability": 0.737705,
-      "market_price": 0.895,
-      "gross_edge": -0.157295,
-      "net_edge_by_buffer": {
-        "0.000": -0.163873,
-        "0.005": -0.168595,
-        "0.010": -0.173313,
-        "0.020": -0.182739
-      },
-      "execution_price_by_buffer": {
-        "0.000": 0.895,
-        "0.005": 0.9,
-        "0.010": 0.905,
-        "0.020": 0.915
-      },
-      "fee_by_buffer": {
-        "0.000": 0.006578,
-        "0.005": 0.0063,
-        "0.010": 0.006018,
-        "0.020": 0.005444
-      },
-      "actual": "UP",
-      "won": false
-    },
-    {
-      "slug": "btc-updown-15m-1792719000",
-      "market_end": "2026-10-23T01:45:00Z",
-      "entry_minute": 3,
-      "side": "down",
-      "model_probability": 0.701245,
-      "market_price": 0.535,
-      "gross_edge": 0.166245,
-      "net_edge_by_buffer": {
-        "0.000": 0.148831,
-        "0.005": 0.143857,
-        "0.010": 0.138887,
-        "0.020": 0.128957
-      },
-      "execution_price_by_buffer": {
-        "0.000": 0.535,
-        "0.005": 0.54,
-        "0.010": 0.545,
-        "0.020": 0.555
-      },
-      "fee_by_buffer": {
-        "0.000": 0.017414,
-        "0.005": 0.017388,
-        "0.010": 0.017358,
-        "0.020": 0.017288
-      },
-      "actual": "DOWN",
-      "won": true
-    },
-    {
-      "slug": "btc-updown-15m-1792719000",
-      "market_end": "2026-10-23T01:45:00Z",
-      "entry_minute": 5,
-      "side": "down",
-      "model_probability": 0.832487,
-      "market_price": 0.775,
-      "gross_edge": 0.057487,
-      "net_edge_by_buffer": {
-        "0.000": 0.045281,
-        "0.005": 0.040475,
-        "0.010": 0.035673,
-        "0.020": 0.026079
-      },
-      "execution_price_by_buffer": {
-        "0.000": 0.775,
-        "0.005": 0.78,
-        "0.010": 0.785,
-        "0.020": 0.795
-      },
-      "fee_by_buffer": {
-        "0.000": 0.012206,
-        "0.005": 0.012012,
-        "0.010": 0.011814,
-        "0.020": 0.011408
-      },
-      "actual": "DOWN",
-      "won": true
-    },
-    {
-      "slug": "btc-updown-15m-1792719900",
-      "market_end": "2026-10-23T02:00:00Z",
-      "entry_minute": 5,
-      "side": "up",
-      "model_probability": 0.842424,
-      "market_price": 0.905,
-      "gross_edge": -0.062576,
-      "net_edge_by_buffer": {
-        "0.000": -0.068594,
-        "0.005": -0.073309,
-        "0.010": -0.07802,
-        "0.020": -0.087432
-      },
-      "execution_price_by_buffer": {
-        "0.000": 0.905,
-        "0.005": 0.91,
-        "0.010": 0.915,
-        "0.020": 0.925
-      },
-      "fee_by_buffer": {
-        "0.000": 0.006018,
-        "0.005": 0.005733,
-        "0.010": 0.005444,
-        "0.020": 0.004856
-      },
-      "actual": "DOWN",
-      "won": false
-    },
-    {
-      "slug": "btc-updown-15m-1792720800",
-      "market_end": "2026-10-23T02:15:00Z",
-      "entry_minute": 3,
-      "side": "down",
-      "model_probability": 0.698347,
-      "market_price": 0.605,
-      "gross_edge": 0.093347,
-      "net_edge_by_buffer": {
-        "0.000": 0.076619,
-        "0.005": 0.071694,
-        "0.010": 0.066773,
-        "0.020": 0.056941
-      },
-      "execution_price_by_buffer": {
-        "0.000": 0.605,
-        "0.005": 0.61,
-        "0.010": 0.615,
-        "0.020": 0.625
-      },
-      "fee_by_buffer": {
-        "0.000": 0.016728,
-        "0.005": 0.016653,
-        "0.010": 0.016574,
-        "0.020": 0.016406
-      },
-      "actual": "UP",
-      "won": false
-    },
-    {
-      "slug": "btc-updown-15m-1792720800",
-      "market_end": "2026-10-23T02:15:00Z",
-      "entry_minute": 5,
-      "side": "down",
-      "model_probability": 0.734694,
-      "market_price": 0.655,
-      "gross_edge": 0.079694,
-      "net_edge_by_buffer": {
-        "0.000": 0.063876,
-        "0.005": 0.058986,
-        "0.010": 0.0541,
-        "0.020": 0.044338
-      },
-      "execution_price_by_buffer": {
-        "0.000": 0.655,
-        "0.005": 0.66,
-        "0.010": 0.665,
-        "0.020": 0.675
-      },
-      "fee_by_buffer": {
-        "0.000": 0.015818,
-        "0.005": 0.015708,
-        "0.010": 0.015594,
-        "0.020": 0.015356
-      },
-      "actual": "UP",
-      "won": false
-    },
-    {
-      "slug": "btc-updown-15m-1792721700",
-      "market_end": "2026-10-23T02:30:00Z",
-      "entry_minute": 3,
-      "side": "up",
-      "model_probability": 0.572635,
-      "market_price": 0.505,
-      "gross_edge": 0.067635,
-      "net_edge_by_buffer": {
-        "0.000": 0.050137,
-        "0.005": 0.045142,
-        "0.010": 0.040151,
-        "0.020": 0.030179
-      },
-      "execution_price_by_buffer": {
-        "0.000": 0.505,
-        "0.005": 0.51,
-        "0.010": 0.515,
-        "0.020": 0.525
-      },
-      "fee_by_buffer": {
-        "0.000": 0.017498,
-        "0.005": 0.017493,
-        "0.010": 0.017484,
-        "0.020": 0.017456
-      },
-      "actual": "UP",
-      "won": true
-    },
-    {
-      "slug": "btc-updown-15m-1792721700",
-      "market_end": "2026-10-23T02:30:00Z",
-      "entry_minute": 5,
-      "side": "up",
-      "model_probability": 0.588235,
-      "market_price": 0.485,
-      "gross_edge": 0.103235,
-      "net_edge_by_buffer": {
-        "0.000": 0.085751,
-        "0.005": 0.080742,
-        "0.010": 0.075737,
-        "0.020": 0.065737
-      },
-      "execution_price_by_buffer": {
-        "0.000": 0.485,
-        "0.005": 0.49,
-        "0.010": 0.495,
-        "0.020": 0.505
-      },
-      "fee_by_buffer": {
-        "0.000": 0.017484,
-        "0.005": 0.017493,
-        "0.010": 0.017498,
-        "0.020": 0.017498
-      },
-      "actual": "UP",
-      "won": true
-    },
-    {
-      "slug": "btc-updown-15m-1792723500",
-      "market_end": "2026-10-23T03:00:00Z",
-      "entry_minute": 3,
-      "side": "up",
-      "model_probability": 0.573356,
-      "market_price": 0.655,
-      "gross_edge": -0.081644,
-      "net_edge_by_buffer": {
-        "0.000": -0.097462,
-        "0.005": -0.102352,
-        "0.010": -0.107238,
-        "0.020": -0.117
-      },
-      "execution_price_by_buffer": {
-        "0.000": 0.655,
-        "0.005": 0.66,
-        "0.010": 0.665,
-        "0.020": 0.675
-      },
-      "fee_by_buffer": {
-        "0.000": 0.015818,
-        "0.005": 0.015708,
-        "0.010": 0.015594,
-        "0.020": 0.015356
-      },
-      "actual": "UP",
-      "won": true
-    },
-    {
-      "slug": "btc-updown-15m-1792723500",
-      "market_end": "2026-10-23T03:00:00Z",
-      "entry_minute": 5,
-      "side": "up",
-      "model_probability": 0.788679,
-      "market_price": 0.565,
-      "gross_edge": 0.223679,
-      "net_edge_by_buffer": {
-        "0.000": 0.206475,
-        "0.005": 0.201522,
-        "0.010": 0.196573,
-        "0.020": 0.186685
-      },
-      "execution_price_by_buffer": {
-        "0.000": 0.565,
-        "0.005": 0.57,
-        "0.010": 0.575,
-        "0.020": 0.585
-      },
-      "fee_by_buffer": {
-        "0.000": 0.017204,
-        "0.005": 0.017157,
-        "0.010": 0.017106,
-        "0.020": 0.016994
-      },
-      "actual": "UP",
-      "won": true
-    },
-    {
-      "slug": "btc-updown-15m-1792724400",
-      "market_end": "2026-10-23T03:15:00Z",
-      "entry_minute": 3,
-      "side": "down",
-      "model_probability": 0.606762,
-      "market_price": 0.665,
-      "gross_edge": -0.058238,
-      "net_edge_by_buffer": {
-        "0.000": -0.073833,
-        "0.005": -0.078715,
-        "0.010": -0.083595,
-        "0.020": -0.093343
-      },
-      "execution_price_by_buffer": {
-        "0.000": 0.665,
-        "0.005": 0.67,
-        "0.010": 0.675,
-        "0.020": 0.685
-      },
-      "fee_by_buffer": {
-        "0.000": 0.015594,
-        "0.005": 0.015477,
-        "0.010": 0.015356,
-        "0.020": 0.015104
-      },
-      "actual": "DOWN",
-      "won": true
-    },
-    {
-      "slug": "btc-updown-15m-1792724400",
-      "market_end": "2026-10-23T03:15:00Z",
-      "entry_minute": 5,
-      "side": "down",
-      "model_probability": 0.731707,
-      "market_price": 0.575,
-      "gross_edge": 0.156707,
-      "net_edge_by_buffer": {
-        "0.000": 0.139601,
-        "0.005": 0.134655,
-        "0.010": 0.129713,
-        "0.020": 0.119839
-      },
-      "execution_price_by_buffer": {
-        "0.000": 0.575,
-        "0.005": 0.58,
-        "0.010": 0.585,
-        "0.020": 0.595
-      },
-      "fee_by_buffer": {
-        "0.000": 0.017106,
-        "0.005": 0.017052,
-        "0.010": 0.016994,
-        "0.020": 0.016868
-      },
-      "actual": "DOWN",
-      "won": true
-    },
-    {
-      "slug": "btc-updown-15m-1792725300",
-      "market_end": "2026-10-23T03:30:00Z",
-      "entry_minute": 3,
-      "side": "down",
-      "model_probability": 0.780822,
-      "market_price": 0.725,
-      "gross_edge": 0.055822,
-      "net_edge_by_buffer": {
-        "0.000": 0.041866,
-        "0.005": 0.037025,
-        "0.010": 0.032188,
-        "0.020": 0.022524
-      },
-      "execution_price_by_buffer": {
-        "0.000": 0.725,
-        "0.005": 0.73,
-        "0.010": 0.735,
-        "0.020": 0.745
-      },
-      "fee_by_buffer": {
-        "0.000": 0.013956,
-        "0.005": 0.013797,
-        "0.010": 0.013634,
-        "0.020": 0.013298
-      },
-      "actual": "DOWN",
-      "won": true
-    },
-    {
-      "slug": "btc-updown-15m-1792725300",
-      "market_end": "2026-10-23T03:30:00Z",
-      "entry_minute": 5,
-      "side": "down",
-      "model_probability": 0.827411,
-      "market_price": 0.855,
-      "gross_edge": -0.027589,
-      "net_edge_by_buffer": {
-        "0.000": -0.036267,
-        "0.005": -0.041017,
-        "0.010": -0.045763,
-        "0.020": -0.055245
-      },
-      "execution_price_by_buffer": {
-        "0.000": 0.855,
-        "0.005": 0.86,
-        "0.010": 0.865,
-        "0.020": 0.875
-      },
-      "fee_by_buffer": {
-        "0.000": 0.008678,
-        "0.005": 0.008428,
-        "0.010": 0.008174,
-        "0.020": 0.007656
-      },
-      "actual": "DOWN",
-      "won": true
-    },
-    {
-      "slug": "btc-updown-15m-1792726200",
-      "market_end": "2026-10-23T03:45:00Z",
-      "entry_minute": 3,
-      "side": "up",
-      "model_probability": 0.574074,
-      "market_price": 0.765,
-      "gross_edge": -0.190926,
-      "net_edge_by_buffer": {
-        "0.000": -0.20351,
-        "0.005": -0.208323,
-        "0.010": -0.213132,
-        "0.020": -0.22274
-      },
-      "execution_price_by_buffer": {
-        "0.000": 0.765,
-        "0.005": 0.77,
-        "0.010": 0.775,
-        "0.020": 0.785
-      },
-      "fee_by_buffer": {
-        "0.000": 0.012584,
-        "0.005": 0.012397,
-        "0.010": 0.012206,
-        "0.020": 0.011814
-      },
-      "actual": "UP",
-      "won": true
-    },
-    {
-      "slug": "btc-updown-15m-1792726200",
-      "market_end": "2026-10-23T03:45:00Z",
-      "entry_minute": 5,
-      "side": "up",
-      "model_probability": 0.789474,
-      "market_price": 0.515,
-      "gross_edge": 0.274474,
-      "net_edge_by_buffer": {
-        "0.000": 0.256989,
-        "0.005": 0.252002,
-        "0.010": 0.247017,
-        "0.020": 0.237059
-      },
-      "execution_price_by_buffer": {
-        "0.000": 0.515,
-        "0.005": 0.52,
-        "0.010": 0.525,
-        "0.020": 0.535
-      },
-      "fee_by_buffer": {
-        "0.000": 0.017484,
-        "0.005": 0.017472,
-        "0.010": 0.017456,
-        "0.020": 0.017414
-      },
-      "actual": "UP",
-      "won": true
-    },
-    {
-      "slug": "btc-updown-15m-1792727100",
-      "market_end": "2026-10-23T04:00:00Z",
-      "entry_minute": 3,
-      "side": "up",
-      "model_probability": 0.75,
-      "market_price": 0.695,
-      "gross_edge": 0.055,
-      "net_edge_by_buffer": {
-        "0.000": 0.040162,
-        "0.005": 0.0353,
-        "0.010": 0.030442,
-        "0.020": 0.020736
-      },
-      "execution_price_by_buffer": {
-        "0.000": 0.695,
-        "0.005": 0.7,
-        "0.010": 0.705,
-        "0.020": 0.715
-      },
-      "fee_by_buffer": {
-        "0.000": 0.014838,
-        "0.005": 0.0147,
-        "0.010": 0.014558,
-        "0.020": 0.014264
-      },
-      "actual": "UP",
-      "won": true
-    },
-    {
-      "slug": "btc-updown-15m-1792727100",
-      "market_end": "2026-10-23T04:00:00Z",
-      "entry_minute": 5,
-      "side": "up",
-      "model_probability": 0.588991,
-      "market_price": 0.835,
-      "gross_edge": -0.246009,
-      "net_edge_by_buffer": {
-        "0.000": -0.255653,
-        "0.005": -0.260417,
-        "0.010": -0.265177,
-        "0.020": -0.274687
-      },
-      "execution_price_by_buffer": {
-        "0.000": 0.835,
-        "0.005": 0.84,
-        "0.010": 0.845,
-        "0.020": 0.855
-      },
-      "fee_by_buffer": {
-        "0.000": 0.009644,
-        "0.005": 0.009408,
-        "0.010": 0.009168,
-        "0.020": 0.008678
-      },
-      "actual": "UP",
-      "won": true
-    },
-    {
-      "slug": "btc-updown-15m-1792728000",
-      "market_end": "2026-10-23T04:15:00Z",
-      "entry_minute": 3,
-      "side": "down",
-      "model_probability": 0.60746,
-      "market_price": 0.675,
-      "gross_edge": -0.06754,
-      "net_edge_by_buffer": {
-        "0.000": -0.082896,
-        "0.005": -0.087772,
-        "0.010": -0.092644,
-        "0.020": -0.102378
-      },
-      "execution_price_by_buffer": {
-        "0.000": 0.675,
-        "0.005": 0.68,
-        "0.010": 0.685,
-        "0.020": 0.695
-      },
-      "fee_by_buffer": {
-        "0.000": 0.015356,
-        "0.005": 0.015232,
-        "0.010": 0.015104,
-        "0.020": 0.014838
-      },
-      "actual": "DOWN",
-      "won": true
-    },
-    {
-      "slug": "btc-updown-15m-1792728000",
-      "market_end": "2026-10-23T04:15:00Z",
-      "entry_minute": 5,
-      "side": "down",
-      "model_probability": 0.731707,
-      "market_price": 0.745,
-      "gross_edge": -0.013293,
-      "net_edge_by_buffer": {
-        "0.000": -0.026591,
-        "0.005": -0.031418,
-        "0.010": -0.036241,
-        "0.020": -0.045877
-      },
-      "execution_price_by_buffer": {
-        "0.000": 0.745,
-        "0.005": 0.75,
-        "0.010": 0.755,
-        "0.020": 0.765
-      },
-      "fee_by_buffer": {
-        "0.000": 0.013298,
-        "0.005": 0.013125,
-        "0.010": 0.012948,
-        "0.020": 0.012584
-      },
-      "actual": "DOWN",
-      "won": true
-    },
-    {
-      "slug": "btc-updown-15m-1792728900",
-      "market_end": "2026-10-23T04:30:00Z",
-      "entry_minute": 3,
-      "side": "down",
-      "model_probability": 0.608156,
-      "market_price": 0.615,
-      "gross_edge": -0.006844,
-      "net_edge_by_buffer": {
-        "0.000": -0.023418,
-        "0.005": -0.028336,
-        "0.010": -0.03325,
-        "0.020": -0.043068
-      },
-      "execution_price_by_buffer": {
-        "0.000": 0.615,
-        "0.005": 0.62,
-        "0.010": 0.625,
-        "0.020": 0.635
-      },
-      "fee_by_buffer": {
-        "0.000": 0.016574,
-        "0.005": 0.016492,
-        "0.010": 0.016406,
-        "0.020": 0.016224
-      },
-      "actual": "DOWN",
-      "won": true
-    },
-    {
-      "slug": "btc-updown-15m-1792728900",
-      "market_end": "2026-10-23T04:30:00Z",
-      "entry_minute": 5,
-      "side": "up",
-      "model_probability": 0.587912,
-      "market_price": 0.405,
-      "gross_edge": 0.182912,
-      "net_edge_by_buffer": {
-        "0.000": 0.166044,
-        "0.005": 0.160979,
-        "0.010": 0.155918,
-        "0.020": 0.145806
-      },
-      "execution_price_by_buffer": {
-        "0.000": 0.405,
-        "0.005": 0.41,
-        "0.010": 0.415,
-        "0.020": 0.425
-      },
-      "fee_by_buffer": {
-        "0.000": 0.016868,
-        "0.005": 0.016933,
-        "0.010": 0.016994,
-        "0.020": 0.017106
-      },
-      "actual": "DOWN",
-      "won": false
-    },
-    {
-      "slug": "btc-updown-15m-1792729800",
-      "market_end": "2026-10-23T04:45:00Z",
-      "entry_minute": 3,
-      "side": "up",
-      "model_probability": 0.574074,
-      "market_price": 0.645,
-      "gross_edge": -0.070926,
-      "net_edge_by_buffer": {
-        "0.000": -0.086954,
-        "0.005": -0.091851,
-        "0.010": -0.096744,
-        "0.020": -0.10652
-      },
-      "execution_price_by_buffer": {
-        "0.000": 0.645,
-        "0.005": 0.65,
-        "0.010": 0.655,
-        "0.020": 0.665
-      },
-      "fee_by_buffer": {
-        "0.000": 0.016028,
-        "0.005": 0.015925,
-        "0.010": 0.015818,
-        "0.020": 0.015594
-      },
-      "actual": "UP",
-      "won": true
-    },
-    {
-      "slug": "btc-updown-15m-1792729800",
-      "market_end": "2026-10-23T04:45:00Z",
-      "entry_minute": 5,
-      "side": "down",
-      "model_probability": 0.621053,
-      "market_price": 0.345,
-      "gross_edge": 0.276053,
-      "net_edge_by_buffer": {
-        "0.000": 0.260234,
-        "0.005": 0.255128,
-        "0.010": 0.250024,
-        "0.020": 0.239828
-      },
-      "execution_price_by_buffer": {
-        "0.000": 0.345,
-        "0.005": 0.35,
-        "0.010": 0.355,
-        "0.020": 0.365
-      },
-      "fee_by_buffer": {
-        "0.000": 0.015818,
-        "0.005": 0.015925,
-        "0.010": 0.016028,
-        "0.020": 0.016224
-      },
-      "actual": "UP",
-      "won": false
-    },
-    {
-      "slug": "btc-updown-15m-1792730700",
-      "market_end": "2026-10-23T05:00:00Z",
-      "entry_minute": 3,
-      "side": "up",
-      "model_probability": 0.573109,
-      "market_price": 0.405,
-      "gross_edge": 0.168109,
-      "net_edge_by_buffer": {
-        "0.000": 0.151241,
-        "0.005": 0.146176,
-        "0.010": 0.141115,
-        "0.020": 0.131003
-      },
-      "execution_price_by_buffer": {
-        "0.000": 0.405,
-        "0.005": 0.41,
-        "0.010": 0.415,
-        "0.020": 0.425
-      },
-      "fee_by_buffer": {
-        "0.000": 0.016868,
-        "0.005": 0.016933,
-        "0.010": 0.016994,
-        "0.020": 0.017106
-      },
-      "actual": "DOWN",
-      "won": false
-    },
-    {
-      "slug": "btc-updown-15m-1792730700",
-      "market_end": "2026-10-23T05:00:00Z",
-      "entry_minute": 5,
-      "side": "down",
-      "model_probability": 0.621849,
-      "market_price": 0.515,
-      "gross_edge": 0.106849,
-      "net_edge_by_buffer": {
-        "0.000": 0.089364,
-        "0.005": 0.084377,
-        "0.010": 0.079392,
-        "0.020": 0.069434
-      },
-      "execution_price_by_buffer": {
-        "0.000": 0.515,
-        "0.005": 0.52,
-        "0.010": 0.525,
-        "0.020": 0.535
-      },
-      "fee_by_buffer": {
-        "0.000": 0.017484,
-        "0.005": 0.017472,
-        "0.010": 0.017456,
-        "0.020": 0.017414
-      },
-      "actual": "DOWN",
-      "won": true
-    },
-    {
-      "slug": "btc-updown-15m-1792731600",
-      "market_end": "2026-10-23T05:15:00Z",
-      "entry_minute": 3,
-      "side": "up",
-      "model_probability": 0.749091,
-      "market_price": 0.715,
-      "gross_edge": 0.034091,
-      "net_edge_by_buffer": {
-        "0.000": 0.019827,
-        "0.005": 0.014979,
-        "0.010": 0.010135,
-        "0.020": 0.000457
-      },
-      "execution_price_by_buffer": {
-        "0.000": 0.715,
-        "0.005": 0.72,
-        "0.010": 0.725,
-        "0.020": 0.735
-      },
-      "fee_by_buffer": {
-        "0.000": 0.014264,
-        "0.005": 0.014112,
-        "0.010": 0.013956,
-        "0.020": 0.013634
-      },
-      "actual": "UP",
-      "won": true
-    },
-    {
-      "slug": "btc-updown-15m-1792731600",
-      "market_end": "2026-10-23T05:15:00Z",
-      "entry_minute": 5,
-      "side": "up",
-      "model_probability": 0.832298,
-      "market_price": 0.805,
-      "gross_edge": 0.027298,
-      "net_edge_by_buffer": {
-        "0.000": 0.01631,
-        "0.005": 0.011525,
-        "0.010": 0.006744,
-        "0.020": -0.002808
-      },
-      "execution_price_by_buffer": {
-        "0.000": 0.805,
-        "0.005": 0.81,
-        "0.010": 0.815,
-        "0.020": 0.825
-      },
-      "fee_by_buffer": {
-        "0.000": 0.010988,
-        "0.005": 0.010773,
-        "0.010": 0.010554,
-        "0.020": 0.010106
-      },
-      "actual": "UP",
-      "won": true
-    },
-    {
-      "slug": "btc-updown-15m-1792732500",
-      "market_end": "2026-10-23T05:30:00Z",
-      "entry_minute": 3,
-      "side": "up",
-      "model_probability": 0.572148,
-      "market_price": 0.535,
-      "gross_edge": 0.037148,
-      "net_edge_by_buffer": {
-        "0.000": 0.019733,
-        "0.005": 0.01476,
-        "0.010": 0.009789,
-        "0.020": -0.000141
-      },
-      "execution_price_by_buffer": {
-        "0.000": 0.535,
-        "0.005": 0.54,
-        "0.010": 0.545,
-        "0.020": 0.555
-      },
-      "fee_by_buffer": {
-        "0.000": 0.017414,
-        "0.005": 0.017388,
-        "0.010": 0.017358,
-        "0.020": 0.017288
-      },
-      "actual": "DOWN",
-      "won": false
-    },
-    {
-      "slug": "btc-updown-15m-1792732500",
-      "market_end": "2026-10-23T05:30:00Z",
-      "entry_minute": 5,
-      "side": "down",
-      "model_probability": 0.622642,
-      "market_price": 0.425,
-      "gross_edge": 0.197642,
-      "net_edge_by_buffer": {
-        "0.000": 0.180535,
-        "0.005": 0.175485,
-        "0.010": 0.170437,
-        "0.020": 0.160353
-      },
-      "execution_price_by_buffer": {
-        "0.000": 0.425,
-        "0.005": 0.43,
-        "0.010": 0.435,
-        "0.020": 0.445
-      },
-      "fee_by_buffer": {
-        "0.000": 0.017106,
-        "0.005": 0.017157,
-        "0.010": 0.017204,
-        "0.020": 0.017288
-      },
-      "actual": "DOWN",
-      "won": true
-    },
-    {
-      "slug": "btc-updown-15m-1792733400",
-      "market_end": "2026-10-23T05:45:00Z",
-      "entry_minute": 3,
-      "side": "up",
-      "model_probability": 0.768595,
-      "market_price": 0.685,
-      "gross_edge": 0.083595,
-      "net_edge_by_buffer": {
-        "0.000": 0.068491,
-        "0.005": 0.063622,
-        "0.010": 0.058757,
-        "0.020": 0.049037
-      },
-      "execution_price_by_buffer": {
-        "0.000": 0.685,
-        "0.005": 0.69,
-        "0.010": 0.695,
-        "0.020": 0.705
-      },
-      "fee_by_buffer": {
-        "0.000": 0.015104,
-        "0.005": 0.014973,
-        "0.010": 0.014838,
-        "0.020": 0.014558
-      },
-      "actual": "UP",
-      "won": true
-    },
-    {
-      "slug": "btc-updown-15m-1792733400",
-      "market_end": "2026-10-23T05:45:00Z",
-      "entry_minute": 5,
-      "side": "up",
-      "model_probability": 0.793233,
-      "market_price": 0.895,
-      "gross_edge": -0.101767,
-      "net_edge_by_buffer": {
-        "0.000": -0.108345,
-        "0.005": -0.113067,
-        "0.010": -0.117785,
-        "0.020": -0.127211
-      },
-      "execution_price_by_buffer": {
-        "0.000": 0.895,
-        "0.005": 0.9,
-        "0.010": 0.905,
-        "0.020": 0.915
-      },
-      "fee_by_buffer": {
-        "0.000": 0.006578,
-        "0.005": 0.0063,
-        "0.010": 0.006018,
-        "0.020": 0.005444
-      },
-      "actual": "UP",
-      "won": true
-    },
-    {
-      "slug": "btc-updown-15m-1792734300",
-      "market_end": "2026-10-23T06:00:00Z",
-      "entry_minute": 3,
-      "side": "up",
-      "model_probability": 0.572148,
-      "market_price": 0.445,
-      "gross_edge": 0.127148,
-      "net_edge_by_buffer": {
-        "0.000": 0.109859,
-        "0.005": 0.104823,
-        "0.010": 0.099789,
-        "0.020": 0.089733
-      },
-      "execution_price_by_buffer": {
-        "0.000": 0.445,
-        "0.005": 0.45,
-        "0.010": 0.455,
-        "0.020": 0.465
-      },
-      "fee_by_buffer": {
-        "0.000": 0.017288,
-        "0.005": 0.017325,
-        "0.010": 0.017358,
-        "0.020": 0.017414
-      },
-      "actual": "UP",
-      "won": true
-    },
-    {
-      "slug": "btc-updown-15m-1792734300",
-      "market_end": "2026-10-23T06:00:00Z",
-      "entry_minute": 5,
-      "side": "up",
-      "model_probability": 0.794007,
-      "market_price": 0.475,
-      "gross_edge": 0.319007,
-      "net_edge_by_buffer": {
-        "0.000": 0.301551,
-        "0.005": 0.296535,
-        "0.010": 0.291523,
-        "0.020": 0.281509
-      },
-      "execution_price_by_buffer": {
-        "0.000": 0.475,
-        "0.005": 0.48,
-        "0.010": 0.485,
-        "0.020": 0.495
-      },
-      "fee_by_buffer": {
-        "0.000": 0.017456,
-        "0.005": 0.017472,
-        "0.010": 0.017484,
-        "0.020": 0.017498
-      },
-      "actual": "UP",
-      "won": true
-    },
-    {
-      "slug": "btc-updown-15m-1792735200",
-      "market_end": "2026-10-23T06:15:00Z",
-      "entry_minute": 3,
-      "side": "down",
-      "model_probability": 0.693277,
-      "market_price": 0.805,
-      "gross_edge": -0.111723,
-      "net_edge_by_buffer": {
-        "0.000": -0.122711,
-        "0.005": -0.127496,
-        "0.010": -0.132277,
-        "0.020": -0.141829
-      },
-      "execution_price_by_buffer": {
-        "0.000": 0.805,
-        "0.005": 0.81,
-        "0.010": 0.815,
-        "0.020": 0.825
-      },
-      "fee_by_buffer": {
-        "0.000": 0.010988,
-        "0.005": 0.010773,
-        "0.010": 0.010554,
-        "0.020": 0.010106
-      },
-      "actual": "UP",
-      "won": false
-    },
-    {
-      "slug": "btc-updown-15m-1792735200",
-      "market_end": "2026-10-23T06:15:00Z",
-      "entry_minute": 5,
-      "side": "down",
-      "model_probability": 0.729508,
-      "market_price": 0.84,
-      "gross_edge": -0.110492,
-      "net_edge_by_buffer": {
-        "0.000": -0.1199,
-        "0.005": -0.12466,
-        "0.010": -0.129417,
-        "0.020": -0.13892
-      },
-      "execution_price_by_buffer": {
-        "0.000": 0.84,
-        "0.005": 0.845,
-        "0.010": 0.85,
-        "0.020": 0.86
-      },
-      "fee_by_buffer": {
-        "0.000": 0.009408,
-        "0.005": 0.009168,
-        "0.010": 0.008925,
-        "0.020": 0.008428
-      },
-      "actual": "UP",
-      "won": false
-    },
-    {
-      "slug": "btc-updown-15m-1792736100",
-      "market_end": "2026-10-23T06:30:00Z",
-      "entry_minute": 3,
-      "side": "up",
-      "model_probability": 0.752727,
-      "market_price": 0.535,
-      "gross_edge": 0.217727,
-      "net_edge_by_buffer": {
-        "0.000": 0.200313,
-        "0.005": 0.195339,
-        "0.010": 0.190369,
-        "0.020": 0.180439
-      },
-      "execution_price_by_buffer": {
-        "0.000": 0.535,
-        "0.005": 0.54,
-        "0.010": 0.545,
-        "0.020": 0.555
-      },
-      "fee_by_buffer": {
-        "0.000": 0.017414,
-        "0.005": 0.017388,
-        "0.010": 0.017358,
-        "0.020": 0.017288
-      },
-      "actual": "DOWN",
-      "won": false
-    },
-    {
-      "slug": "btc-updown-15m-1792736100",
-      "market_end": "2026-10-23T06:30:00Z",
-      "entry_minute": 5,
-      "side": "up",
-      "model_probability": 0.587912,
-      "market_price": 0.725,
-      "gross_edge": -0.137088,
-      "net_edge_by_buffer": {
-        "0.000": -0.151044,
-        "0.005": -0.155885,
-        "0.010": -0.160722,
-        "0.020": -0.170386
-      },
-      "execution_price_by_buffer": {
-        "0.000": 0.725,
-        "0.005": 0.73,
-        "0.010": 0.735,
-        "0.020": 0.745
-      },
-      "fee_by_buffer": {
-        "0.000": 0.013956,
-        "0.005": 0.013797,
-        "0.010": 0.013634,
-        "0.020": 0.013298
-      },
-      "actual": "DOWN",
-      "won": false
-    },
-    {
-      "slug": "btc-updown-15m-1792737000",
-      "market_end": "2026-10-23T06:45:00Z",
-      "entry_minute": 3,
-      "side": "up",
-      "model_probability": 0.572864,
-      "market_price": 0.755,
-      "gross_edge": -0.182136,
-      "net_edge_by_buffer": {
-        "0.000": -0.195084,
-        "0.005": -0.199904,
-        "0.010": -0.20472,
-        "0.020": -0.214342
-      },
-      "execution_price_by_buffer": {
-        "0.000": 0.755,
-        "0.005": 0.76,
-        "0.010": 0.765,
-        "0.020": 0.775
-      },
-      "fee_by_buffer": {
-        "0.000": 0.012948,
-        "0.005": 0.012768,
-        "0.010": 0.012584,
-        "0.020": 0.012206
-      },
-      "actual": "UP",
-      "won": true
-    },
-    {
-      "slug": "btc-updown-15m-1792737000",
-      "market_end": "2026-10-23T06:45:00Z",
-      "entry_minute": 5,
-      "side": "up",
-      "model_probability": 0.586837,
-      "market_price": 0.635,
-      "gross_edge": -0.048163,
-      "net_edge_by_buffer": {
-        "0.000": -0.064387,
-        "0.005": -0.069291,
-        "0.010": -0.074191,
-        "0.020": -0.083981
-      },
-      "execution_price_by_buffer": {
-        "0.000": 0.635,
-        "0.005": 0.64,
-        "0.010": 0.645,
-        "0.020": 0.655
-      },
-      "fee_by_buffer": {
-        "0.000": 0.016224,
-        "0.005": 0.016128,
-        "0.010": 0.016028,
-        "0.020": 0.015818
-      },
-      "actual": "UP",
-      "won": true
-    },
     {
       "slug": "btc-updown-15m-1792737900",
       "market_end": "2026-10-23T07:00:00Z",
@@ -69621,9 +67214,2184 @@
       },
       "actual": "UP",
       "won": true
+    },
+    {
+      "slug": "btc-updown-15m-1793907900",
+      "market_end": "2026-11-05T20:00:00Z",
+      "entry_minute": 3,
+      "side": "up",
+      "model_probability": 0.71374,
+      "market_price": 0.615,
+      "gross_edge": 0.09874,
+      "net_edge_by_buffer": {
+        "0.000": 0.082166,
+        "0.005": 0.077248,
+        "0.010": 0.072334,
+        "0.020": 0.062516
+      },
+      "execution_price_by_buffer": {
+        "0.000": 0.615,
+        "0.005": 0.62,
+        "0.010": 0.625,
+        "0.020": 0.635
+      },
+      "fee_by_buffer": {
+        "0.000": 0.016574,
+        "0.005": 0.016492,
+        "0.010": 0.016406,
+        "0.020": 0.016224
+      },
+      "actual": "DOWN",
+      "won": false
+    },
+    {
+      "slug": "btc-updown-15m-1793907900",
+      "market_end": "2026-11-05T20:00:00Z",
+      "entry_minute": 5,
+      "side": "up",
+      "model_probability": 0.716312,
+      "market_price": 0.635,
+      "gross_edge": 0.081312,
+      "net_edge_by_buffer": {
+        "0.000": 0.065088,
+        "0.005": 0.060184,
+        "0.010": 0.055284,
+        "0.020": 0.045494
+      },
+      "execution_price_by_buffer": {
+        "0.000": 0.635,
+        "0.005": 0.64,
+        "0.010": 0.645,
+        "0.020": 0.655
+      },
+      "fee_by_buffer": {
+        "0.000": 0.016224,
+        "0.005": 0.016128,
+        "0.010": 0.016028,
+        "0.020": 0.015818
+      },
+      "actual": "DOWN",
+      "won": false
+    },
+    {
+      "slug": "btc-updown-15m-1793908800",
+      "market_end": "2026-11-05T20:15:00Z",
+      "entry_minute": 3,
+      "side": "down",
+      "model_probability": 0.59633,
+      "market_price": 0.635,
+      "gross_edge": -0.03867,
+      "net_edge_by_buffer": {
+        "0.000": -0.054894,
+        "0.005": -0.059798,
+        "0.010": -0.064698,
+        "0.020": -0.074488
+      },
+      "execution_price_by_buffer": {
+        "0.000": 0.635,
+        "0.005": 0.64,
+        "0.010": 0.645,
+        "0.020": 0.655
+      },
+      "fee_by_buffer": {
+        "0.000": 0.016224,
+        "0.005": 0.016128,
+        "0.010": 0.016028,
+        "0.020": 0.015818
+      },
+      "actual": "DOWN",
+      "won": true
+    },
+    {
+      "slug": "btc-updown-15m-1793908800",
+      "market_end": "2026-11-05T20:15:00Z",
+      "entry_minute": 5,
+      "side": "down",
+      "model_probability": 0.836842,
+      "market_price": 0.6,
+      "gross_edge": 0.236842,
+      "net_edge_by_buffer": {
+        "0.000": 0.220042,
+        "0.005": 0.215114,
+        "0.010": 0.210189,
+        "0.020": 0.20035
+      },
+      "execution_price_by_buffer": {
+        "0.000": 0.6,
+        "0.005": 0.605,
+        "0.010": 0.61,
+        "0.020": 0.62
+      },
+      "fee_by_buffer": {
+        "0.000": 0.0168,
+        "0.005": 0.016728,
+        "0.010": 0.016653,
+        "0.020": 0.016492
+      },
+      "actual": "DOWN",
+      "won": true
+    },
+    {
+      "slug": "btc-updown-15m-1793909700",
+      "market_end": "2026-11-05T20:30:00Z",
+      "entry_minute": 3,
+      "side": "down",
+      "model_probability": 0.805031,
+      "market_price": 0.455,
+      "gross_edge": 0.350031,
+      "net_edge_by_buffer": {
+        "0.000": 0.332673,
+        "0.005": 0.327643,
+        "0.010": 0.322617,
+        "0.020": 0.312575
+      },
+      "execution_price_by_buffer": {
+        "0.000": 0.455,
+        "0.005": 0.46,
+        "0.010": 0.465,
+        "0.020": 0.475
+      },
+      "fee_by_buffer": {
+        "0.000": 0.017358,
+        "0.005": 0.017388,
+        "0.010": 0.017414,
+        "0.020": 0.017456
+      },
+      "actual": "DOWN",
+      "won": true
+    },
+    {
+      "slug": "btc-updown-15m-1793909700",
+      "market_end": "2026-11-05T20:30:00Z",
+      "entry_minute": 5,
+      "side": "down",
+      "model_probability": 0.738351,
+      "market_price": 0.775,
+      "gross_edge": -0.036649,
+      "net_edge_by_buffer": {
+        "0.000": -0.048855,
+        "0.005": -0.053661,
+        "0.010": -0.058463,
+        "0.020": -0.068057
+      },
+      "execution_price_by_buffer": {
+        "0.000": 0.775,
+        "0.005": 0.78,
+        "0.010": 0.785,
+        "0.020": 0.795
+      },
+      "fee_by_buffer": {
+        "0.000": 0.012206,
+        "0.005": 0.012012,
+        "0.010": 0.011814,
+        "0.020": 0.011408
+      },
+      "actual": "DOWN",
+      "won": true
+    },
+    {
+      "slug": "btc-updown-15m-1793910600",
+      "market_end": "2026-11-05T20:45:00Z",
+      "entry_minute": 3,
+      "side": "down",
+      "model_probability": 0.715953,
+      "market_price": 0.555,
+      "gross_edge": 0.160953,
+      "net_edge_by_buffer": {
+        "0.000": 0.143665,
+        "0.005": 0.138705,
+        "0.010": 0.133749,
+        "0.020": 0.123847
+      },
+      "execution_price_by_buffer": {
+        "0.000": 0.555,
+        "0.005": 0.56,
+        "0.010": 0.565,
+        "0.020": 0.575
+      },
+      "fee_by_buffer": {
+        "0.000": 0.017288,
+        "0.005": 0.017248,
+        "0.010": 0.017204,
+        "0.020": 0.017106
+      },
+      "actual": "UP",
+      "won": false
+    },
+    {
+      "slug": "btc-updown-15m-1793911500",
+      "market_end": "2026-11-05T21:00:00Z",
+      "entry_minute": 3,
+      "side": "up",
+      "model_probability": 0.8,
+      "market_price": 0.455,
+      "gross_edge": 0.345,
+      "net_edge_by_buffer": {
+        "0.000": 0.327642,
+        "0.005": 0.322612,
+        "0.010": 0.317586,
+        "0.020": 0.307544
+      },
+      "execution_price_by_buffer": {
+        "0.000": 0.455,
+        "0.005": 0.46,
+        "0.010": 0.465,
+        "0.020": 0.475
+      },
+      "fee_by_buffer": {
+        "0.000": 0.017358,
+        "0.005": 0.017388,
+        "0.010": 0.017414,
+        "0.020": 0.017456
+      },
+      "actual": "DOWN",
+      "won": false
+    },
+    {
+      "slug": "btc-updown-15m-1793911500",
+      "market_end": "2026-11-05T21:00:00Z",
+      "entry_minute": 5,
+      "side": "up",
+      "model_probability": 0.572917,
+      "market_price": 0.675,
+      "gross_edge": -0.102083,
+      "net_edge_by_buffer": {
+        "0.000": -0.11744,
+        "0.005": -0.122315,
+        "0.010": -0.127188,
+        "0.020": -0.136922
+      },
+      "execution_price_by_buffer": {
+        "0.000": 0.675,
+        "0.005": 0.68,
+        "0.010": 0.685,
+        "0.020": 0.695
+      },
+      "fee_by_buffer": {
+        "0.000": 0.015356,
+        "0.005": 0.015232,
+        "0.010": 0.015104,
+        "0.020": 0.014838
+      },
+      "actual": "DOWN",
+      "won": false
+    },
+    {
+      "slug": "btc-updown-15m-1793912400",
+      "market_end": "2026-11-05T21:15:00Z",
+      "entry_minute": 3,
+      "side": "down",
+      "model_probability": 0.80625,
+      "market_price": 0.485,
+      "gross_edge": 0.32125,
+      "net_edge_by_buffer": {
+        "0.000": 0.303766,
+        "0.005": 0.298757,
+        "0.010": 0.293752,
+        "0.020": 0.283752
+      },
+      "execution_price_by_buffer": {
+        "0.000": 0.485,
+        "0.005": 0.49,
+        "0.010": 0.495,
+        "0.020": 0.505
+      },
+      "fee_by_buffer": {
+        "0.000": 0.017484,
+        "0.005": 0.017493,
+        "0.010": 0.017498,
+        "0.020": 0.017498
+      },
+      "actual": "DOWN",
+      "won": true
+    },
+    {
+      "slug": "btc-updown-15m-1793913300",
+      "market_end": "2026-11-05T21:30:00Z",
+      "entry_minute": 3,
+      "side": "down",
+      "model_probability": 0.59633,
+      "market_price": 0.575,
+      "gross_edge": 0.02133,
+      "net_edge_by_buffer": {
+        "0.000": 0.004224,
+        "0.005": -0.000722,
+        "0.010": -0.005664,
+        "0.020": -0.015538
+      },
+      "execution_price_by_buffer": {
+        "0.000": 0.575,
+        "0.005": 0.58,
+        "0.010": 0.585,
+        "0.020": 0.595
+      },
+      "fee_by_buffer": {
+        "0.000": 0.017106,
+        "0.005": 0.017052,
+        "0.010": 0.016994,
+        "0.020": 0.016868
+      },
+      "actual": "DOWN",
+      "won": true
+    },
+    {
+      "slug": "btc-updown-15m-1793913300",
+      "market_end": "2026-11-05T21:30:00Z",
+      "entry_minute": 5,
+      "side": "down",
+      "model_probability": 0.837696,
+      "market_price": 0.475,
+      "gross_edge": 0.362696,
+      "net_edge_by_buffer": {
+        "0.000": 0.34524,
+        "0.005": 0.340224,
+        "0.010": 0.335212,
+        "0.020": 0.325198
+      },
+      "execution_price_by_buffer": {
+        "0.000": 0.475,
+        "0.005": 0.48,
+        "0.010": 0.485,
+        "0.020": 0.495
+      },
+      "fee_by_buffer": {
+        "0.000": 0.017456,
+        "0.005": 0.017472,
+        "0.010": 0.017484,
+        "0.020": 0.017498
+      },
+      "actual": "DOWN",
+      "won": true
+    },
+    {
+      "slug": "btc-updown-15m-1793914200",
+      "market_end": "2026-11-05T21:45:00Z",
+      "entry_minute": 3,
+      "side": "up",
+      "model_probability": 0.80137,
+      "market_price": 0.575,
+      "gross_edge": 0.22637,
+      "net_edge_by_buffer": {
+        "0.000": 0.209264,
+        "0.005": 0.204318,
+        "0.010": 0.199376,
+        "0.020": 0.189502
+      },
+      "execution_price_by_buffer": {
+        "0.000": 0.575,
+        "0.005": 0.58,
+        "0.010": 0.585,
+        "0.020": 0.595
+      },
+      "fee_by_buffer": {
+        "0.000": 0.017106,
+        "0.005": 0.017052,
+        "0.010": 0.016994,
+        "0.020": 0.016868
+      },
+      "actual": "UP",
+      "won": true
+    },
+    {
+      "slug": "btc-updown-15m-1793914200",
+      "market_end": "2026-11-05T21:45:00Z",
+      "entry_minute": 5,
+      "side": "up",
+      "model_probability": 0.78481,
+      "market_price": 0.735,
+      "gross_edge": 0.04981,
+      "net_edge_by_buffer": {
+        "0.000": 0.036176,
+        "0.005": 0.031342,
+        "0.010": 0.026512,
+        "0.020": 0.016862
+      },
+      "execution_price_by_buffer": {
+        "0.000": 0.735,
+        "0.005": 0.74,
+        "0.010": 0.745,
+        "0.020": 0.755
+      },
+      "fee_by_buffer": {
+        "0.000": 0.013634,
+        "0.005": 0.013468,
+        "0.010": 0.013298,
+        "0.020": 0.012948
+      },
+      "actual": "UP",
+      "won": true
+    },
+    {
+      "slug": "btc-updown-15m-1793915100",
+      "market_end": "2026-11-05T22:00:00Z",
+      "entry_minute": 3,
+      "side": "up",
+      "model_probability": 0.712644,
+      "market_price": 0.425,
+      "gross_edge": 0.287644,
+      "net_edge_by_buffer": {
+        "0.000": 0.270537,
+        "0.005": 0.265487,
+        "0.010": 0.260439,
+        "0.020": 0.250355
+      },
+      "execution_price_by_buffer": {
+        "0.000": 0.425,
+        "0.005": 0.43,
+        "0.010": 0.435,
+        "0.020": 0.445
+      },
+      "fee_by_buffer": {
+        "0.000": 0.017106,
+        "0.005": 0.017157,
+        "0.010": 0.017204,
+        "0.020": 0.017288
+      },
+      "actual": "DOWN",
+      "won": false
+    },
+    {
+      "slug": "btc-updown-15m-1793915100",
+      "market_end": "2026-11-05T22:00:00Z",
+      "entry_minute": 5,
+      "side": "down",
+      "model_probability": 0.626638,
+      "market_price": 0.395,
+      "gross_edge": 0.231638,
+      "net_edge_by_buffer": {
+        "0.000": 0.214909,
+        "0.005": 0.209838,
+        "0.010": 0.204769,
+        "0.020": 0.194643
+      },
+      "execution_price_by_buffer": {
+        "0.000": 0.395,
+        "0.005": 0.4,
+        "0.010": 0.405,
+        "0.020": 0.415
+      },
+      "fee_by_buffer": {
+        "0.000": 0.016728,
+        "0.005": 0.0168,
+        "0.010": 0.016868,
+        "0.020": 0.016994
+      },
+      "actual": "DOWN",
+      "won": true
+    },
+    {
+      "slug": "btc-updown-15m-1793916000",
+      "market_end": "2026-11-05T22:15:00Z",
+      "entry_minute": 3,
+      "side": "up",
+      "model_probability": 0.709924,
+      "market_price": 0.345,
+      "gross_edge": 0.364924,
+      "net_edge_by_buffer": {
+        "0.000": 0.349105,
+        "0.005": 0.343999,
+        "0.010": 0.338895,
+        "0.020": 0.328699
+      },
+      "execution_price_by_buffer": {
+        "0.000": 0.345,
+        "0.005": 0.35,
+        "0.010": 0.355,
+        "0.020": 0.365
+      },
+      "fee_by_buffer": {
+        "0.000": 0.015818,
+        "0.005": 0.015925,
+        "0.010": 0.016028,
+        "0.020": 0.016224
+      },
+      "actual": "UP",
+      "won": true
+    },
+    {
+      "slug": "btc-updown-15m-1793916000",
+      "market_end": "2026-11-05T22:15:00Z",
+      "entry_minute": 5,
+      "side": "up",
+      "model_probability": 0.779874,
+      "market_price": 0.575,
+      "gross_edge": 0.204874,
+      "net_edge_by_buffer": {
+        "0.000": 0.187768,
+        "0.005": 0.182822,
+        "0.010": 0.17788,
+        "0.020": 0.168006
+      },
+      "execution_price_by_buffer": {
+        "0.000": 0.575,
+        "0.005": 0.58,
+        "0.010": 0.585,
+        "0.020": 0.595
+      },
+      "fee_by_buffer": {
+        "0.000": 0.017106,
+        "0.005": 0.017052,
+        "0.010": 0.016994,
+        "0.020": 0.016868
+      },
+      "actual": "UP",
+      "won": true
+    },
+    {
+      "slug": "btc-updown-15m-1793916900",
+      "market_end": "2026-11-05T22:30:00Z",
+      "entry_minute": 3,
+      "side": "down",
+      "model_probability": 0.598165,
+      "market_price": 0.555,
+      "gross_edge": 0.043165,
+      "net_edge_by_buffer": {
+        "0.000": 0.025877,
+        "0.005": 0.020917,
+        "0.010": 0.015961,
+        "0.020": 0.006059
+      },
+      "execution_price_by_buffer": {
+        "0.000": 0.555,
+        "0.005": 0.56,
+        "0.010": 0.565,
+        "0.020": 0.575
+      },
+      "fee_by_buffer": {
+        "0.000": 0.017288,
+        "0.005": 0.017248,
+        "0.010": 0.017204,
+        "0.020": 0.017106
+      },
+      "actual": "DOWN",
+      "won": true
+    },
+    {
+      "slug": "btc-updown-15m-1793916900",
+      "market_end": "2026-11-05T22:30:00Z",
+      "entry_minute": 5,
+      "side": "up",
+      "model_probability": 0.572917,
+      "market_price": 0.495,
+      "gross_edge": 0.077917,
+      "net_edge_by_buffer": {
+        "0.000": 0.060418,
+        "0.005": 0.055417,
+        "0.010": 0.050418,
+        "0.020": 0.040432
+      },
+      "execution_price_by_buffer": {
+        "0.000": 0.495,
+        "0.005": 0.5,
+        "0.010": 0.505,
+        "0.020": 0.515
+      },
+      "fee_by_buffer": {
+        "0.000": 0.017498,
+        "0.005": 0.0175,
+        "0.010": 0.017498,
+        "0.020": 0.017484
+      },
+      "actual": "DOWN",
+      "won": false
+    },
+    {
+      "slug": "btc-updown-15m-1793917800",
+      "market_end": "2026-11-05T22:45:00Z",
+      "entry_minute": 3,
+      "side": "down",
+      "model_probability": 0.598901,
+      "market_price": 0.415,
+      "gross_edge": 0.183901,
+      "net_edge_by_buffer": {
+        "0.000": 0.166907,
+        "0.005": 0.161849,
+        "0.010": 0.156795,
+        "0.020": 0.146697
+      },
+      "execution_price_by_buffer": {
+        "0.000": 0.415,
+        "0.005": 0.42,
+        "0.010": 0.425,
+        "0.020": 0.435
+      },
+      "fee_by_buffer": {
+        "0.000": 0.016994,
+        "0.005": 0.017052,
+        "0.010": 0.017106,
+        "0.020": 0.017204
+      },
+      "actual": "DOWN",
+      "won": true
+    },
+    {
+      "slug": "btc-updown-15m-1793917800",
+      "market_end": "2026-11-05T22:45:00Z",
+      "entry_minute": 5,
+      "side": "down",
+      "model_probability": 0.740072,
+      "market_price": 0.625,
+      "gross_edge": 0.115072,
+      "net_edge_by_buffer": {
+        "0.000": 0.098666,
+        "0.005": 0.093755,
+        "0.010": 0.088848,
+        "0.020": 0.079044
+      },
+      "execution_price_by_buffer": {
+        "0.000": 0.625,
+        "0.005": 0.63,
+        "0.010": 0.635,
+        "0.020": 0.645
+      },
+      "fee_by_buffer": {
+        "0.000": 0.016406,
+        "0.005": 0.016317,
+        "0.010": 0.016224,
+        "0.020": 0.016028
+      },
+      "actual": "DOWN",
+      "won": true
+    },
+    {
+      "slug": "btc-updown-15m-1793918700",
+      "market_end": "2026-11-05T23:00:00Z",
+      "entry_minute": 3,
+      "side": "down",
+      "model_probability": 0.807453,
+      "market_price": 0.565,
+      "gross_edge": 0.242453,
+      "net_edge_by_buffer": {
+        "0.000": 0.225249,
+        "0.005": 0.220296,
+        "0.010": 0.215347,
+        "0.020": 0.205459
+      },
+      "execution_price_by_buffer": {
+        "0.000": 0.565,
+        "0.005": 0.57,
+        "0.010": 0.575,
+        "0.020": 0.585
+      },
+      "fee_by_buffer": {
+        "0.000": 0.017204,
+        "0.005": 0.017157,
+        "0.010": 0.017106,
+        "0.020": 0.016994
+      },
+      "actual": "DOWN",
+      "won": true
+    },
+    {
+      "slug": "btc-updown-15m-1793918700",
+      "market_end": "2026-11-05T23:00:00Z",
+      "entry_minute": 5,
+      "side": "down",
+      "model_probability": 0.838542,
+      "market_price": 0.785,
+      "gross_edge": 0.053542,
+      "net_edge_by_buffer": {
+        "0.000": 0.041727,
+        "0.005": 0.036929,
+        "0.010": 0.032133,
+        "0.020": 0.022553
+      },
+      "execution_price_by_buffer": {
+        "0.000": 0.785,
+        "0.005": 0.79,
+        "0.010": 0.795,
+        "0.020": 0.805
+      },
+      "fee_by_buffer": {
+        "0.000": 0.011814,
+        "0.005": 0.011613,
+        "0.010": 0.011408,
+        "0.020": 0.010988
+      },
+      "actual": "DOWN",
+      "won": true
+    },
+    {
+      "slug": "btc-updown-15m-1793919600",
+      "market_end": "2026-11-05T23:15:00Z",
+      "entry_minute": 3,
+      "side": "up",
+      "model_probability": 0.709924,
+      "market_price": 0.415,
+      "gross_edge": 0.294924,
+      "net_edge_by_buffer": {
+        "0.000": 0.277929,
+        "0.005": 0.272872,
+        "0.010": 0.267817,
+        "0.020": 0.257719
+      },
+      "execution_price_by_buffer": {
+        "0.000": 0.415,
+        "0.005": 0.42,
+        "0.010": 0.425,
+        "0.020": 0.435
+      },
+      "fee_by_buffer": {
+        "0.000": 0.016994,
+        "0.005": 0.017052,
+        "0.010": 0.017106,
+        "0.020": 0.017204
+      },
+      "actual": "DOWN",
+      "won": false
+    },
+    {
+      "slug": "btc-updown-15m-1793919600",
+      "market_end": "2026-11-05T23:15:00Z",
+      "entry_minute": 5,
+      "side": "down",
+      "model_probability": 0.741007,
+      "market_price": 0.475,
+      "gross_edge": 0.266007,
+      "net_edge_by_buffer": {
+        "0.000": 0.248551,
+        "0.005": 0.243535,
+        "0.010": 0.238523,
+        "0.020": 0.228509
+      },
+      "execution_price_by_buffer": {
+        "0.000": 0.475,
+        "0.005": 0.48,
+        "0.010": 0.485,
+        "0.020": 0.495
+      },
+      "fee_by_buffer": {
+        "0.000": 0.017456,
+        "0.005": 0.017472,
+        "0.010": 0.017484,
+        "0.020": 0.017498
+      },
+      "actual": "DOWN",
+      "won": true
+    },
+    {
+      "slug": "btc-updown-15m-1793920500",
+      "market_end": "2026-11-05T23:30:00Z",
+      "entry_minute": 3,
+      "side": "up",
+      "model_probability": 0.707224,
+      "market_price": 0.575,
+      "gross_edge": 0.132224,
+      "net_edge_by_buffer": {
+        "0.000": 0.115118,
+        "0.005": 0.110172,
+        "0.010": 0.10523,
+        "0.020": 0.095356
+      },
+      "execution_price_by_buffer": {
+        "0.000": 0.575,
+        "0.005": 0.58,
+        "0.010": 0.585,
+        "0.020": 0.595
+      },
+      "fee_by_buffer": {
+        "0.000": 0.017106,
+        "0.005": 0.017052,
+        "0.010": 0.016994,
+        "0.020": 0.016868
+      },
+      "actual": "UP",
+      "won": true
+    },
+    {
+      "slug": "btc-updown-15m-1793920500",
+      "market_end": "2026-11-05T23:30:00Z",
+      "entry_minute": 5,
+      "side": "down",
+      "model_probability": 0.626638,
+      "market_price": 0.415,
+      "gross_edge": 0.211638,
+      "net_edge_by_buffer": {
+        "0.000": 0.194643,
+        "0.005": 0.189586,
+        "0.010": 0.184531,
+        "0.020": 0.174433
+      },
+      "execution_price_by_buffer": {
+        "0.000": 0.415,
+        "0.005": 0.42,
+        "0.010": 0.425,
+        "0.020": 0.435
+      },
+      "fee_by_buffer": {
+        "0.000": 0.016994,
+        "0.005": 0.017052,
+        "0.010": 0.017106,
+        "0.020": 0.017204
+      },
+      "actual": "UP",
+      "won": false
+    },
+    {
+      "slug": "btc-updown-15m-1793921400",
+      "market_end": "2026-11-05T23:45:00Z",
+      "entry_minute": 3,
+      "side": "up",
+      "model_probability": 0.795918,
+      "market_price": 0.405,
+      "gross_edge": 0.390918,
+      "net_edge_by_buffer": {
+        "0.000": 0.37405,
+        "0.005": 0.368985,
+        "0.010": 0.363924,
+        "0.020": 0.353812
+      },
+      "execution_price_by_buffer": {
+        "0.000": 0.405,
+        "0.005": 0.41,
+        "0.010": 0.415,
+        "0.020": 0.425
+      },
+      "fee_by_buffer": {
+        "0.000": 0.016868,
+        "0.005": 0.016933,
+        "0.010": 0.016994,
+        "0.020": 0.017106
+      },
+      "actual": "UP",
+      "won": true
+    },
+    {
+      "slug": "btc-updown-15m-1793921400",
+      "market_end": "2026-11-05T23:45:00Z",
+      "entry_minute": 5,
+      "side": "up",
+      "model_probability": 0.779874,
+      "market_price": 0.615,
+      "gross_edge": 0.164874,
+      "net_edge_by_buffer": {
+        "0.000": 0.1483,
+        "0.005": 0.143382,
+        "0.010": 0.138468,
+        "0.020": 0.12865
+      },
+      "execution_price_by_buffer": {
+        "0.000": 0.615,
+        "0.005": 0.62,
+        "0.010": 0.625,
+        "0.020": 0.635
+      },
+      "fee_by_buffer": {
+        "0.000": 0.016574,
+        "0.005": 0.016492,
+        "0.010": 0.016406,
+        "0.020": 0.016224
+      },
+      "actual": "UP",
+      "won": true
+    },
+    {
+      "slug": "btc-updown-15m-1793922300",
+      "market_end": "2026-11-06T00:00:00Z",
+      "entry_minute": 3,
+      "side": "up",
+      "model_probability": 0.540441,
+      "market_price": 0.575,
+      "gross_edge": -0.034559,
+      "net_edge_by_buffer": {
+        "0.000": -0.051665,
+        "0.005": -0.056611,
+        "0.010": -0.061553,
+        "0.020": -0.071427
+      },
+      "execution_price_by_buffer": {
+        "0.000": 0.575,
+        "0.005": 0.58,
+        "0.010": 0.585,
+        "0.020": 0.595
+      },
+      "fee_by_buffer": {
+        "0.000": 0.017106,
+        "0.005": 0.017052,
+        "0.010": 0.016994,
+        "0.020": 0.016868
+      },
+      "actual": "UP",
+      "won": true
+    },
+    {
+      "slug": "btc-updown-15m-1793922300",
+      "market_end": "2026-11-06T00:00:00Z",
+      "entry_minute": 5,
+      "side": "down",
+      "model_probability": 0.741007,
+      "market_price": 0.375,
+      "gross_edge": 0.366007,
+      "net_edge_by_buffer": {
+        "0.000": 0.349601,
+        "0.005": 0.344515,
+        "0.010": 0.339433,
+        "0.020": 0.329279
+      },
+      "execution_price_by_buffer": {
+        "0.000": 0.375,
+        "0.005": 0.38,
+        "0.010": 0.385,
+        "0.020": 0.395
+      },
+      "fee_by_buffer": {
+        "0.000": 0.016406,
+        "0.005": 0.016492,
+        "0.010": 0.016574,
+        "0.020": 0.016728
+      },
+      "actual": "UP",
+      "won": false
+    },
+    {
+      "slug": "btc-updown-15m-1793924100",
+      "market_end": "2026-11-06T00:30:00Z",
+      "entry_minute": 3,
+      "side": "up",
+      "model_probability": 0.797297,
+      "market_price": 0.48,
+      "gross_edge": 0.317297,
+      "net_edge_by_buffer": {
+        "0.000": 0.299825,
+        "0.005": 0.294813,
+        "0.010": 0.289804,
+        "0.020": 0.279797
+      },
+      "execution_price_by_buffer": {
+        "0.000": 0.48,
+        "0.005": 0.485,
+        "0.010": 0.49,
+        "0.020": 0.5
+      },
+      "fee_by_buffer": {
+        "0.000": 0.017472,
+        "0.005": 0.017484,
+        "0.010": 0.017493,
+        "0.020": 0.0175
+      },
+      "actual": "UP",
+      "won": true
+    },
+    {
+      "slug": "btc-updown-15m-1793924100",
+      "market_end": "2026-11-06T00:30:00Z",
+      "entry_minute": 5,
+      "side": "up",
+      "model_probability": 0.715302,
+      "market_price": 0.705,
+      "gross_edge": 0.010302,
+      "net_edge_by_buffer": {
+        "0.000": -0.004256,
+        "0.005": -0.009111,
+        "0.010": -0.013962,
+        "0.020": -0.023654
+      },
+      "execution_price_by_buffer": {
+        "0.000": 0.705,
+        "0.005": 0.71,
+        "0.010": 0.715,
+        "0.020": 0.725
+      },
+      "fee_by_buffer": {
+        "0.000": 0.014558,
+        "0.005": 0.014413,
+        "0.010": 0.014264,
+        "0.020": 0.013956
+      },
+      "actual": "UP",
+      "won": true
+    },
+    {
+      "slug": "btc-updown-15m-1793925000",
+      "market_end": "2026-11-06T00:45:00Z",
+      "entry_minute": 3,
+      "side": "up",
+      "model_probability": 0.798658,
+      "market_price": 0.435,
+      "gross_edge": 0.363658,
+      "net_edge_by_buffer": {
+        "0.000": 0.346453,
+        "0.005": 0.34141,
+        "0.010": 0.336369,
+        "0.020": 0.326299
+      },
+      "execution_price_by_buffer": {
+        "0.000": 0.435,
+        "0.005": 0.44,
+        "0.010": 0.445,
+        "0.020": 0.455
+      },
+      "fee_by_buffer": {
+        "0.000": 0.017204,
+        "0.005": 0.017248,
+        "0.010": 0.017288,
+        "0.020": 0.017358
+      },
+      "actual": "UP",
+      "won": true
+    },
+    {
+      "slug": "btc-updown-15m-1793925000",
+      "market_end": "2026-11-06T00:45:00Z",
+      "entry_minute": 5,
+      "side": "up",
+      "model_probability": 0.78125,
+      "market_price": 0.655,
+      "gross_edge": 0.12625,
+      "net_edge_by_buffer": {
+        "0.000": 0.110432,
+        "0.005": 0.105542,
+        "0.010": 0.100656,
+        "0.020": 0.090894
+      },
+      "execution_price_by_buffer": {
+        "0.000": 0.655,
+        "0.005": 0.66,
+        "0.010": 0.665,
+        "0.020": 0.675
+      },
+      "fee_by_buffer": {
+        "0.000": 0.015818,
+        "0.005": 0.015708,
+        "0.010": 0.015594,
+        "0.020": 0.015356
+      },
+      "actual": "UP",
+      "won": true
+    },
+    {
+      "slug": "btc-updown-15m-1793925900",
+      "market_end": "2026-11-06T01:00:00Z",
+      "entry_minute": 3,
+      "side": "down",
+      "model_probability": 0.721569,
+      "market_price": 0.515,
+      "gross_edge": 0.206569,
+      "net_edge_by_buffer": {
+        "0.000": 0.189084,
+        "0.005": 0.184097,
+        "0.010": 0.179112,
+        "0.020": 0.169154
+      },
+      "execution_price_by_buffer": {
+        "0.000": 0.515,
+        "0.005": 0.52,
+        "0.010": 0.525,
+        "0.020": 0.535
+      },
+      "fee_by_buffer": {
+        "0.000": 0.017484,
+        "0.005": 0.017472,
+        "0.010": 0.017456,
+        "0.020": 0.017414
+      },
+      "actual": "DOWN",
+      "won": true
+    },
+    {
+      "slug": "btc-updown-15m-1793926800",
+      "market_end": "2026-11-06T01:15:00Z",
+      "entry_minute": 3,
+      "side": "down",
+      "model_probability": 0.721569,
+      "market_price": 0.435,
+      "gross_edge": 0.286569,
+      "net_edge_by_buffer": {
+        "0.000": 0.269364,
+        "0.005": 0.264321,
+        "0.010": 0.25928,
+        "0.020": 0.24921
+      },
+      "execution_price_by_buffer": {
+        "0.000": 0.435,
+        "0.005": 0.44,
+        "0.010": 0.445,
+        "0.020": 0.455
+      },
+      "fee_by_buffer": {
+        "0.000": 0.017204,
+        "0.005": 0.017248,
+        "0.010": 0.017288,
+        "0.020": 0.017358
+      },
+      "actual": "DOWN",
+      "won": true
+    },
+    {
+      "slug": "btc-updown-15m-1793928600",
+      "market_end": "2026-11-06T01:45:00Z",
+      "entry_minute": 3,
+      "side": "up",
+      "model_probability": 0.707224,
+      "market_price": 0.755,
+      "gross_edge": -0.047776,
+      "net_edge_by_buffer": {
+        "0.000": -0.060724,
+        "0.005": -0.065544,
+        "0.010": -0.07036,
+        "0.020": -0.079982
+      },
+      "execution_price_by_buffer": {
+        "0.000": 0.755,
+        "0.005": 0.76,
+        "0.010": 0.765,
+        "0.020": 0.775
+      },
+      "fee_by_buffer": {
+        "0.000": 0.012948,
+        "0.005": 0.012768,
+        "0.010": 0.012584,
+        "0.020": 0.012206
+      },
+      "actual": "UP",
+      "won": true
+    },
+    {
+      "slug": "btc-updown-15m-1793929500",
+      "market_end": "2026-11-06T02:00:00Z",
+      "entry_minute": 3,
+      "side": "up",
+      "model_probability": 0.539595,
+      "market_price": 0.505,
+      "gross_edge": 0.034595,
+      "net_edge_by_buffer": {
+        "0.000": 0.017097,
+        "0.005": 0.012102,
+        "0.010": 0.007111,
+        "0.020": -0.002861
+      },
+      "execution_price_by_buffer": {
+        "0.000": 0.505,
+        "0.005": 0.51,
+        "0.010": 0.515,
+        "0.020": 0.525
+      },
+      "fee_by_buffer": {
+        "0.000": 0.017498,
+        "0.005": 0.017493,
+        "0.010": 0.017484,
+        "0.020": 0.017456
+      },
+      "actual": "DOWN",
+      "won": false
+    },
+    {
+      "slug": "btc-updown-15m-1793929500",
+      "market_end": "2026-11-06T02:00:00Z",
+      "entry_minute": 5,
+      "side": "up",
+      "model_probability": 0.716312,
+      "market_price": 0.485,
+      "gross_edge": 0.231312,
+      "net_edge_by_buffer": {
+        "0.000": 0.213828,
+        "0.005": 0.208819,
+        "0.010": 0.203814,
+        "0.020": 0.193814
+      },
+      "execution_price_by_buffer": {
+        "0.000": 0.485,
+        "0.005": 0.49,
+        "0.010": 0.495,
+        "0.020": 0.505
+      },
+      "fee_by_buffer": {
+        "0.000": 0.017484,
+        "0.005": 0.017493,
+        "0.010": 0.017498,
+        "0.020": 0.017498
+      },
+      "actual": "DOWN",
+      "won": false
+    },
+    {
+      "slug": "btc-updown-15m-1793930400",
+      "market_end": "2026-11-06T02:15:00Z",
+      "entry_minute": 3,
+      "side": "up",
+      "model_probability": 0.541436,
+      "market_price": 0.545,
+      "gross_edge": -0.003564,
+      "net_edge_by_buffer": {
+        "0.000": -0.020922,
+        "0.005": -0.025889,
+        "0.010": -0.030852,
+        "0.020": -0.040768
+      },
+      "execution_price_by_buffer": {
+        "0.000": 0.545,
+        "0.005": 0.55,
+        "0.010": 0.555,
+        "0.020": 0.565
+      },
+      "fee_by_buffer": {
+        "0.000": 0.017358,
+        "0.005": 0.017325,
+        "0.010": 0.017288,
+        "0.020": 0.017204
+      },
+      "actual": "UP",
+      "won": true
+    },
+    {
+      "slug": "btc-updown-15m-1793930400",
+      "market_end": "2026-11-06T02:15:00Z",
+      "entry_minute": 5,
+      "side": "down",
+      "model_probability": 0.625,
+      "market_price": 0.46,
+      "gross_edge": 0.165,
+      "net_edge_by_buffer": {
+        "0.000": 0.147612,
+        "0.005": 0.142586,
+        "0.010": 0.137563,
+        "0.020": 0.127528
+      },
+      "execution_price_by_buffer": {
+        "0.000": 0.46,
+        "0.005": 0.465,
+        "0.010": 0.47,
+        "0.020": 0.48
+      },
+      "fee_by_buffer": {
+        "0.000": 0.017388,
+        "0.005": 0.017414,
+        "0.010": 0.017437,
+        "0.020": 0.017472
+      },
+      "actual": "UP",
+      "won": false
+    },
+    {
+      "slug": "btc-updown-15m-1793931300",
+      "market_end": "2026-11-06T02:30:00Z",
+      "entry_minute": 3,
+      "side": "up",
+      "model_probability": 0.541436,
+      "market_price": 0.485,
+      "gross_edge": 0.056436,
+      "net_edge_by_buffer": {
+        "0.000": 0.038952,
+        "0.005": 0.033943,
+        "0.010": 0.028938,
+        "0.020": 0.018938
+      },
+      "execution_price_by_buffer": {
+        "0.000": 0.485,
+        "0.005": 0.49,
+        "0.010": 0.495,
+        "0.020": 0.505
+      },
+      "fee_by_buffer": {
+        "0.000": 0.017484,
+        "0.005": 0.017493,
+        "0.010": 0.017498,
+        "0.020": 0.017498
+      },
+      "actual": "UP",
+      "won": true
+    },
+    {
+      "slug": "btc-updown-15m-1793931300",
+      "market_end": "2026-11-06T02:30:00Z",
+      "entry_minute": 5,
+      "side": "up",
+      "model_probability": 0.570526,
+      "market_price": 0.535,
+      "gross_edge": 0.035526,
+      "net_edge_by_buffer": {
+        "0.000": 0.018112,
+        "0.005": 0.013138,
+        "0.010": 0.008168,
+        "0.020": -0.001762
+      },
+      "execution_price_by_buffer": {
+        "0.000": 0.535,
+        "0.005": 0.54,
+        "0.010": 0.545,
+        "0.020": 0.555
+      },
+      "fee_by_buffer": {
+        "0.000": 0.017414,
+        "0.005": 0.017388,
+        "0.010": 0.017358,
+        "0.020": 0.017288
+      },
+      "actual": "UP",
+      "won": true
+    },
+    {
+      "slug": "btc-updown-15m-1793932200",
+      "market_end": "2026-11-06T02:45:00Z",
+      "entry_minute": 3,
+      "side": "down",
+      "model_probability": 0.807453,
+      "market_price": 0.535,
+      "gross_edge": 0.272453,
+      "net_edge_by_buffer": {
+        "0.000": 0.255039,
+        "0.005": 0.250065,
+        "0.010": 0.245095,
+        "0.020": 0.235165
+      },
+      "execution_price_by_buffer": {
+        "0.000": 0.535,
+        "0.005": 0.54,
+        "0.010": 0.545,
+        "0.020": 0.555
+      },
+      "fee_by_buffer": {
+        "0.000": 0.017414,
+        "0.005": 0.017388,
+        "0.010": 0.017358,
+        "0.020": 0.017288
+      },
+      "actual": "DOWN",
+      "won": true
+    },
+    {
+      "slug": "btc-updown-15m-1793933100",
+      "market_end": "2026-11-06T03:00:00Z",
+      "entry_minute": 3,
+      "side": "up",
+      "model_probability": 0.810811,
+      "market_price": 0.605,
+      "gross_edge": 0.205811,
+      "net_edge_by_buffer": {
+        "0.000": 0.189083,
+        "0.005": 0.184158,
+        "0.010": 0.179237,
+        "0.020": 0.169405
+      },
+      "execution_price_by_buffer": {
+        "0.000": 0.605,
+        "0.005": 0.61,
+        "0.010": 0.615,
+        "0.020": 0.625
+      },
+      "fee_by_buffer": {
+        "0.000": 0.016728,
+        "0.005": 0.016653,
+        "0.010": 0.016574,
+        "0.020": 0.016406
+      },
+      "actual": "UP",
+      "won": true
+    },
+    {
+      "slug": "btc-updown-15m-1793934000",
+      "market_end": "2026-11-06T03:15:00Z",
+      "entry_minute": 3,
+      "side": "up",
+      "model_probability": 0.707224,
+      "market_price": 0.605,
+      "gross_edge": 0.102224,
+      "net_edge_by_buffer": {
+        "0.000": 0.085496,
+        "0.005": 0.080571,
+        "0.010": 0.07565,
+        "0.020": 0.065818
+      },
+      "execution_price_by_buffer": {
+        "0.000": 0.605,
+        "0.005": 0.61,
+        "0.010": 0.615,
+        "0.020": 0.625
+      },
+      "fee_by_buffer": {
+        "0.000": 0.016728,
+        "0.005": 0.016653,
+        "0.010": 0.016574,
+        "0.020": 0.016406
+      },
+      "actual": "DOWN",
+      "won": false
+    },
+    {
+      "slug": "btc-updown-15m-1793934000",
+      "market_end": "2026-11-06T03:15:00Z",
+      "entry_minute": 5,
+      "side": "up",
+      "model_probability": 0.716312,
+      "market_price": 0.725,
+      "gross_edge": -0.008688,
+      "net_edge_by_buffer": {
+        "0.000": -0.022644,
+        "0.005": -0.027485,
+        "0.010": -0.032322,
+        "0.020": -0.041986
+      },
+      "execution_price_by_buffer": {
+        "0.000": 0.725,
+        "0.005": 0.73,
+        "0.010": 0.735,
+        "0.020": 0.745
+      },
+      "fee_by_buffer": {
+        "0.000": 0.013956,
+        "0.005": 0.013797,
+        "0.010": 0.013634,
+        "0.020": 0.013298
+      },
+      "actual": "DOWN",
+      "won": false
+    },
+    {
+      "slug": "btc-updown-15m-1793934900",
+      "market_end": "2026-11-06T03:30:00Z",
+      "entry_minute": 3,
+      "side": "down",
+      "model_probability": 0.808642,
+      "market_price": 0.635,
+      "gross_edge": 0.173642,
+      "net_edge_by_buffer": {
+        "0.000": 0.157418,
+        "0.005": 0.152514,
+        "0.010": 0.147614,
+        "0.020": 0.137824
+      },
+      "execution_price_by_buffer": {
+        "0.000": 0.635,
+        "0.005": 0.64,
+        "0.010": 0.645,
+        "0.020": 0.655
+      },
+      "fee_by_buffer": {
+        "0.000": 0.016224,
+        "0.005": 0.016128,
+        "0.010": 0.016028,
+        "0.020": 0.015818
+      },
+      "actual": "DOWN",
+      "won": true
+    },
+    {
+      "slug": "btc-updown-15m-1793934900",
+      "market_end": "2026-11-06T03:30:00Z",
+      "entry_minute": 5,
+      "side": "down",
+      "model_probability": 0.837696,
+      "market_price": 0.775,
+      "gross_edge": 0.062696,
+      "net_edge_by_buffer": {
+        "0.000": 0.05049,
+        "0.005": 0.045684,
+        "0.010": 0.040882,
+        "0.020": 0.031288
+      },
+      "execution_price_by_buffer": {
+        "0.000": 0.775,
+        "0.005": 0.78,
+        "0.010": 0.785,
+        "0.020": 0.795
+      },
+      "fee_by_buffer": {
+        "0.000": 0.012206,
+        "0.005": 0.012012,
+        "0.010": 0.011814,
+        "0.020": 0.011408
+      },
+      "actual": "DOWN",
+      "won": true
+    },
+    {
+      "slug": "btc-updown-15m-1793935800",
+      "market_end": "2026-11-06T03:45:00Z",
+      "entry_minute": 3,
+      "side": "down",
+      "model_probability": 0.721569,
+      "market_price": 0.695,
+      "gross_edge": 0.026569,
+      "net_edge_by_buffer": {
+        "0.000": 0.01173,
+        "0.005": 0.006869,
+        "0.010": 0.00201,
+        "0.020": -0.007696
+      },
+      "execution_price_by_buffer": {
+        "0.000": 0.695,
+        "0.005": 0.7,
+        "0.010": 0.705,
+        "0.020": 0.715
+      },
+      "fee_by_buffer": {
+        "0.000": 0.014838,
+        "0.005": 0.0147,
+        "0.010": 0.014558,
+        "0.020": 0.014264
+      },
+      "actual": "DOWN",
+      "won": true
+    },
+    {
+      "slug": "btc-updown-15m-1793936700",
+      "market_end": "2026-11-06T04:00:00Z",
+      "entry_minute": 3,
+      "side": "up",
+      "model_probability": 0.704545,
+      "market_price": 0.705,
+      "gross_edge": -0.000455,
+      "net_edge_by_buffer": {
+        "0.000": -0.015013,
+        "0.005": -0.019868,
+        "0.010": -0.024719,
+        "0.020": -0.034411
+      },
+      "execution_price_by_buffer": {
+        "0.000": 0.705,
+        "0.005": 0.71,
+        "0.010": 0.715,
+        "0.020": 0.725
+      },
+      "fee_by_buffer": {
+        "0.000": 0.014558,
+        "0.005": 0.014413,
+        "0.010": 0.014264,
+        "0.020": 0.013956
+      },
+      "actual": "DOWN",
+      "won": false
+    },
+    {
+      "slug": "btc-updown-15m-1793936700",
+      "market_end": "2026-11-06T04:00:00Z",
+      "entry_minute": 5,
+      "side": "up",
+      "model_probability": 0.572632,
+      "market_price": 0.545,
+      "gross_edge": 0.027632,
+      "net_edge_by_buffer": {
+        "0.000": 0.010273,
+        "0.005": 0.005307,
+        "0.010": 0.000343,
+        "0.020": -0.009573
+      },
+      "execution_price_by_buffer": {
+        "0.000": 0.545,
+        "0.005": 0.55,
+        "0.010": 0.555,
+        "0.020": 0.565
+      },
+      "fee_by_buffer": {
+        "0.000": 0.017358,
+        "0.005": 0.017325,
+        "0.010": 0.017288,
+        "0.020": 0.017204
+      },
+      "actual": "DOWN",
+      "won": false
+    },
+    {
+      "slug": "btc-updown-15m-1793937600",
+      "market_end": "2026-11-06T04:15:00Z",
+      "entry_minute": 3,
+      "side": "down",
+      "model_probability": 0.808642,
+      "market_price": 0.495,
+      "gross_edge": 0.313642,
+      "net_edge_by_buffer": {
+        "0.000": 0.296144,
+        "0.005": 0.291142,
+        "0.010": 0.286144,
+        "0.020": 0.276158
+      },
+      "execution_price_by_buffer": {
+        "0.000": 0.495,
+        "0.005": 0.5,
+        "0.010": 0.505,
+        "0.020": 0.515
+      },
+      "fee_by_buffer": {
+        "0.000": 0.017498,
+        "0.005": 0.0175,
+        "0.010": 0.017498,
+        "0.020": 0.017484
+      },
+      "actual": "DOWN",
+      "won": true
+    },
+    {
+      "slug": "btc-updown-15m-1793938500",
+      "market_end": "2026-11-06T04:30:00Z",
+      "entry_minute": 3,
+      "side": "down",
+      "model_probability": 0.722656,
+      "market_price": 0.705,
+      "gross_edge": 0.017656,
+      "net_edge_by_buffer": {
+        "0.000": 0.003098,
+        "0.005": -0.001757,
+        "0.010": -0.006608,
+        "0.020": -0.0163
+      },
+      "execution_price_by_buffer": {
+        "0.000": 0.705,
+        "0.005": 0.71,
+        "0.010": 0.715,
+        "0.020": 0.725
+      },
+      "fee_by_buffer": {
+        "0.000": 0.014558,
+        "0.005": 0.014413,
+        "0.010": 0.014264,
+        "0.020": 0.013956
+      },
+      "actual": "DOWN",
+      "won": true
+    },
+    {
+      "slug": "btc-updown-15m-1793938500",
+      "market_end": "2026-11-06T04:30:00Z",
+      "entry_minute": 5,
+      "side": "down",
+      "model_probability": 0.740072,
+      "market_price": 0.82,
+      "gross_edge": -0.079928,
+      "net_edge_by_buffer": {
+        "0.000": -0.09026,
+        "0.005": -0.095034,
+        "0.010": -0.099805,
+        "0.020": -0.109336
+      },
+      "execution_price_by_buffer": {
+        "0.000": 0.82,
+        "0.005": 0.825,
+        "0.010": 0.83,
+        "0.020": 0.84
+      },
+      "fee_by_buffer": {
+        "0.000": 0.010332,
+        "0.005": 0.010106,
+        "0.010": 0.009877,
+        "0.020": 0.009408
+      },
+      "actual": "DOWN",
+      "won": true
+    },
+    {
+      "slug": "btc-updown-15m-1793939400",
+      "market_end": "2026-11-06T04:45:00Z",
+      "entry_minute": 3,
+      "side": "up",
+      "model_probability": 0.70566,
+      "market_price": 0.425,
+      "gross_edge": 0.28066,
+      "net_edge_by_buffer": {
+        "0.000": 0.263554,
+        "0.005": 0.258503,
+        "0.010": 0.253456,
+        "0.020": 0.243372
+      },
+      "execution_price_by_buffer": {
+        "0.000": 0.425,
+        "0.005": 0.43,
+        "0.010": 0.435,
+        "0.020": 0.445
+      },
+      "fee_by_buffer": {
+        "0.000": 0.017106,
+        "0.005": 0.017157,
+        "0.010": 0.017204,
+        "0.020": 0.017288
+      },
+      "actual": "UP",
+      "won": true
+    },
+    {
+      "slug": "btc-updown-15m-1793939400",
+      "market_end": "2026-11-06T04:45:00Z",
+      "entry_minute": 5,
+      "side": "up",
+      "model_probability": 0.782609,
+      "market_price": 0.715,
+      "gross_edge": 0.067609,
+      "net_edge_by_buffer": {
+        "0.000": 0.053344,
+        "0.005": 0.048497,
+        "0.010": 0.043652,
+        "0.020": 0.033974
+      },
+      "execution_price_by_buffer": {
+        "0.000": 0.715,
+        "0.005": 0.72,
+        "0.010": 0.725,
+        "0.020": 0.735
+      },
+      "fee_by_buffer": {
+        "0.000": 0.014264,
+        "0.005": 0.014112,
+        "0.010": 0.013956,
+        "0.020": 0.013634
+      },
+      "actual": "UP",
+      "won": true
+    },
+    {
+      "slug": "btc-updown-15m-1793940300",
+      "market_end": "2026-11-06T05:00:00Z",
+      "entry_minute": 3,
+      "side": "up",
+      "model_probability": 0.542435,
+      "market_price": 0.645,
+      "gross_edge": -0.102565,
+      "net_edge_by_buffer": {
+        "0.000": -0.118593,
+        "0.005": -0.12349,
+        "0.010": -0.128383,
+        "0.020": -0.138159
+      },
+      "execution_price_by_buffer": {
+        "0.000": 0.645,
+        "0.005": 0.65,
+        "0.010": 0.655,
+        "0.020": 0.665
+      },
+      "fee_by_buffer": {
+        "0.000": 0.016028,
+        "0.005": 0.015925,
+        "0.010": 0.015818,
+        "0.020": 0.015594
+      },
+      "actual": "UP",
+      "won": true
+    },
+    {
+      "slug": "btc-updown-15m-1793940300",
+      "market_end": "2026-11-06T05:00:00Z",
+      "entry_minute": 5,
+      "side": "up",
+      "model_probability": 0.572632,
+      "market_price": 0.575,
+      "gross_edge": -0.002368,
+      "net_edge_by_buffer": {
+        "0.000": -0.019475,
+        "0.005": -0.02442,
+        "0.010": -0.029363,
+        "0.020": -0.039237
+      },
+      "execution_price_by_buffer": {
+        "0.000": 0.575,
+        "0.005": 0.58,
+        "0.010": 0.585,
+        "0.020": 0.595
+      },
+      "fee_by_buffer": {
+        "0.000": 0.017106,
+        "0.005": 0.017052,
+        "0.010": 0.016994,
+        "0.020": 0.016868
+      },
+      "actual": "UP",
+      "won": true
+    },
+    {
+      "slug": "btc-updown-15m-1793941200",
+      "market_end": "2026-11-06T05:15:00Z",
+      "entry_minute": 3,
+      "side": "down",
+      "model_probability": 0.723735,
+      "market_price": 0.665,
+      "gross_edge": 0.058735,
+      "net_edge_by_buffer": {
+        "0.000": 0.043141,
+        "0.005": 0.038258,
+        "0.010": 0.033379,
+        "0.020": 0.023631
+      },
+      "execution_price_by_buffer": {
+        "0.000": 0.665,
+        "0.005": 0.67,
+        "0.010": 0.675,
+        "0.020": 0.685
+      },
+      "fee_by_buffer": {
+        "0.000": 0.015594,
+        "0.005": 0.015477,
+        "0.010": 0.015356,
+        "0.020": 0.015104
+      },
+      "actual": "DOWN",
+      "won": true
+    },
+    {
+      "slug": "btc-updown-15m-1793941200",
+      "market_end": "2026-11-06T05:15:00Z",
+      "entry_minute": 5,
+      "side": "down",
+      "model_probability": 0.836842,
+      "market_price": 0.735,
+      "gross_edge": 0.101842,
+      "net_edge_by_buffer": {
+        "0.000": 0.088208,
+        "0.005": 0.083374,
+        "0.010": 0.078544,
+        "0.020": 0.068894
+      },
+      "execution_price_by_buffer": {
+        "0.000": 0.735,
+        "0.005": 0.74,
+        "0.010": 0.745,
+        "0.020": 0.755
+      },
+      "fee_by_buffer": {
+        "0.000": 0.013634,
+        "0.005": 0.013468,
+        "0.010": 0.013298,
+        "0.020": 0.012948
+      },
+      "actual": "DOWN",
+      "won": true
+    },
+    {
+      "slug": "btc-updown-15m-1793942100",
+      "market_end": "2026-11-06T05:30:00Z",
+      "entry_minute": 3,
+      "side": "up",
+      "model_probability": 0.810811,
+      "market_price": 0.545,
+      "gross_edge": 0.265811,
+      "net_edge_by_buffer": {
+        "0.000": 0.248453,
+        "0.005": 0.243486,
+        "0.010": 0.238523,
+        "0.020": 0.228607
+      },
+      "execution_price_by_buffer": {
+        "0.000": 0.545,
+        "0.005": 0.55,
+        "0.010": 0.555,
+        "0.020": 0.565
+      },
+      "fee_by_buffer": {
+        "0.000": 0.017358,
+        "0.005": 0.017325,
+        "0.010": 0.017288,
+        "0.020": 0.017204
+      },
+      "actual": "DOWN",
+      "won": false
+    },
+    {
+      "slug": "btc-updown-15m-1793942100",
+      "market_end": "2026-11-06T05:30:00Z",
+      "entry_minute": 5,
+      "side": "up",
+      "model_probability": 0.783951,
+      "market_price": 0.865,
+      "gross_edge": -0.081049,
+      "net_edge_by_buffer": {
+        "0.000": -0.089224,
+        "0.005": -0.093966,
+        "0.010": -0.098706,
+        "0.020": -0.108174
+      },
+      "execution_price_by_buffer": {
+        "0.000": 0.865,
+        "0.005": 0.87,
+        "0.010": 0.875,
+        "0.020": 0.885
+      },
+      "fee_by_buffer": {
+        "0.000": 0.008174,
+        "0.005": 0.007917,
+        "0.010": 0.007656,
+        "0.020": 0.007124
+      },
+      "actual": "DOWN",
+      "won": false
+    },
+    {
+      "slug": "btc-updown-15m-1793943000",
+      "market_end": "2026-11-06T05:45:00Z",
+      "entry_minute": 3,
+      "side": "down",
+      "model_probability": 0.808642,
+      "market_price": 0.715,
+      "gross_edge": 0.093642,
+      "net_edge_by_buffer": {
+        "0.000": 0.079378,
+        "0.005": 0.07453,
+        "0.010": 0.069686,
+        "0.020": 0.060008
+      },
+      "execution_price_by_buffer": {
+        "0.000": 0.715,
+        "0.005": 0.72,
+        "0.010": 0.725,
+        "0.020": 0.735
+      },
+      "fee_by_buffer": {
+        "0.000": 0.014264,
+        "0.005": 0.014112,
+        "0.010": 0.013956,
+        "0.020": 0.013634
+      },
+      "actual": "UP",
+      "won": false
+    },
+    {
+      "slug": "btc-updown-15m-1793943000",
+      "market_end": "2026-11-06T05:45:00Z",
+      "entry_minute": 5,
+      "side": "up",
+      "model_probability": 0.712766,
+      "market_price": 0.235,
+      "gross_edge": 0.477766,
+      "net_edge_by_buffer": {
+        "0.000": 0.465182,
+        "0.005": 0.459998,
+        "0.010": 0.454818,
+        "0.020": 0.444468
+      },
+      "execution_price_by_buffer": {
+        "0.000": 0.235,
+        "0.005": 0.24,
+        "0.010": 0.245,
+        "0.020": 0.255
+      },
+      "fee_by_buffer": {
+        "0.000": 0.012584,
+        "0.005": 0.012768,
+        "0.010": 0.012948,
+        "0.020": 0.013298
+      },
+      "actual": "UP",
+      "won": true
+    },
+    {
+      "slug": "btc-updown-15m-1793943900",
+      "market_end": "2026-11-06T06:00:00Z",
+      "entry_minute": 3,
+      "side": "up",
+      "model_probability": 0.712121,
+      "market_price": 0.685,
+      "gross_edge": 0.027121,
+      "net_edge_by_buffer": {
+        "0.000": 0.012017,
+        "0.005": 0.007148,
+        "0.010": 0.002283,
+        "0.020": -0.007437
+      },
+      "execution_price_by_buffer": {
+        "0.000": 0.685,
+        "0.005": 0.69,
+        "0.010": 0.695,
+        "0.020": 0.705
+      },
+      "fee_by_buffer": {
+        "0.000": 0.015104,
+        "0.005": 0.014973,
+        "0.010": 0.014838,
+        "0.020": 0.014558
+      },
+      "actual": "UP",
+      "won": true
+    },
+    {
+      "slug": "btc-updown-15m-1793943900",
+      "market_end": "2026-11-06T06:00:00Z",
+      "entry_minute": 5,
+      "side": "up",
+      "model_probability": 0.713781,
+      "market_price": 0.655,
+      "gross_edge": 0.058781,
+      "net_edge_by_buffer": {
+        "0.000": 0.042963,
+        "0.005": 0.038073,
+        "0.010": 0.033187,
+        "0.020": 0.023425
+      },
+      "execution_price_by_buffer": {
+        "0.000": 0.655,
+        "0.005": 0.66,
+        "0.010": 0.665,
+        "0.020": 0.675
+      },
+      "fee_by_buffer": {
+        "0.000": 0.015818,
+        "0.005": 0.015708,
+        "0.010": 0.015594,
+        "0.020": 0.015356
+      },
+      "actual": "UP",
+      "won": true
+    },
+    {
+      "slug": "btc-updown-15m-1793944800",
+      "market_end": "2026-11-06T06:15:00Z",
+      "entry_minute": 3,
+      "side": "down",
+      "model_probability": 0.723735,
+      "market_price": 0.685,
+      "gross_edge": 0.038735,
+      "net_edge_by_buffer": {
+        "0.000": 0.023631,
+        "0.005": 0.018762,
+        "0.010": 0.013897,
+        "0.020": 0.004177
+      },
+      "execution_price_by_buffer": {
+        "0.000": 0.685,
+        "0.005": 0.69,
+        "0.010": 0.695,
+        "0.020": 0.705
+      },
+      "fee_by_buffer": {
+        "0.000": 0.015104,
+        "0.005": 0.014973,
+        "0.010": 0.014838,
+        "0.020": 0.014558
+      },
+      "actual": "DOWN",
+      "won": true
+    },
+    {
+      "slug": "btc-updown-15m-1793944800",
+      "market_end": "2026-11-06T06:15:00Z",
+      "entry_minute": 5,
+      "side": "down",
+      "model_probability": 0.740072,
+      "market_price": 0.665,
+      "gross_edge": 0.075072,
+      "net_edge_by_buffer": {
+        "0.000": 0.059478,
+        "0.005": 0.054595,
+        "0.010": 0.049716,
+        "0.020": 0.039968
+      },
+      "execution_price_by_buffer": {
+        "0.000": 0.665,
+        "0.005": 0.67,
+        "0.010": 0.675,
+        "0.020": 0.685
+      },
+      "fee_by_buffer": {
+        "0.000": 0.015594,
+        "0.005": 0.015477,
+        "0.010": 0.015356,
+        "0.020": 0.015104
+      },
+      "actual": "DOWN",
+      "won": true
+    },
+    {
+      "slug": "btc-updown-15m-1793945700",
+      "market_end": "2026-11-06T06:30:00Z",
+      "entry_minute": 3,
+      "side": "up",
+      "model_probability": 0.805369,
+      "market_price": 0.815,
+      "gross_edge": -0.009631,
+      "net_edge_by_buffer": {
+        "0.000": -0.020185,
+        "0.005": -0.024963,
+        "0.010": -0.029737,
+        "0.020": -0.039275
+      },
+      "execution_price_by_buffer": {
+        "0.000": 0.815,
+        "0.005": 0.82,
+        "0.010": 0.825,
+        "0.020": 0.835
+      },
+      "fee_by_buffer": {
+        "0.000": 0.010554,
+        "0.005": 0.010332,
+        "0.010": 0.010106,
+        "0.020": 0.009644
+      },
+      "actual": "UP",
+      "won": true
+    },
+    {
+      "slug": "btc-updown-15m-1793945700",
+      "market_end": "2026-11-06T06:30:00Z",
+      "entry_minute": 5,
+      "side": "up",
+      "model_probability": 0.779141,
+      "market_price": 0.765,
+      "gross_edge": 0.014141,
+      "net_edge_by_buffer": {
+        "0.000": 0.001557,
+        "0.005": -0.003256,
+        "0.010": -0.008065,
+        "0.020": -0.017673
+      },
+      "execution_price_by_buffer": {
+        "0.000": 0.765,
+        "0.005": 0.77,
+        "0.010": 0.775,
+        "0.020": 0.785
+      },
+      "fee_by_buffer": {
+        "0.000": 0.012584,
+        "0.005": 0.012397,
+        "0.010": 0.012206,
+        "0.020": 0.011814
+      },
+      "actual": "UP",
+      "won": true
+    },
+    {
+      "slug": "btc-updown-15m-1793946600",
+      "market_end": "2026-11-06T06:45:00Z",
+      "entry_minute": 3,
+      "side": "down",
+      "model_probability": 0.723735,
+      "market_price": 0.465,
+      "gross_edge": 0.258735,
+      "net_edge_by_buffer": {
+        "0.000": 0.241321,
+        "0.005": 0.236298,
+        "0.010": 0.231279,
+        "0.020": 0.221251
+      },
+      "execution_price_by_buffer": {
+        "0.000": 0.465,
+        "0.005": 0.47,
+        "0.010": 0.475,
+        "0.020": 0.485
+      },
+      "fee_by_buffer": {
+        "0.000": 0.017414,
+        "0.005": 0.017437,
+        "0.010": 0.017456,
+        "0.020": 0.017484
+      },
+      "actual": "UP",
+      "won": false
+    },
+    {
+      "slug": "btc-updown-15m-1793946600",
+      "market_end": "2026-11-06T06:45:00Z",
+      "entry_minute": 5,
+      "side": "down",
+      "model_probability": 0.740072,
+      "market_price": 0.605,
+      "gross_edge": 0.135072,
+      "net_edge_by_buffer": {
+        "0.000": 0.118344,
+        "0.005": 0.113419,
+        "0.010": 0.108498,
+        "0.020": 0.098666
+      },
+      "execution_price_by_buffer": {
+        "0.000": 0.605,
+        "0.005": 0.61,
+        "0.010": 0.615,
+        "0.020": 0.625
+      },
+      "fee_by_buffer": {
+        "0.000": 0.016728,
+        "0.005": 0.016653,
+        "0.010": 0.016574,
+        "0.020": 0.016406
+      },
+      "actual": "UP",
+      "won": false
     }
   ],
-  "skipped": 1327,
+  "skipped": 1319,
   "status": "research_only_execution_stress_test",
   "notes": [
     "A trade is evaluated only once per market/entry minute and then filtered independently by net edge threshold.",
